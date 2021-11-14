@@ -1,0 +1,38 @@
+@import "base/kob-variables";
+
+.modal{
+	.modal-content{
+		border-radius:0px;
+		.modal-header{
+			.modal-title{
+				text-align:center;
+				color:$kob-red;
+			}
+		}
+		.close{
+			background: url("../img/sprite.png") #d54d4d center no-repeat;
+			background-position: -8px -248px;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			border-radius: 50%;
+			outline: none;
+			opacity: 1 !important;
+			border: 0;
+		}
+		.modal-body{
+				text-align:center;
+				h5{
+					color:$kob-black;
+					font-size:18px;
+					font-weight:bold;
+				}
+				p{
+					color:$kob-black;
+					font-weight:400;
+				}
+			}
+	}	
+}

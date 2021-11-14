@@ -1,0 +1,120 @@
+@import "compass";
+@import "theme_variables";
+
+$grid-color-one: #7cadff;
+$grid-color-two: #9fb1b9;
+$grid-color-three: #7dced4;
+$grid-color-four: #a29bb7;
+$grid-color-five: #efa79b;
+$grid-color-six: #b66f93;
+$grid-color-seven: #c3ec45;
+$grid-color-eight: #FFB988;
+$amount: 20%;
+#my-account {
+	.addresses-lists {
+		margin-bottom: 30px;
+	}
+	ul.myaccount-link-list {
+		li {
+			overflow: hidden;
+			padding-bottom: 30px;
+			a {
+				display: block;
+				overflow: hidden;
+				text-shadow: none;
+				text-transform: capitalize;
+				text-decoration: none;
+				padding: 15px;
+				@include border-radius(2px);
+                vertical-align: middle;
+				i {
+                    color: #ffffff;
+					font-size: 36px;
+                    line-height: 54px;
+					text-align: center;
+                    vertical-align: middle;
+                    display: block;
+				}
+				span {
+                    font: 700 18px/36px $font-custom;
+                    color: #ffffff;
+					padding: 0;
+					overflow: hidden;
+                    vertical-align: middle;
+                    display: block;
+                    text-align: center;
+				}
+				&:hover{
+                    span{
+                        color: #ffffff;
+                    }
+                    i{
+                        color: #f5f5f5;
+                    }
+                    background: #323232;
+                    transition: background 0.4s ease-in-out;
+                    color: #ffffff;
+                }
+                &:focus{
+                    span{
+                        color: #ffffff;
+                    }
+                    i{
+                        color: #f5f5f5;
+                    }
+                    background: #1e1e1e;
+                    transition: background 0.4s ease-in-out;
+                    color: #ffffff;
+                }
+			}
+            &:nth-child(1) a{
+                background: $grid-color-one;
+                &:hover{
+                    background: darken($grid-color-one, $amount)
+                }
+            }
+            &:nth-child(2) a{
+                background: $grid-color-two;
+                &:hover{
+                    background: darken($grid-color-two, $amount)
+                }
+            }
+            &:nth-child(3) a{
+                background: $grid-color-three;
+                &:hover{
+                    background: darken($grid-color-three, $amount)
+                }
+            }
+            &:nth-child(4) a{
+                background: $grid-color-four;
+                &:hover{
+                    background: darken($grid-color-four, $amount)
+                }
+            }
+            &:nth-child(5) a{
+                background: $grid-color-five;
+                &:hover{
+                    background: darken($grid-color-five, $amount)
+                }
+            }
+            &:nth-child(6) a{
+                background: $grid-color-six;
+                &:hover{
+                    background: darken($grid-color-six, $amount)
+                }
+            }
+            &:nth-child(7) a{
+                background: $grid-color-seven;
+                &:hover{
+                    background: darken($grid-color-seven, $amount)
+                }
+            }
+            &:nth-child(8) a{
+                background: $grid-color-eight;
+                &:hover{
+                    background: darken($grid-color-eight, $amount)
+                }
+            }
+		}
+	}
+}

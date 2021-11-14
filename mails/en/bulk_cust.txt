@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Message from {shop_name}</title>
+</head>
+<body>
+	<table style="font-family:Verdana,sans-serif; font-size:11px; color:#374953; width: 550px;">
+		<tr>
+			<td align="left">
+				<a href="{shop_url}" title="{shop_name}"><img alt="{shop_name}" src="https://www.kobster.com/images/mail_imgs/credit_policy.jpg" style="border:none;" ></a>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">Hello <strong style="color:##dc5046;">{firstname} {lastname}</strong>,</td>
+		</tr>
+		<tr><td><br /><p>Greetings from Kobster.com!  Your one stop shop for all office supplies.<p></td></tr>
+		<tr>
+			<td align="left">
+				<p>We thank you for showing interest in Kobster Credit Account Scheme for commercials.  This account is useful for the organization who wants to buy now and pay later. We currently give the credit limit to maximum 7-21 days subject to approval of your account. The minimum order is Rs. 2500/-.</p>
+				<p>Organization needs to have <b>any one</b> of the following official documents to be eligible for our Credit Account Scheme. Our friendly Customer Support team will get in touch with you to assist you further on this.</p>
+			<ul>
+				<li>	Sales tax	</li>
+				<li>	Tax documents - Service Tax	</li>
+				<li>	Tax documents - Excise duty registration	</li>
+				<li>	Tax documents - GST registration	</li>
+				<li>	Trade Licenses issued by Govt. Authority / Govt. Body / Local Self-Govt. Authority - Any trade license	</li>
+				<li>	Trade Licenses issued by Govt. Authority / Govt. Body / Local Self-Govt. Authority - Registration Certificate	</li>
+				<li>	Trade Licenses issued by Govt. Authority / Govt. Body / Local Self-Govt. Authority - Membership Certificate	</li>
+				<li>	Trade Licenses issued by Govt. Authority / Govt. Body / Local Self-Govt. Authority - Registration under shops and establishment Act	</li>
+				<li>	Permits or license obtained for Retail Trade issued by Government authority / Local self government bodies (like tehbazari or similar license for hawker)	</li>
+				<li>	Institution documents (only for your own self consumption) - Certificate of incorporation	</li>
+				<li>	Institution documents (only for your own self consumption) - Registration as a society	</li>
+				<li>	Institution documents (only for your own self consumption) - Registration as public trust	</li>
+			</ul>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><br />
+			<p>Thank you for your trust,</p>
+			<p><b>Kobster.com Team</b></p><br />
+			</td></tr>
+		<tr>
+		<tr>
+			<td>
+				<p>If you have any questions, please contact our friendly <a href="https://www.kobster.com/contact-us">Customer Support Team</a> Or reach to us at 1800 121 0405 (9am to 9pm, Monday through Saturday).</p> 
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-size:10px; border-top: 1px solid #D9DADE;">
+				Kobster.com – Your one stop shop for all your office needs | <a href="{shop_url}" style="color:##dc5046; font-weight:bold; text-decoration:none;">{shop_name}</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

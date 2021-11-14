@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_group` ADD  `po_mandatory` TINYINT( 1 ) UNSIGNED NOT NULL DEFAULT  '0' AFTER  `verification_status` ;

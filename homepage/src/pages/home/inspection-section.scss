@@ -1,0 +1,13 @@
+.inspection-section{
+    .container{
+        .row{
+            @media(max-width: 768px){
+                flex-direction: column-reverse;
+                flex-wrap: nowrap;
+                .col-10{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+Employee Name: {Employee_name}<br /><br />
+Product Name: {product_name} <br /><br />
+Product Reference: {product_reference} <br /><br />
+Old GST Percentage: {old_vat} <br /><br />
+New GST Percentage: {new_vat} <br /><br />
+
+ 
+{shop_url} 	
+ 

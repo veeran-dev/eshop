@@ -1,0 +1,1 @@
+ALTER TABLE `kob_bq_request` ADD COLUMN `triggered` tinyint(4) DEFAULT '0' AFTER `date_updated`

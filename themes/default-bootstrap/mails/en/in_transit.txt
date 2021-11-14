@@ -1,0 +1,4 @@
+{firstname}
+{id_order}
+{trackingid}
+{followup}

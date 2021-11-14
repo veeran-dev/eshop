@@ -1,0 +1,14 @@
+.timepicker{
+    display: flex;
+    flex-direction: column;
+    input{
+    	margin: 8px 0;
+    	width: 100%;
+    }
+	.react-timekeeper{
+		width: 224px !important;
+		.react-timekeeper__top-bar{
+			padding:0;
+		}
+	}
+}

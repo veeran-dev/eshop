@@ -1,0 +1,33 @@
+
+
+	
+	New Product Uploaded - {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			
+			A new product has been uploaded by - {uploadBy}
+			
+				Product Details:
+				    Name: {product_name}
+				    Code: {product_code}
+			
+			You can the Product Upload by clicking on the following link:
+			{edit_link}
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

@@ -1,0 +1,23 @@
+INSERT INTO kob_order_detail_tax (id_order_detail,id_tax, unit_amount, total_amount) 
+	SELECT ko.id_order_detail,ktr.id_tax, (ko.unit_price_tax_excl*(kt.rate/100)),(ko.total_price_tax_excl*(kt.rate/100)) FROM kob_order_detail ko
+    LEFT JOIN kob_tax_rule ktr on ktr.id_tax_rules_group=ko.id_tax_rules_group
+    LEFT JOIN kob_tax kt on kt.id_tax=ktr.id_tax
+    WHERE ko.id_order=24877
+	
+
+UPDATE kob_order_detail kod
+LEFT JOIN kob_order_detail_tax kodt on kodt.id_order_detail=kod.id_order_detail
+SET kod.total_price_tax_incl = kod.total_price_tax_excl+kodt.total_amount,kod.unit_price_tax_incl=kod.unit_price_tax_excl+kodt.unit_amount
+WHERE kod.id_order=25744
+
+
+UPDATE `kob_order_detail` SET total_price_tax_incl=total_price_tax_excl, unit_price_tax_incl=unit_price_tax_excl
+WHERE id_order IN(25952,25956,26006)
+
+
+INSERT INTO kob_order_detail_tax (id_order_detail,id_tax, unit_amount, total_amount) 
+	SELECT ko.id_order_detail,ktr.id_tax, (ko.unit_price_tax_excl*(kt.rate/100)),(ko.total_price_tax_excl*(kt.rate/100)) FROM kob_order_detail ko
+    LEFT JOIN kob_product kp on kp.id_product=ko.product_id
+    LEFT JOIN kob_tax_rule ktr on ktr.id_tax_rules_group=kp.id_tax_rules_group
+    LEFT JOIN kob_tax kt on kt.id_tax=ktr.id_tax
+    WHERE ko.id_order=27996

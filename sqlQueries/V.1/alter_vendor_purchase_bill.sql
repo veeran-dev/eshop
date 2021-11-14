@@ -1,0 +1,1 @@
+ALTER TABLE `kob_vendor_purchase_bill` ADD COLUMN id_payment SMALLINT(3) COMMENT '1-COD,2-cheque,3-NEFT, 4-Cheque' AFTER tax

@@ -1,0 +1,11 @@
+SELECT ko.id_order,kc.id_default_group,kfc.city_name,kod.product_id,kod.product_name,kod.unit_price_tax_excl,zonal.price,zonal.date_upd,kp.wholesale_price,ks.name,ka.city,ko.date_add 
+FROM kob_orders ko 
+LEFT JOIN kob_address ka on ka.id_address=ko.id_address_delivery
+LEFT JOIN kob_state ks on ks.id_state=ka.id_state
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order
+LEFT JOIN kob_product kp on kp.id_product=kod.product_id
+LEFT JOIN kob_zonal_price zonal on zonal.id_fulfillment_centre=ko.id_fc AND zonal.id_product=kod.product_id
+LEFT JOIN kob_fulfillment_centre kfc on kfc.id_fulfillment_centre=ko.id_fc
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+WHERE kc.id_default_group= 53
+ORDER by ko.id_order

@@ -1,0 +1,132 @@
+.feedback-question{
+    max-width: 764px;
+    padding: 32px 64px;
+    text-align: center;
+    margin: 0 auto;
+    h1{
+        margin-bottom: 32px;
+    }
+    @media (max-width: $mobile-large){
+        padding: 32px 16px;
+        h1{
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.feedback-options{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    a{
+        display: block;
+        padding: 32px;
+        margin: 0 32px;
+        text-align: center;
+        border: 1px solid $kob-gray-eighty;
+        border-radius: 4px;
+        img{
+            display: block;
+            margin-bottom: 16px;
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 32px auto;
+        }
+        span{
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: bold;
+        }
+        &:hover{
+            img{
+                animation: shake 300ms ease-in;
+            }
+        }
+        @media (max-width: $mobile-large){
+            padding: 8px;
+            margin: 8px;
+            img{
+                width: 32px;
+                height: 32px;
+                margin-bottom: 16px;
+            }
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.happy:hover{
+    border-color: $kob-green;
+    //background: rgba( $kob-green, 0.2 );
+    span{
+        color: $kob-green;
+    }
+}
+.sad:hover{
+    border-color: darken($kob-red, 15%);
+    //background: rgba( $kob-red, 0.05 );
+    span{
+        color: darken($kob-red, 15%);
+    }
+}
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%{
+    -webkit-transform: translate3d(-6px, 0, 0);
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  90%{
+    -webkit-transform: translate3d(6px, 0, 0);
+    transform: translate3d(6px, 0, 0);
+  }
+}
+
+.feedback-info{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 32px 8px;
+    animation: enter 900ms ease-in;
+    h3{
+        font-size: 22px;
+        color: $kob-gray;
+    }
+    textarea{
+        display: block;
+        border: 1px solid $kob-gray-eighty;
+        padding: 16px;
+        height: 128px;
+        width: 100%;
+        margin: 32px 0 16px 0;
+        &:focus{
+            border-color: $kob-blue;
+        }
+    }
+    button{
+        width: 164px;
+        height: 42px;
+    }
+
+
+}
+
+@-webkit-keyframes enter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.feedback-success{
+    text-align: center;
+    max-width: 600px;
+    h3{
+        margin-bottom: 16px;
+    }
+}

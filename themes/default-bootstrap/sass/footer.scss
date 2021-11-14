@@ -1,0 +1,21 @@
+
+footer{
+	background: #ffffff;
+	.support-info{
+	.list-group{
+		.list-group-item {
+			padding: 5px 0px !important;
+			background-color: transparent !important;
+			border: none !important;
+		}
+	}
+		
+	}
+	.copyright{
+		@extend .container;
+		.logo, copyright-info, .payment-methods{
+			display:inline-block;
+		}
+	}
+}
+

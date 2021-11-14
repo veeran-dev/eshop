@@ -1,0 +1,247 @@
+*ERROR* 	2019/04/09 - 18:28:42: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 10, 10
+*ERROR* 	2019/04/09 - 18:28:46: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 20, 10
+*ERROR* 	2019/04/09 - 18:28:54: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 25
+*ERROR* 	2019/04/09 - 18:29:01: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 25, 25
+*ERROR* 	2019/04/09 - 18:29:03: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 25
+*ERROR* 	2019/04/09 - 19:24:15: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 19:28:59: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 19:56:45: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 19:57:05: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:31:01: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:34:30: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:39:04: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:39:17: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:39:44: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:40:01: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:40:51: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 21:41:04: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 22:34:41: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10
+*ERROR* 	2019/04/09 - 22:35:04: SELECT DISTINCT(ko.id_order),kc.email, kgl.name as company, ko.total_paid_tax_incl,FORMAT(ko.total_paid,2) as total_paid, kosl.name,koh.date_add 
+                                    from kob_elite_supplier_orders keso
+        							LEFT JOIN kob_orders ko ON ko.id_order=keso.id_order
+        							LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+        							LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+        							LEFT JOIN kob_customer kc ON kc.id_customer=ko.id_customer
+        							LEFT JOIN kob_group_lang kgl on kgl.id_group=kc.id_default_group AND kgl.id_lang=1
+        							WHERE keso.id_supplier=35
+        							AND koh.id_order_history IN(SELECT MAX(id_order_history) from kob_order_history where id_order=ko.id_order )
+                                    
+                                    ORDER BY ko.`id_order` 
+                                    DESC 
+                                     LIMIT 0, 10

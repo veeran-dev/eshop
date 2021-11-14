@@ -1,0 +1,40 @@
+
+
+	
+	Estimated Delivery Time Changed {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			
+			Dear RMs / Supply Chain,
+			Customer / Company Name : {customer_name}
+			The estimated delivery time for the order #  #{id_order}  has been changed from {old_estimated_delivery_time} to {new_estimated_delivery_time}.
+			
+		
+		
+			
+				This is an automatic system generated alert. For any technical issues, please contact tech.team@kobster.com 
+				
+			
+		
+		
+			
+				This email is meant for internal circulation only. Not be forwarded outside of Kobster.com 
+				
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

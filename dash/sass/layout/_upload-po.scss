@@ -1,0 +1,98 @@
+.upload-po-container{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    height: calc(100vh - 203px);
+    background: $kob-white;
+    border-radius: 4px;
+    padding: 0 32px;
+    @media (max-width: #{$tablet-large - 32px}){
+        height: calc(100vh - 124px);
+    }
+    @media (max-width: $mobile-large){
+        padding: 0 8px;
+    }
+}
+
+.upload-po{
+    border-bottom: 1px solid $kob-gray-eighty;
+}
+
+.upload-excel{
+    width: 100%;
+    max-width: 400px;
+    .step{
+        padding: 16px;
+        max-width: 400px;
+        display: flex;
+        display: -webkit-flex;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid $kob-gray-eighty;
+        margin: 16px 0;
+        border-radius: 4px;
+        background: #f5f5f5;
+        .help-text{
+            font-size: 13px;
+            margin-top: 8px;
+            color: $kob-gray-medium;
+        }
+    }
+    .step-count{
+        flex-basis: 80px;
+        -webkit-flex-basis: 80px;
+        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        color: $kob-gray;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    button{
+        margin: 16px 0 0 0;
+        span{
+            margin-right: 8px;
+        }
+    }
+    @media (max-width: $mobile-large){
+        .step{
+            text-align: center;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+        }
+        .step-count{
+            flex-basis: 32px;
+            -webkit-flex-basis: 32px;
+        }
+    }
+}
+
+#upload-purchase-order{
+    display: flex;
+    margin-top: 16px;
+    display: -webkit-flex;
+    @media (max-width: $mobile-large){
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    label{
+        border-radius: 2px 0 0 2px;
+        background: $kob-white;
+        color: $kob-blue;
+        border: 1px solid $kob-blue;
+        line-height: 14px;
+        padding: 7px;
+        width: 100%;
+        max-width: 140px;
+    }
+    .button-blue{
+        border-radius: 0 2px 2px 0;
+        margin: 0;
+        flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+    }
+}

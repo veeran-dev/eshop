@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_product` ADD  `hsn_code` VARCHAR( 32 ) NULL DEFAULT NULL AFTER  `reference` ;

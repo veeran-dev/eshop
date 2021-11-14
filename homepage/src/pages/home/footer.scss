@@ -1,0 +1,103 @@
+.footer_section{
+    text-align: center;
+    font-size: 18px;
+    background: #3e4265;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 92px);
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 32px 0px;
+    
+    p{
+        letter-spacing: 2px;
+    }
+    @media (max-width: 320px){
+        height: auto;
+    }
+    @media (max-width: 425px){
+    .container{
+            flex-wrap: wrap !important;
+            .fsection{
+                width: 50%;
+                a{
+                    font-size: 0.8em;
+                    text-align: left;
+                }
+                &:last-child{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) and (min-width: 425px){
+        .container{
+            flex-wrap: wrap !important;
+            .fsection{
+                flex:1;
+                a{
+                    font-size: 0.8em;
+                    text-align: left;
+                }
+                &:last-child{
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .container{
+    	display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;
+        align-items: center;
+	    flex-wrap: nowrap;
+        width: auto;
+        opacity: 1!important;
+        @media (min-width: 1024px){
+            width: 100%;
+        }
+        @media (max-width: 1024px){
+            font-size: 0.8em;
+            flex-wrap: wrap !important;
+        }
+    	.fsection{
+		    display: flex;
+		    flex-direction: column;
+		    align-items: flex-start;
+    		justify-content: flex-start;
+    		a{
+                color: #fff;
+    			margin-bottom: 16px;
+    			&.head{
+                    text-transform: uppercase;
+                    font-size: 0.7em;
+    				font-weight: bold;
+    			}
+    		}
+    	}
+    }
+    .logo-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 16px 0;
+        .copyright{
+            @media (max-width: 767px){
+                    font-size: 0.8em;
+                }
+        }
+        a{
+            padding: 0px 8px;
+            svg{
+                @media (max-width: 767px){
+                    transform: scale(0.6);
+                }
+                height: 24px;
+                width: 24px;
+                color: #fff;
+                fill: #fff;
+            }
+        }
+    }
+}

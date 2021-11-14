@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Kobster Customer Verification Email</title>
+</head>
+<body>
+	<table style="font-family:Verdana,sans-serif; font-size:11px; color:#374953; width: 550px;">
+		<tr>
+			<td align="left">
+				<a href="{shop_url}" title="{shop_name}"><img alt="{shop_name}" src="https://www.kobster.com/img/logo_mail.jpg" style="border:none;" ></a>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">Dear Customer, <br /><br /></td>
+		</tr>
+		<tr><td>
+		<p>This is to bring to your notice that, to register {firstname}{lastname} in Kobster.com, we require few 
+
+		necessary documents. Request you to upload the same at the earliest for processing the upcoming 
+
+		orders.</p>
+		<p>Kindly take this as top priority and help in registering your concern with Kobster.com.</p>
+		</td></tr>
+		<tr>
+			<td>
+				<p>
+					Please <a href="https://www.kobster.com/verify-document.php">Click Here</a> to upload the documents.
+				</p><br />
+				
+			</td>
+		</tr>
+		
+		
+		
+		<tr><td>&nbsp;</td></tr>		
+	</table>
+</body>
+</html>

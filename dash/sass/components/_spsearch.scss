@@ -1,0 +1,310 @@
+///new Search
+.sp-search-header, .sp_search{
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+	align-self: center;
+
+	@media (max-width: 991px) {
+	    	flex-grow: initial;
+    	    padding: 10px;
+		}
+	.sp-container{
+		display: flex;
+		margin-left: 48px;
+		margin-right: 48px;
+		justify-content: center;
+		@media (max-width: 991px){
+			margin: 0;
+			input{
+				min-width: calc(60%) !important;
+			}
+		}
+		input{
+			border: 1px solid #a4a5a7;
+		    border-radius: 0;
+		    border-right: 0;
+		    min-width: 320px;
+		    height: 36px;
+		    padding: 0 10px;
+		}
+		div{
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    width: 36px;
+		    height: 36px;
+		    border-radius: 0 3px 3px 0;
+		    border: 0;
+		    color: #ffffff;
+		    background: #ea6153;
+		    i{
+		    	font-weight: bold;
+		    }
+		}
+	}
+	.sp-filter-container{
+		display: flex;
+		justify-content: space-between;
+		background: $kob-gray-hover;
+		@media (max-width: 991px){
+			margin: 16px 0 0 0;
+		}
+		&.hidden{
+			display: none;
+		}
+		.sp-result-count{
+		    display: flex;
+		    align-items: flex-end;
+		    margin-bottom: 8px;
+    		margin-left: 8px;
+    		@media (max-width: 991px){
+				padding: 8px 8px 0 0;
+				width: 100%;
+				align-items: center;
+				i{
+					margin-left: auto;
+					background: $kob-red;
+					color: $kob-white;
+					padding: 10px;
+					border-radius: 4px;
+				}
+			}
+		}
+		.sp-filter-wrapper{
+			display: flex;
+			align-items: flex-end;
+    		padding: 8px;
+    		cursor: pointer;
+    		@media (max-width: 991px){
+	    		position: fixed;
+			    top: 0;
+			    left: 0;
+			    background: #fff;
+			    width: 100%;
+			    height: 100%;
+			    z-index: 1000;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: space-evenly;
+			    align-items: start;
+			    flex-wrap: wrap;
+			    padding: 16px;
+				
+				transform: translateX(100%);
+				transition: transform 0.5s ease;
+				&.show-filter{
+					transform: translateX(0%);
+				}
+    		}
+    		.sp-filter{
+    			.icon-place-pin{
+					font-size: 16px;
+					font-weight: bold;
+					margin-right: 4px;	
+    			}
+    			&.sp-location-wrapper{
+					background: $kob-white;
+					padding: 8px;
+    			}
+    			.sp-location{
+					width: 140px;
+				    color: $kob-red;
+				    font-weight: bold;
+				    cursor: pointer;
+				    text-transform: capitalize;
+				    text-align: center;
+					white-space: nowrap;
+					display: inline-block;
+					overflow: hidden !important;
+					text-overflow: ellipsis;
+					text-align: left;
+					margin:0;
+					font-size: 14px;
+					font-weight: bold;
+				}
+    			button{
+    				height: 40px;
+    				min-width: 130px;
+				    padding: 8px 16px;
+    			}
+    			p{
+    				font-weight: bold;
+    				font-size: 10px;
+    				margin-bottom: 8px;
+    			}
+    			select{
+    				border: 0;
+    				min-width: 140px;
+    				min-height: 40px;
+    				padding: 0px 8px;
+    			}
+    			.pagination{
+    				margin: 0;
+    				@media (max-width: 991px){
+    					display: none;
+    				}
+    			}
+    			.sp-price-range{
+    				min-width: 140px;
+    			}
+    			.icon-back-arrow {
+    				cursor: pointer;
+    				padding: 10px;
+    			}
+    		}
+		}
+	}
+}
+
+.sp-search-header{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 16px 0;
+    .sp-container{
+    }
+    .sp-filter{
+    	margin-left: 16px;
+    	min-height: 40px;
+    	justify-content: center;
+		align-items: center;
+		display: flex;
+    }
+    .sp-filter-price{
+		margin: 0 24px;
+		.sp-price-range{
+			.InputRange{
+				margin: 0;
+			}
+		}
+	}
+}
+.search-product-container{
+	.sp-search-results{
+		.sp-search-results-container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			.no-results{
+				background-color: $kob-white;
+			}
+			.sp-product-container{
+				flex:1;
+				max-width: 280px;
+				margin:0 8px 8px 8px;
+				background-color: $kob-white;
+				padding: 24px;
+				border: 1px solid $kob-gray-eighty;
+				border-radius: 4px;
+				.sp-image-wrapper{
+					position: relative;
+					.sp-supplier-count{
+						background-color: $kob-white;
+						position: absolute;
+					    right: -16px;
+    					top: -16px;
+					    display: flex;
+					    flex-direction: column;
+					    border-radius: 4px;
+					    z-index: 1;
+					    padding: 2px;
+					    text-align: center;
+				        border-radius: #ccc;
+
+						span:nth-child(1){
+							font-size: 18px;
+							font-weight: bold;
+						}
+						span:nth-child(2){
+							font-size: 8px;
+						}
+					}
+					.image-container{
+						text-align: center;
+						img{
+						    width: 240px;
+						}
+					}
+				}
+				.sp-name{
+					color: $kob-black;
+					margin: 8px 0;
+					font-size: 14px;
+    				line-height: 20px;
+    				min-height: 40px;
+				    display: -webkit-box;
+				}
+				.sp-reference		{
+					margin-left: 8px;
+					font-weight: bold;
+				}
+				.sp-details{
+					display: flex;
+    				justify-content: space-between;
+    				margin: 16px 0;
+    				.sp-price{
+    					div:nth-child(1){
+    						font-size: 14px;
+    						color: #777;
+    					}
+    					div:nth-child(2){
+    						font-size: 18px;
+    						font-weight: bold;
+    					}
+    				}
+    				.sp-ratings{
+    					div:nth-child(2){
+    						font-size: 18px;
+    						font-weight: bold;
+    					}
+    				}
+				}
+				.sp-cta{
+
+				}
+			}
+		}
+	}
+}
+
+//MOBILE COMPONENT FOR SEARCH
+.sp-mobile-search{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+    &.show-search{
+	    transform: translateY(100%);
+    }
+    .sp-mobile-search-wrapper{
+    	min-width: calc(60%);
+    	.close-search{
+    		i{
+    			padding: 8px;
+			    width: 40px;
+			    height: 40px;
+    		}
+    	}
+    	.sp-mobile-search-input{
+    		display: flex;
+    		input{
+				height: 32px;
+				width: calc(100% - 60px);
+    		}
+    		button{
+    			margin: 0;
+    			height: 32px;
+    		}
+    	}
+    }
+}

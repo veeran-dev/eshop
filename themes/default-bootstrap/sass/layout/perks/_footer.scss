@@ -1,0 +1,57 @@
+.from-perks{
+    .support-container{
+        height: auto;
+        background: #f7f7f7;
+        @media (max-width: 990px){
+            margin-bottom: 15px;
+        }
+        .container{
+            max-width: 90%;
+            width: 100%;
+        }
+    }
+    .support-column{
+        width: 25%;
+        height: 236px;
+        margin-bottom: 16px;
+        @media (max-width: 768px){
+            width: 50%;
+            margin-bottom: 0;
+        }
+        @media (max-width: 480px){
+            width: 100%;
+            margin-bottom: 0;
+        }
+        h3{
+            color: #333;
+        }
+        img{
+            opacity: 0.85;
+            width: 100%;
+            max-width: 120px;
+            margin: 0 auto;
+            display: block;
+        }
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3){
+            display: block;
+        }
+    }
+    .footer-links{
+        text-align: center;
+        margin-bottom: 16px;
+        a{
+            margin: 0 12px;
+            &:hover{
+                color: $perks-blue;
+            }
+        }
+    }
+    &#authentication{
+        .support-container,
+        .footer-container{
+            display: none;
+        }
+    }
+}

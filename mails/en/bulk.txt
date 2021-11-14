@@ -1,0 +1,40 @@
+Hi {firstname} {lastname},
+
+You have received a message for credit policy via your shop: {shop_name}
+
+Details of message:
+
+E-mail address: {email}
+
+Contact Person details:
+
+{email}
+
+{name}
+
+{mobile}
+
+{org_name}
+
+{office_phone}
+
+{extn}
+
+{noofemp}
+
+{address1}
+
+{address2}
+
+{city}
+
+{min_pur}
+
+{max_pur}
+
+{dur}
+
+
+
+
+{shop_url} 

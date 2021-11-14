@@ -1,0 +1,8 @@
+CREATE TABLE `kob_elite_feedback`(  
+  `id_feedback` INT(11) NOT NULL AUTO_INCREMENT,
+  `id_customer` INT(11),
+  `id_order` INT(11),
+  `rating` INT(11),
+  `comment` VARCHAR(300),
+  PRIMARY KEY (`id_feedback`)
+);

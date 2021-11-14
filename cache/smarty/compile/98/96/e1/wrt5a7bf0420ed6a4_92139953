@@ -1,0 +1,22 @@
+<?php /* Smarty version Smarty-3.1.19, created on 2018-02-08 12:07:54
+         compiled from "C:\wamp\www\kobsterEshop\themes\default-bootstrap\modules\blockuserinfo\blockuserinfo.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:234645a7bf0420eb194-84546274%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '9896e1b21453d401e67a780aab92d5b25a586c54' => 
+    array (
+      0 => 'C:\\wamp\\www\\kobsterEshop\\themes\\default-bootstrap\\modules\\blockuserinfo\\blockuserinfo.tpl',
+      1 => 1478085910,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '234645a7bf0420eb194-84546274',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5a7bf0420ec905_66500785',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5a7bf0420ec905_66500785')) {function content_5a7bf0420ec905_66500785($_smarty_tpl) {?><?php }} ?>

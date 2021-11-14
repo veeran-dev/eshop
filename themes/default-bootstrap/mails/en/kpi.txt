@@ -1,0 +1,76 @@
+Hi {firstname},
+{month}
+Annual Revenue Target Achieved
+{arta}
+ 
+Annual Target
+Target
+₹15,00,00,000	Achieved
+{target_Achived}
+ 
+Top Line Revenue
+{tlr_lm}
+
+{tlr_cm}
+
+ 
+FC Wise Revenue
+{fc_wise}
+ 
+RM Wise Revenue
+{rm_wise}
+ 
+KAM Wise Revenue
+{kam_wise}
+ 
+Top Categories Revenue
+{tcat_wise}
+ 
+Top Customers Revenue
+{tcus_wise}
+ 
+Average Delivery Time
+{avg_dt}
+ 
+FC Wise Average Delivery Time
+{fc_avg_dt}
+ 
+Total Pending Orders
+{total_po}
+ 
+FC Wise Pending Orders
+{fc_wise_po}
+ 
+ 
+Days Sales Outstanding
+Receivables
+{receivables}	Payables
+{payables}
+ 
+Average Collection Period
+{averageCollectionPeriod}
+ 
+Customer Detail
+New Customers
+{new_customer}	Active Companies
+{active_companies}
+ 
+Active Users
+{active_users}
+ 
+Catalog Detail
+Active Brands
+{active_brands}	Active Products
+{active_products}
+ 
+Out of Stock
+{oos}
+ 
+Vendor Detail
+New Vendors
+{new_vendors}	Total Vendors
+{total_vendors}
+ 
+Active Vendors
+{active_vendors}
+ 

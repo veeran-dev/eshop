@@ -1,0 +1,6 @@
+{order_name}
+{credit_date}
+{order_name}
+{payment}
+{date}
+{payment_amount}

@@ -1,0 +1,1 @@
+ALTER TABLE `kob_elite_supplier`  ADD `reference` VARCHAR(6) NOT NULL  AFTER `mobile`,  ADD `established` DATE NOT NULL  AFTER `reference`,  ADD `ratings` FLOAT NOT NULL  AFTER `established`,  ADD `response_time` INT(2) NOT NULL  AFTER `ratings`,  ADD `orders_processed` INT NOT NULL  AFTER `response_time`;

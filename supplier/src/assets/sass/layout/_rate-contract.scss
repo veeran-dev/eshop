@@ -1,0 +1,120 @@
+.catalog-container{
+	.page-header{
+		justify-content: space-between;
+	}
+	.contract-list-container{
+		display: flex;
+		.contract-filter-container{
+			margin-right: 16px;
+			padding: 8px 0;
+			background: $kob-white;
+			min-width: 220px;
+			max-width: 220px;
+			border-radius: 4px;
+			min-height: max-content;
+			.filter-header{
+				margin-bottom: 16px;
+				padding: 0 16px;
+				h3{
+					font-size: 24px;
+    				font-weight: 500;
+				}
+			}
+			.filter-wrapper{
+				margin-bottom: 16px;
+				border-bottom: 1px solid $kob-gray-eighty;
+				.title{
+					font-weight: bold;
+					margin-bottom: 8px;
+					padding: 0 16px;
+					color: $kob-blue;
+				}
+				.actions{
+					ul li{
+						line-height: 24px;
+						font-size: 16px;
+						padding: 8px 16px 8px 24px;
+						display: flex;
+						justify-content: space-between;
+						position: relative;
+						transition: all 1s ease-in-out;
+						cursor: pointer;
+						span:nth-child(2){
+							color: lighten($kob-red, 10%);
+						}
+						&:hover{
+							background-color: $kob-gray-background;
+						}
+						&.active{
+							font-weight: bold;
+							background: $kob-gray-background;
+							&:before{
+								content: "";
+								position: absolute;
+								width: 3px;
+								height: 40px;
+								background: $kob-red;
+								box-shadow: 2px 0px 4px 0px  rgba(234, 97, 83, 0.7);
+								left: -2px;
+								top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		.contract-list-wrapper{
+			width: calc(100% - 240px);
+			background: $kob-white;
+			padding: 8px;
+			border-radius: 4px;
+			
+			@media(min-width: $tablet-large){
+				min-height: calc(100vh - 240px);
+			}
+
+			&.product-list-wrapper{
+				width: calc(100%) !important;
+			}
+			.contract-list-search{
+				flex-grow: 100;
+			    max-width: 420px;
+			    display: flex;
+				.icon-search{
+					position: relative;
+					left: -32px;
+					font-size: 24px;
+					top: 0px;
+					padding: 4px 8px;
+					background: #f4f4f4;
+					border-radius: 0px 4px 4px 0px;
+					&:before{
+						margin-top: 14px;
+    					line-height: 30px;
+					}
+				}
+				input{
+					height: 40px;
+				    border-radius: 4px;
+				    padding: 16px;
+				    border: $kob-gray-background 1px solid;
+				    width: 100%;
+				}
+			}
+			.table-filter{
+				.pagination-container{
+					align-items:center;
+				}
+			}
+			table{
+				tbody tr td{ 
+						min-height: auto;
+						max-width: 240px;
+						@media(max-width: $tablet-large){
+							padding: 8px;
+						}
+				}
+			}
+		}
+	}
+}

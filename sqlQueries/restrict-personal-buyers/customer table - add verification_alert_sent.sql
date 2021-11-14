@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` ADD  `verification_alert_sent` DATETIME NULL DEFAULT NULL AFTER  `verified_by` ;

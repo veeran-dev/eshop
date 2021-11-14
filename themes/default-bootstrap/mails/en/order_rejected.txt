@@ -1,0 +1,94 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Hello {firstname} {lastname},
+		
+		
+		Greetings from Kobster.com!
+		Your order has been rejected by {rejected_by}.
+		
+		
+			
+				
+					Your order has been rejected for the following reasons.
+				
+				{reasons}
+			
+		
+		
+			Please find below the summary of the order: 
+		
+		 
+		
+			
+				Order placed by: {placed_by}
+				Order No: {order_name}
+			
+		
+		 
+		
+			Shipping Details:
+		
+		 
+		
+			
+				
+					
+						Shipping address
+						Billing address
+					
+					
+						
+							{delivery_company}
+							{delivery_firstname} {delivery_lastname}
+							{delivery_address1}
+							{delivery_address2}
+							{delivery_city} {delivery_postal_code}
+							{delivery_country} {delivery_state}
+							{delivery_phone}
+							{delivery_other}
+						
+						
+							{invoice_company}
+							{invoice_firstname} {invoice_lastname}
+							{invoice_address1}
+							{invoice_address2}
+							{invoice_city} {invoice_postal_code}
+							{invoice_country} {invoice_state}
+							{invoice_phone}
+							{invoice_other}
+						
+					
+				
+			
+		
+		 
+		
+			
+				For more details, please contact your relationship manager.
+			
+		
+		
+			Thank You for Shopping with Us!
+			Kobster.com Team
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

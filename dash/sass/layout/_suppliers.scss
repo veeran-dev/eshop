@@ -1,0 +1,45 @@
+.supplier-container{
+	.split-button{
+		button{
+			margin: 0px !important;
+		}
+	}
+	.split-button-dropdown{
+		width: max-content;
+	}
+	.table-filter + table tr td:last-child div{
+		overflow: unset;
+	}
+}
+
+.supplier-box{
+	box-shadow: 1px 1px 3px 0px $kob-gray;
+    text-align: center;
+    background: $kob-white;
+    .hero-content{
+		background: linear-gradient(135deg, #4CAF50, #CDDC39);
+		padding: 16px;
+		img{
+			width: 64px;
+			margin: 8px;
+			border-radius: 50px;
+		}
+    }
+	.supplier-details{
+		padding: 16px;
+		.split-button{
+			margin-top: 8px;
+			button{
+				width: 100%;
+			}
+			.split-button-dropdown{
+				width: 100%;
+				text-align: center;
+				li a{
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

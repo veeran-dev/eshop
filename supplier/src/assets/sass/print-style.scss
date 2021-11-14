@@ -1,0 +1,55 @@
+//Print Styles
+.print-page{
+    //max-width: 600px;
+    //margin: 0 auto;
+    font-family: 'Arial',san-serif;
+    font-size: 24px;
+    margin: 32px;
+    .print-logo{
+        width:300px;
+        margin-bottom: 48px;
+    }
+
+    table, th, td{
+        font-size: 24px;
+        border-collapse:collapse;
+        border: 1px solid #cccccc;
+        text-align:left;
+    }
+    table th,
+    table td{
+        word-wrap: break-word;
+        padding: 12px;
+    }
+    .print-border{
+            width: 100%;
+        }
+}
+@media print {
+    .print-page{
+        //max-width: 600px;
+        //margin: 0 auto;
+        font-family: 'Arial',san-serif;
+        font-size: 24px;
+        margin: 32px;
+        .print-logo{
+            width:300px;
+            margin-bottom: 48px;
+        }
+
+        table, th, td{
+            font-size: 24px;
+            border-collapse:collapse;
+            border: 1px solid #cccccc;
+            text-align:left;
+        }
+        table th,
+        table td{
+            word-wrap: break-word;
+            padding: 12px;
+        }
+        .print-border{
+            width: 100%;
+        }
+    }
+}

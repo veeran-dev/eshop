@@ -1,0 +1,68 @@
+*INFO* 	2016/11/10 - 12:11:57: -------------------------------------------
+*INFO* 	2016/11/10 - 12:11:57: 
+*INFO* 	2016/11/10 - 12:11:57: Customer Logged In. IP Address: ::1
+*INFO* 	2016/11/10 - 12:11:59: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.17KB
+*INFO* 	2016/11/10 - 12:12:00: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.78KB
+*INFO* 	2016/11/10 - 12:12:00: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:12:00: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.17KB
+*INFO* 	2016/11/10 - 12:12:08: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.2KB
+*INFO* 	2016/11/10 - 12:12:09: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:12:09: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:12:09: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:12:19: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:12:19: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:12:19: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:12:20: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:12:20: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:12:20: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:12:52: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.17KB
+*INFO* 	2016/11/10 - 12:12:55: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:12:56: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:12:56: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:12:56: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:12:56: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:12:56: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:13:05: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.17KB
+*INFO* 	2016/11/10 - 12:13:14: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.17KB
+*INFO* 	2016/11/10 - 12:13:23: Ajax Response  :/kobstereshop/dash-reports.php?type=1&customerid=50 Type: 1 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:13:23: Ajax Response  :/kobstereshop/dash-reports.php?type=1&customerid=50 Type: 1 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:14:06: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.17KB
+*INFO* 	2016/11/10 - 12:14:12: Ajax Response  :/kobstereshop/dash-reports.php?type=1&customerid=50 Type: 1 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:14:12: Ajax Response  :/kobstereshop/dash-reports.php?type=1&customerid=50 Type: 1 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:14:35: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:14:35: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:14:36: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:17:43: Ajax Response  :/kobstereshop/dash-reports.php?type=1&customerid=50 Type: 1 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:17:43: Ajax Response  :/kobstereshop/dash-reports.php?type=1&customerid=50 Type: 1 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:17:47: Ajax Response  :/kobstereshop/dash-reports.php?type=2&customerid=50 Type: 2 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:17:47: Ajax Response  :/kobstereshop/dash-reports.php?type=2&customerid=50 Type: 2 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:17:51: Ajax Response  :/kobstereshop/dash-reports.php?type=6&customerid=50 Type: 6 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:17:51: Ajax Response  :/kobstereshop/dash-reports.php?type=6&customerid=50 Type: 6 Customer name: sreenivasan Response size : 4.35KB
+*INFO* 	2016/11/10 - 12:18:02: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.17KB
+*INFO* 	2016/11/10 - 12:18:06: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:18:06: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:18:07: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:18:07: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:18:07: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=50 Type: 7 Customer name: sreenivasan Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:18:07: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=50&duration=4 Type: 5 Customer name: sreenivasan Response size : 37.75KB
+*INFO* 	2016/11/10 - 12:18:16: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.17KB
+*INFO* 	2016/11/10 - 12:18:36: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 165.02KB
+*INFO* 	2016/11/10 - 12:18:41: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.41KB
+*INFO* 	2016/11/10 - 12:18:46: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.45KB
+*INFO* 	2016/11/10 - 12:18:50: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.41KB
+*INFO* 	2016/11/10 - 12:19:07: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.41KB
+*INFO* 	2016/11/10 - 12:19:20: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.41KB
+*INFO* 	2016/11/10 - 12:19:27: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.45KB
+*INFO* 	2016/11/10 - 12:19:36: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 987.41KB
+*INFO* 	2016/11/10 - 12:19:40: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 987.43KB
+*INFO* 	2016/11/10 - 12:19:54: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 987.43KB
+*INFO* 	2016/11/10 - 12:20:14: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 1212.91KB
+*INFO* 	2016/11/10 - 12:20:18: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.06KB
+*INFO* 	2016/11/10 - 12:20:22: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.41KB
+*INFO* 	2016/11/10 - 12:20:26: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 953.45KB
+*INFO* 	2016/11/10 - 12:21:21: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.09KB
+*INFO* 	2016/11/10 - 12:22:53: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 1212.4KB
+*INFO* 	2016/11/10 - 12:23:19: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 201.1KB
+*INFO* 	2016/11/10 - 12:23:35: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 1212.41KB
+*INFO* 	2016/11/10 - 12:23:45: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 986.62KB
+*INFO* 	2016/11/10 - 12:23:50: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: sreenivasan Response size : 986.62KB

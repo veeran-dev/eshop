@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_quotation` ADD  `rm_published` TINYINT( 1 ) NOT NULL DEFAULT  '0' AFTER  `published` ;

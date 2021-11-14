@@ -1,0 +1,41 @@
+*INFO* 	2016/11/10 - 12:10:07: -------------------------------------------
+*INFO* 	2016/11/10 - 12:10:07: 
+*INFO* 	2016/11/10 - 12:10:07: Customer Logged In. IP Address: ::1
+*INFO* 	2016/11/10 - 12:10:11: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 201.14KB
+*INFO* 	2016/11/10 - 12:10:12: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=48&duration=4 Type: 5 Customer name: elumalai Response size : 37.74KB
+*INFO* 	2016/11/10 - 12:10:12: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:10:13: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:10:19: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 201.2KB
+*INFO* 	2016/11/10 - 12:10:20: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=48&duration=4 Type: 5 Customer name: elumalai Response size : 37.74KB
+*INFO* 	2016/11/10 - 12:10:21: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:10:21: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:10:33: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:10:33: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=48&duration=4 Type: 5 Customer name: elumalai Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:10:34: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=48&duration=4 Type: 5 Customer name: elumalai Response size : 37.74KB
+*INFO* 	2016/11/10 - 12:10:34: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 0.19KB
+*INFO* 	2016/11/10 - 12:10:34: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 37.73KB
+*INFO* 	2016/11/10 - 12:10:35: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48 Type: 7 Customer name: elumalai Response size : 0.19KB
+*INFO* 	2017/07/10 - 11:13:04: -------------------------------------------
+*INFO* 	2017/07/10 - 11:13:04: 
+*INFO* 	2017/07/10 - 11:13:04: Customer Logged In. IP Address: ::1
+*INFO* 	2017/07/10 - 11:13:06: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 1568KB
+*INFO* 	2017/07/10 - 11:13:11: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 1.55KB
+*INFO* 	2017/07/10 - 11:13:11: Ajax Response  :/kobstereshop/dash-reports.php?type=5&customerid=48&duration=5&from_date=&to_date= Type: 5 Customer name: elumalai Response size : 1.55KB
+*INFO* 	2017/07/10 - 11:13:11: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 0.23KB
+*INFO* 	2017/07/10 - 11:13:23: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 1568.09KB
+*INFO* 	2017/07/10 - 11:13:29: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 1568.03KB
+*INFO* 	2017/07/10 - 11:13:29: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 1568.03KB
+*INFO* 	2019/04/11 - 13:43:01: -------------------------------------------
+*INFO* 	2019/04/11 - 13:43:01: 
+*INFO* 	2019/04/11 - 13:43:01: Customer Logged In. IP Address: ::1
+*INFO* 	2019/04/11 - 13:43:11: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 193.31KB
+*INFO* 	2019/04/11 - 13:43:11: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 37.02KB
+*INFO* 	2019/04/11 - 13:43:22: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 193.28KB
+*INFO* 	2019/04/11 - 13:43:30: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 0.21KB
+*INFO* 	2019/04/14 - 14:45:15: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 193.28KB
+*INFO* 	2019/04/14 - 14:45:17: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 37.02KB
+*INFO* 	2019/04/14 - 14:45:40: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 0.21KB
+*INFO* 	2019/04/14 - 14:47:28: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 193.3KB
+*INFO* 	2019/04/15 - 15:30:26: Ajax Response  :/kobstereshop/dash-getcartproduct.php?type=0 Type:  Customer name: elumalai Response size : 193.29KB
+*INFO* 	2019/04/15 - 15:30:26: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 36.98KB
+*INFO* 	2019/04/15 - 15:30:29: Ajax Response  :/kobstereshop/dash-reports.php?type=7&customerid=48&duration=5&from_date=&to_date= Type: 7 Customer name: elumalai Response size : 0.23KB

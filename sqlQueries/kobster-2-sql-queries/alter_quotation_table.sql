@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_quotation` ADD  `id_group` INT( 11 ) NOT NULL AFTER  `id_customer` ;

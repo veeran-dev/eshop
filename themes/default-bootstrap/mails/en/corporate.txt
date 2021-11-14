@@ -1,0 +1,41 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Message from your shop {shop_name}
+		
+		 
+		
+			
+				E-mail address: {email_id}
+				
+				Contact Person details:
+
+				Email: {email_id} 
+				
+				Name: {name} 
+				
+				Mobile: {mobile_no} 
+				
+				Company Name: {company_name} 
+			
+		
+		 
+		
+			
+				{shop_name}
+			
+		
+	
+
+

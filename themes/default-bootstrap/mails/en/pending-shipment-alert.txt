@@ -1,0 +1,43 @@
+
+
+	
+	Delivery Alert from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			
+			Dear RMs / Supply Chain,
+			The order number  #{id_order}  placed by the customer {customer_name} is due for delivery in {hours} hours.
+			However the same has not been shipped yet.
+			There could be a potential delay in the delivery.
+			The Supply Chain team is advised to either expedite the delivery or update the delivery time with proper reasons for the delay.
+			The RM is advised to inform the customer about this delay, if necessary.
+			
+		
+		
+			
+				This is an automatic system generated alert. For any technical issues, please contact tech.team@kobster.com 
+				
+			
+		
+		
+			
+				This email is meant for internal circulation only. Not be forwarded outside of Kobster.com 
+				
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

@@ -1,0 +1,248 @@
+{
+  "Faqs": [
+    {
+      "category": "General Info Related",
+      "id": 1,
+      "faqs": [
+        {
+          "id": 1,
+          "Question": "Does Kobzo Elite charge me any service fee for the technology that they provide?",
+          "Answer": "Kobzo Elite is an absolutely user-friendly sourcing tool which is absolutely free of cost and Kobster does not discreetly charge any of the clients with any sort of service fee."
+        },
+        {
+          "id": 2,
+          "Question": "Does Kobster guarantee my transaction in case of an online transaction?",
+          "Answer": "A transaction with Kobster is encrypted with a 128 bit SSL Secure Gateway and Kobster guarantees the whereabouts of the transaction. It is absolutely trustworthy and secure to transact with Kobster. Kobster also guarantees to safeguard the details related to the transaction."
+        },
+        {
+          "id": 3,
+          "Question": "Why do I have to provide a “incorporation” verification certificate to become a Kobzo Elite user?",
+          "Answer": "Kobzo Elite is an e-Procurement tool which is open only for Corporates, SMEs and Manufacturers. Kobzo Elite is not open for individuals. In order to verify this, it is mandatory for the users to provide a valid certificate (GST certificate/TIN certificate/CST certificate/Certificate of incorporation) for verification."
+        },
+        {
+          "id": 4,
+          "Question": "Why should I enter the state that I belong to in the first screen that pops up after logging into my account?",
+          "Answer": "Kobzo Elite requires you to enter your State to avoid taxation related issues on the products that you are going to procure. Different states have their own taxation policies, in order to avoid ambiguity, you will have to enter the state that you belong to."
+        },
+        {
+          "id": 5,
+          "Question": "What is Purhcase Order (PO)?",
+          "Answer": "A buyer-generated document that authorizes a purchase transaction. When accepted by the seller, it becomes a contract binding on both parties.<br>A purchase order sets forth the descriptions, quantities, prices, discounts, payment terms, date of performance or shipment, other associated terms and conditions, and identifies a specific seller. Also called order."
+        },
+        {
+          "id": 6,
+          "Question": "What is Delivery Receipt (DR)?",
+          "Answer": "Kobster generated document that confirms the delivery of product(s) to the buyer. When accepted by the buyer, it becomes a contract binding on both parties.<br />A Delivery Receipt sets forth the descriptions, quantities, prices, discounts, payment terms, date of delivery of the order."
+        },
+        {
+          "id": 7,
+          "Question": "How do I track the shipment post placing the order?",
+          "Answer": "You can track your shipment post placing the order by logging into your personalised Kobzo Elite portal and find out the status of your order on the “Order Status Widget” upon clicking the particular order, which clearly depicts the steps involved in the delivery of the product(s) with a highlighted colour notification for the completed steps or you can mail your respective Relationship Manager or call them to know more on the order status or you can call our Toll Free number 1800-121-0405."
+        },
+        {
+          "id": 8,
+          "Question": "How do I make a bulk enquiry with Kobster?",
+          "Answer": "If you are interested to purchase a product in bulk with Kobster, you just have to click the product link and the Quick View pop-up appears. The details including the price of the product can be viewed and on your right hand side corner, you will be able to view a button saying “Bulk Enquiry”. Click the button and you will be required to fill in the form that appears post clicking, which includes Quanity that you may require, target price and Pin-code of the location of delivery. Once the form is submitted, Kobster’s Executive will get it touch with you shortly regarding the enquiry."
+        },
+        {
+          "id": 9,
+          "Question": "How do I remove widgets from my dashboard?",
+          "Answer": "To remove a widget from your dashboard, you can just click on “X” option on the right hand side corner of every widget and wait for the response which says “Widget successfully removed”."
+        },
+        {
+          "id": 10,
+          "Question": "For what will I be notified for?",
+          "Answer": "Notifications helps you to be informed about your order statuses, Delivery Dispatch Details, Pending Approvals. You can also be notified about the deals and offers from Kobster if you would allow Push Notifications through your browser."
+        },
+        {
+          "id": 11,
+          "Question": "How do I check notifications that are from the past?",
+          "Answer": "If you want a view of your past notifications, you have to click “View All Notifications” in your Notifications dropdown."
+        },
+        {
+          "id": 12,
+          "Question": "Can I have a personalised Account Picture for my profile?",
+          "Answer": "The Account Picture can only be of your Company’s logo and it has to be uploaded by you. The file size of the picture should be less than 500 KB."
+        },
+        {
+          "id": 13,
+          "Question": "How do I logout from my Kobzo Elite account?",
+          "Answer": "You can log out from your profile by clicking on to “Account” and then click on to the “Log Out” option in the dropdown list. You will be safely logged out from your account."
+        },
+        {
+          "id": 14,
+          "Question": "How do I change or remove my shipping address?",
+          "Answer": "To change or remove your shipping address, you have to click “Settings” widget in your account and click “Address” option. Now, in the list of addresses you have already entered will appear. You can click “Edit” to change the address or “Delete” to remove that address."
+        },
+        {
+          "id": 15,
+          "Question": "How will I be alerted on my order statuses and offers?",
+          "Answer": "You will be alerted for Order statuses, Password change, Delivery updates and approval statuses through Emails on a regular basis and you will also be sent SMS to your registered mobile phone. You can be alerted through push notifications if you allow Kobzo Elite to do so in your Account Settings."
+        },
+        {
+          "id": 16,
+          "Question": "How do I upload a PO?",
+          "Answer": "A PO has to be uploaded by you for a faster purchase through Kobzo Elite and you can do that by clicking on to “Procure/Buy” widget in the navigation bar, Now you can click on to the option “Upload PO” and you will able to download a prescribed format of PO by Koster in the form of an Excel Sheet. Now you can fill the excel sheet with the prescribed format and Upload it in the same tab by clicking “choose file”. Now click “Upload PO”."
+        },
+        {
+          "id": 17,
+          "Question": "Why are there no deals or offers for the products that I usually buy from Kobster?",
+          "Answer": "Deals widget displays the products that are exclusive of products that are not in your Rate Contract. The rates that are provided to you by us are already discounted. You can avail latest deals and offers for the other products ranging from our wide range of Categories."
+        },
+        {
+          "id": 18,
+          "Question": "How do I request a quote for a particular product?",
+          "Answer": "Request Quote is an option that is available in every window of Kobzo Elite protal. If you are interested in any of the product click on the button “Request Quote” that appears on the left hand side of your screen. Now, fill in the form with the Product name/ Product code/ Manufacturer code, Quantity Required, Targeted Price and the Pincode of the location of delivery. Once you submit the form, Kobster’s Exectuive will get in touch with you shortly with the most exclusive pricing for you."
+        }
+      ]
+    },
+    {
+      "category": "Delivery Related",
+      "id": 2,
+      "faqs": [
+        {
+          "id": 19,
+          "Question": "After the payment when do I receive my products?",
+          "Answer": "Kobzo Elite deliveries happen within 24-48 hours across the operational Tier-1 cities i.e Chennai, Mumbai, Bengaluru, Hyderabad and Delhi."
+        }
+      ]
+    },
+    {
+      "category": "Orders Related",
+      "id": 3,
+      "faqs": [
+        {
+          "id": 20,
+          "Question": "Why am I not able to view certain products when I search through the Kobzo Elite Portal?",
+          "Answer": "You can cross-check the search bar once again and check if the filter on the left hand side of your search bar says “My Products” or “All Products”. If the filter says “My Products”, you will be able to view only the products that are listed in the Rate Contract with Kobster. If you select “All Products”, you will be able to view all the 1,00,000+ products that are available with Kobster."
+        },
+        {
+          "id": 21,
+          "Question": "How do I place an order through Kobzo Elite portal?",
+          "Answer": "To place an order you can make use of the default widget “Top 4 Products” that will list out the products you have ordered the most, click “Buy now” button adjacent to the product that you are interested to purchase or you can click on the “Procure/Buy” option on your navigation bar, search for the product from your Product list with relevant filters and click “Buy now” button or you can navigate to the “Reorder list” and click “Reorder” button or you can also go to the “Orders” tab, view your existing/past orders and click “Reorder” button to place an order."
+        },
+        {
+          "id": 22,
+          "Question": "How do I view my past/current orders?",
+          "Answer": "You can get a clear reference of your past/current orders through the default “Order Status” widget where your recent orders will be displayed or you can click the “Orders” option in the Navigation tab to enable time-wise filters like “from date” to “to date”. If you would like a detailed Order status, Click “View order” option adjacent to the respective order."
+        },
+        {
+          "id": 23,
+          "Question": "How do I add products to my Cart?",
+          "Answer": "The products that you are interested in buying can be added to your cart by clicking on to “Add to cart” button that will be displayed adjacent to every product. Adding the products to your cart helps you to understand the expenses involved as a whole and it also displays the quantity of the products that you have added."
+        },
+        {
+          "id": 24,
+          "Question": "How do I remove products from my cart?",
+          "Answer": "To remove a product from your cart, Click the Cart icon <ICON> on the top of your which will display the list of products that are in your cart. Now you can click on “X” adjacent to the product that you would like to remove and it will be removed."
+        },
+        {
+          "id": 25,
+          "Question": "How do I reset the filters to view my order statuses?",
+          "Answer": "In the “Orders” tab, you can apply filters that you would like for instance “Now” filter will display your most recent orders and “Month” filter will display your orders that were placed during the current month. If you are looking to reset the filters, you can click the Refresh <ICON>."
+        }
+      ]
+    },
+    {
+      "category": "Approvals Related",
+      "id": 4,
+      "faqs": []
+    },
+    {
+      "category": "Widgets Related",
+      "id": 5,
+      "faqs": [
+        {
+          "id": 26,
+          "Question": "What is Dashboard?",
+          "Answer": "Dashboard is the first opening screen of your Kobzo Elite Portal and it displays certain widgets that can be aligned based on the user preferences."
+        },
+        {
+          "id": 27,
+          "Question": "What are Widgets and how do I use them?",
+          "Answer": "Widgets are add on features in your Kobzo Elite Portal in the Navigation bar (Black Bar) which enables you to have a clear and easy view of your order statuses, approval statuses, spend reports, add-on services and invoices generation. There are few default widgets which can be customised based on your requirement. These widgets can be found in the “Add Widget” option available in your Dashboard."
+        },
+        {
+          "id": 28,
+          "Question": "How do I add widgets to my Kobzo Elite portal?",
+          "Answer": "Apart from the default widgets that are available, you can add more widgets from the “Add Widget” that is available in your dashboard."
+        },
+        {
+          "id": 29,
+          "Question": "Why am I not able to add few widgets in my Kobzo Elite Portal?",
+          "Answer": "Few Widgets are not available for all the users and you can contact your respective Relationship Managers if you’d like access to the widgets that you are not able to access or you can contact your approver/Admin head for further details."
+        }
+      ]
+    },
+    {
+      "category": "Loyalty Related",
+      "id": 6,
+      "faqs": [
+        {
+          "id": 30,
+          "Question": "What are Loyalty Points?",
+          "Answer": "Loyalty points are a value-added advantage given to you by Kobzo Elite for your continued patronage with us. For each purchase you make with us, 1% of your order value will be added as your Loyalty point which can be found in the Loyalty Points notification tab <ICON> on the top right hand side corner of your Elite Portal."
+        },
+        {
+          "id": 31,
+          "Question": "How do I utilise my Loyalty Points?",
+          "Answer": "Click on the Loyalty Points Icon <ICON> on the right hand side corner of your portal and click Create Voucher. The loyalty points that you have gathered will be convereted into a voucher containing cash which can be viewed with the “View Voucher” option. You can apply the voucher to your Next Purchase by clicking on Apply."
+        }
+      ]
+    },
+    {
+      "category": "Products Related",
+      "id": 7,
+      "faqs": [
+        {
+          "id": 32,
+          "Question": "How do I search for products in my Kobzo Elite Portal?",
+          "Answer": "To search a product in your Kobzo Elite Portal, You will find a search bar on the top of your screen. You can just type the name of the product that you would like to purchase which will in turn suggest you a list of products in a drop-down. If you are looking to search for a specific product, you can use the Kobster’s Product code or the Manfucaturers code for eg. Havells fan’s Manufacturer specific Product code can be found in Havell’s website."
+        },
+        {
+          "id": 33,
+          "Question": "What is Quick View of Products and how do I view products through Quick View?",
+          "Answer": "Quick view is a feature that enables you to just click on the product link that you are interested in, a pop up with all the product related details appears without routing you to a new tab. This feature also can be utilised at any point of your shopping just by clicking the product link that you are interested in."
+        }
+      ]
+    },
+    {
+      "category": "Reports Related",
+      "id": 8,
+      "faqs": [
+        {
+          "id": 34,
+          "Question": "How do I download my Reports?",
+          "Answer": "You can download the Reports for the time (Now/Week/Month/All) that you would like from the “Reports” widget in your Navigation bar. Choose between Purchase History Reports or Category Reports or Location Based Report and click <ICON> to download it in the form of an Excel Sheet or you can click PDF <ICON> in case you require it in PDF format or you can click Mail <ICON> to mail it to someone or you can click Print <ICON> to print the reports."
+        },
+        {
+          "id": 35,
+          "Question": "How do I download my Invoices and Delivery Reciepts?",
+          "Answer": "You can download your Invoices from the “Invoices” widget in your Navigation bar and click “Download Invoice” for which ever invoice that you would like to download. If you are looking to download a DR, Click “Delivery Reciept” option adjacent to Invoices and click “Download Delivery Reciept” for which ever DR that you would like to download."
+        }
+      ]
+    },
+    {
+      "category": "Professional Services Related",
+      "id": 9,
+      "faqs": [
+        {
+          "id": 36,
+          "Question": "What are the other Services Kobzo Elites provides me?",
+          "Answer": "Kobzo Elite provides you with an add on service of Corporate bookings of Domestic/International flights with amazing discounts in assoication with our Travel Partner Skyscanner."
+        }
+      ]
+    },
+    {
+      "category": "Customer Services Related",
+      "id": 10,
+      "faqs": [
+        {
+          "id": 37,
+          "Question": "I need to contact Customer Service of Kobzo Elite. How do I do it?",
+          "Answer": "You can just log into to your Kobzo Elite account and the Relationship Manager’s contact details will be appearing on the right hand side of your screen. You could either mail the respective Relationship Manager or Call them on their Phone number or you can call our Toll Free number 1800-121-0405 for any assistance or you can chat with our Relationship Managers using the Chat option available at the bottom-left hand side of your Elite portal."
+        }
+      ]
+    }
+  ]
+}

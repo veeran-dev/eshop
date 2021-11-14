@@ -1,0 +1,38 @@
+.invite-supplier-container {
+	display: flex; 
+	display: -webkit-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 203px);
+	background: #fff;
+	border-radius: 4px;
+	padding: 0 30px;
+
+	.invite-supplier-input {
+		flex-basis: 50%;
+	}
+
+	.invite-btn {
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+	}
+
+	.button, button {
+		height: 50px;
+		line-height: 50px;
+		padding: 0 60px;
+		border-radius: 50px;
+	}
+}
+.invite-supplier-form-container{
+	.edit-address{
+		padding-top: 24px;
+		max-width: 420px;
+    	margin: 0 auto;
+    	.step{
+			padding: 0px;
+		}
+	}
+}

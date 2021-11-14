@@ -1,0 +1,11 @@
+{seller_name}
+
+{firm_name}
+
+{city}
+
+{mobile}
+
+{email}
+
+{seller_type}

@@ -1,0 +1,70 @@
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+// Box Sizing
+* {
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	&:focus{
+		text-decoration: none;
+	}
+	&:visited{
+		text-decoration: none;
+	}
+	&:hover{
+		text-decoration: none;
+	}
+}
+img{
+	vertical-align: middle;
+}
+img:-moz-broken{
+	-moz-force-broken-image-icon:1;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input{
+	font-family: inherit;
+	&:focus,
+	&:active{
+		outline: none;
+	}
+}
+select{
+	font-family: inherit;
+	&:focus,
+	&:active{
+		outline: none;
+	}
+}
+button{
+	font-family: inherit;
+	&:focus,
+	&:active{
+		outline: none;
+	}
+}
+textarea {
+	font-family: inherit;
+	&:focus,
+	&:active{
+		outline: none;
+	}
+}
+
+//Firefox Button Text Vertical Alignment Fix
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+

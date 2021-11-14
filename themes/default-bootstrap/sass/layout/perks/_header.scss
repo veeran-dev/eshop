@@ -1,0 +1,378 @@
+//Global Overrides
+body.from-perks{
+    font-family: 'Lato', sans-serif;
+}
+.from-perks{
+    #header{
+        animation: headerSlideUp 500ms linear;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,0.13);
+    }
+    @media (max-width: 420px){
+        #header{
+            position: initial;
+            //border-bottom: 1px solid #ccc;
+        }
+    }
+    header .nav .topbar{
+        border-bottom: none;
+        padding: 0 15px;
+        @media (max-width: 640px){
+            padding: 0;
+        }
+        @media (max-width: 420px){
+            flex-direction: column;
+        }
+    }
+    .nav{
+        background: #fff;
+        border: none;
+        .container{
+            max-width: 90%;
+            .row{
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        @media (max-width: 767px){
+            padding: 0 8px;
+            .container{
+                max-width: 100%;
+            }
+        }
+    }
+    .topbar{
+        background: transparent;
+        border: none;
+    }
+    .menubar{
+        display: none;
+    }
+    .searchbar{
+        display: none;
+    }
+    .columns-container{
+        padding-top: 108px;
+        padding-bottom: 48px;
+        @media (max-width: 767px){
+            padding-top: 72px;
+        }
+        @media (max-width: 480px){
+            padding-top: 0;
+        }
+    }
+    #columns{
+        .container{
+            max-width: 1200px;
+            //margin: 0 -15px;
+            #center_column{
+                //padding-left: 0;
+                //padding-right: 0;
+            }
+        }
+        .breadcrumb{
+            display: none;
+        }
+    }
+}
+@keyframes headerSlideUp{
+    0% {
+        transform: translateY(30px);
+        opacity: .37;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.from-perks header .nav .topbar .left-links{
+    align-items: center;
+    -webkit-align-items: center;
+}
+.from-perks header .nav .topbar .right-links{
+    @media (max-width: 420px){
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+}
+.from-perks header .nav .topbar .center-logo{
+    @media (max-width: 640px){
+        display: flex;
+        display: -webkit-flex;
+        padding: 8px 0;
+    }
+}
+.mobile-kob-logo{
+    display: none;
+    @media (max-width: 991px){
+        display: block;
+        margin-right: 4px;
+    }
+}
+.kobster-logo{
+    // background: url('../img/perks/perks-sprite.png');
+    // background-position: 0 0;
+    // width: 164px;
+    // height: 36px;
+    // display: block;
+    // @media (max-width:767px){
+    //     background-position: 0 -144px;
+    //     width: 200px;
+    // }
+    // @media (max-width:640px){
+    //     background-position: 0px -216px;
+    //     width: 164px;
+    // }
+    display: block;
+    width: 100%;
+    max-width: 180px;
+}
+
+.perks-logo{
+    // background: url('../img/perks/perks-sprite.png');
+    // background-position: -180px 0;
+    // width: 72px;
+    // height: 36px;
+    // display: block;
+    // @media (max-width:767px){
+        //background-position: 0 -144px;
+        //width: 200px;
+    // }
+    // @media (max-width: 420px){
+    //     display: inline-block;
+    //     margin-left: 4px;
+    // }
+    display: block;
+    width: 100%;
+    max-width: 89px;
+    @media (max-width: 991px){
+        display: none;
+    }
+}
+
+.perks-top-button{
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 16px 24px;
+    display: block;
+    &:hover{
+        background: #222;
+        color: #fff;
+    }
+    @media(max-width: 640px){
+        margin-left: 4px;
+        padding: 8px;
+    }
+    @media(max-width: 320px){
+        margin-left: 2px;
+        padding: 8px 4px;
+    }
+}
+.perks-top-icon{
+    background: url('../img/perks/perks-sprite.png');
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    display: block;
+    transition: background-position 300ms ease;
+}
+.perks-top-label{
+    @media (max-width: 767px){
+        display: none;
+        &.count{
+            display: block;
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 16px;
+            height: 16px;
+            background: #ea4646;
+            border-radius: 12px;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: bold;
+        }
+    }
+}
+.cart-count{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    padding: 0 8px;
+    background: #c12323;
+    text-align: center;
+    @media (max-width: 640px){
+        top: 4px;
+        right: 4px;
+    }
+}
+
+.home-icon{
+    background-position: 0 -36px;
+    @media (max-width: 767px){
+        //background-position: -216px -144px;
+    }
+}
+.cart-icon{
+    background-position: -36px -36px;
+    @media (max-width: 767px){
+        //background-position: -216px -144px;
+    }
+}
+.profile-icon{
+    background-position: -74px -36px;
+    @media (max-width: 767px){
+        //background-position: -254px -144px;
+    }
+}
+.in-complete:before{
+    content: "";
+    border: 2px solid transparent;
+    border-color: $perks-green $perks-green $perks-green #e5e5e5;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    width: 36px;
+    height: 36px;
+    transform: rotate(45deg);
+    @media (min-width: 768px){
+        left: 37px;
+    }
+    @media (max-width: 640px){
+        left: 6px;
+        top: 6px;
+    }
+}
+.profile-completeness{
+    padding: 8px 16px;
+    color: #fff;
+    background: #555555;
+    p{
+        margin-bottom: 8px;
+        color: #fff;
+        font-size: 14px;
+    }
+    .progress-bar{
+        background-color: $perks-green;
+    }
+    a{
+        color: $perks-green;
+        border: 1px solid $perks-green;
+        padding: 6px 16px;
+        display: block;
+        width: 100%;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 8px;
+        span{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &:hover{
+            color: #fff;
+            background: $perks-green;
+        }
+    }
+}
+.help-icon{
+    background-position: -108px -36px;
+}
+.perks-top-button:hover .perks-top-icon{
+    background-position-y: -72px !important;
+}
+
+// Resets
+.form-group{
+    margin-bottom: 16px;
+}
+.form-control{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 36px;
+    padding: 0 16px;
+    &:focus{
+        color: #666;
+        border: 1px solid #999;
+        background: #fff;
+    }
+}
+
+.dropdown.black-dropdown{
+    background: #fff;
+    width: initial;
+    padding: 0;
+    border: 0;
+    &.open .perks-top-button{
+        background: #343234;
+        color: #fff;
+        .perks-top-icon{
+            background-position-y: -72px !important;
+        }
+    }
+    .dropdown-menu{
+        background: #333333;
+        color: #fff;
+        top: 85px;
+        left: initial;
+        right: 0;
+        min-width: 236px;
+        & > li{
+            padding: 0;
+            border-bottom: none;
+        }
+        & > li > a{
+            padding: 8px 16px;
+            color: #fff;
+            &:hover{
+                background-color: #8c8b8b;
+            }
+        }
+        .logout{
+            background: #5e5c5e;
+            margin: 12px 16px;
+            border-radius: 3px;
+        }
+        @media(max-width: 768px){
+            top: 66px;
+        }
+        @media(max-width: 420px){
+            top: 50px;
+        }
+    }
+}
+
+// Feedback form
+#feedbackModal{
+    .feedback-title{
+        margin-bottom: 16px;
+    }
+    .feedback-thumb{
+        display: block;
+        width: 220px;
+        margin: 16px auto;
+    }
+    textarea{
+        padding: 16px;
+    }
+    .feedback-button{
+        display: block;
+        width: 100%;
+        background: $perks-green;
+        color: #fff;
+    }
+}

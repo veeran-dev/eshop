@@ -1,0 +1,1 @@
+ALTER TABLE `kob_cart` ADD `region` INT(10) UNSIGNED NOT NULL DEFAULT '0' AFTER `id_address_invoice`, ADD INDEX `region` (`region`);

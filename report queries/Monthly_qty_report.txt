@@ -1,0 +1,22 @@
+select d.product, max(d.APR), max(d.MAY), max(d.JUN), max(d.JUL), max(d.AUG), max(d.SEP), max(d.OCT), max(d.NOV), max(d.DECEMBER),max(d.JAN) from (
+SELECT res.product_id as product, 
+
+(CASE WHEN res.period='4-2017' THEN res.qty ELSE '0' END) AS APR, 
+(CASE WHEN res.period='5-2017' THEN res.qty ELSE '0' END) AS MAY, 
+(CASE WHEN res.period='6-2017' THEN res.qty ELSE '0' END) AS JUN, 
+(CASE WHEN res.period='7-2017' THEN res.qty ELSE '0' END) AS JUL, 
+(CASE WHEN res.period='8-2017' THEN res.qty ELSE '0' END) AS AUG, 
+(CASE WHEN res.period='9-2017' THEN res.qty ELSE '0' END) AS SEP, 
+(CASE WHEN res.period='10-2017' THEN res.qty ELSE '0' END) AS OCT, 
+(CASE WHEN res.period='11-2017' THEN res.qty ELSE '0' END) AS NOV,
+(CASE WHEN res.period='12-2017' THEN res.qty ELSE '0' END) AS DECEMBER, 
+(CASE WHEN res.period='1-2018' THEN res.qty ELSE '0' END) AS JAN
+FROM(
+SELECT kod.product_id as product_id, SUM(kod.product_quantity) as qty,CONCAT(MONTH(ko.date_add),"-",YEAR(ko.date_add)) as period FROM kob_orders ko
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+WHERE kc.id_default_group=498
+GROUP BY kod.product_id, YEAR(ko.date_add),MONTH(ko.date_add)
+ORDER BY kod.product_id) as res
+order by res.product_id
+) as d group by d.product

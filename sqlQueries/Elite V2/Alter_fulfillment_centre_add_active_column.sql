@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_fulfillment_centre` ADD  `active` TINYINT( 1 ) NOT NULL DEFAULT  '1' AFTER  `cst_date` ;

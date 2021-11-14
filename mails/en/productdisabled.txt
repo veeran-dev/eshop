@@ -1,0 +1,13 @@
+Hello Relationship Manager, 
+
+Product Disabled
+Employee Name: {emp_name} <br /><br />
+ 
+Product Name: {product_name} <br /><br />
+Product Reference: {product_reference} <br /><br />
+Product ID: {product_id} <br /><br />
+
+Customer Details:{details} <br /><br />
+
+ 
+{shop_url} 	

@@ -1,0 +1,223 @@
+.voucher-popup{
+	button.close{
+		z-index: 1;
+	}
+	.modal-dialog{
+		@media (min-width: 769px){
+			width: 800px;
+			padding-top: 120px;
+		}
+		@media (max-width: 768px){
+			padding: 30px;
+		}
+	}
+	.modal-body{
+		padding: 0;
+		overflow: hidden;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex; 
+		@media (max-width: 480px){
+			display: block;
+		}
+	}
+	.voucher-section, .form-section{
+  		width: 50%;
+		padding: 30px;
+  		@media (min-width: 769px){
+			padding: 45px;
+		}
+		@media (max-width: 480px){
+			width: 100%;
+		}
+	}
+	.voucher-section{
+		background: #ce243c;
+		background: linear-gradient(to bottom right, #fab37a, #ed2d5a);
+		color: #ffffff;
+		padding: 0;
+		position: relative;
+		.content{
+			padding: 45px 45px 20px 45px;
+		}
+		.pattern{
+			padding: 0;
+			position: absolute;
+			bottom: 0;
+			img{
+				width: 100%;
+			}
+			@media (max-width: 480px){
+				display: none;
+			}
+		}
+		h2{
+			color: #ffffff;
+			margin-bottom: 45px;
+			font-weight: 300;
+			@media (max-width: 480px){
+				color: #ffffff;
+				margin-bottom: 24px;
+				font-weight: 300;
+				line-height: 30px;
+				font-size: 24px;
+			}
+		}
+		.get-voucher{
+			height: 45px;
+			border: 1px dashed #ffffff;
+			margin-bottom: 30px;
+			position: relative;
+			.scissor{
+				position: absolute;
+				left: 12px;
+				top: -9px;
+				width: 16px;
+				height: 16px;
+				background: url("../img/voucher-form-sprite.png");
+				background-position: -124px -4px
+			}
+			span{
+				font-size: 18px; 
+				color: #ffffff;
+				font-style: italic;
+				line-height: 39px;
+				@media (max-width: 480px){
+					font-size: 14px;
+					font-weight: bold;
+				}
+			}
+			@media (max-width: 480px){
+				margin-bottom: 24px;
+			}
+		}
+		p{
+			color: #ffffff !important;
+			font-size: 17px;
+		}
+		@media (min-width: 769px){
+			min-height: 360px;
+		}
+	}
+	.form-section{
+		h2{
+			color: #f26b67;
+			font-size: 24px;
+			font-weight: 500;
+			text-align: left;
+			margin-bottom: 15px;
+			@media (max-width: 480px){
+				font-weight: 500;
+				line-height: 30px;
+				font-size: 20px;
+			}
+		}
+		h3{
+			color: #f26b67;
+			font-size: 18px;
+			font-weight: 500;
+			text-align: left;
+			margin-bottom: 15px;
+			@media (max-width: 480px){
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		.form-group{
+			border: 1px solid lighten(#ed2d5a, 20%);
+			padding: 6px;
+			border-radius: 2px;
+			margin-bottom: 18px !important;
+		}
+		.form-control{
+			border: none;
+			border-radius: 2px;
+			height: 24px;
+			display: inline-block;
+			width: calc(100% - 24px) !important;
+			float: right;
+			padding-left: 5px;
+			color: #323232;
+			&:active, &:focus{
+				color: #323232;
+			}
+		}
+		::-webkit-input-placeholder {
+		   color: #f26b67;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: #f26b67;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: #f26b67;  
+		}
+		select {
+		    color: #323232;
+		}
+		select:required {
+		  color: #323232;
+		}
+		select:invalid {
+		  color: #f9b2b0;
+		}
+		option[value=""][disabled] {
+			display: none;
+		}
+		option {
+		    color: #323232;
+		}
+		input[type=number] {-moz-appearance: textfield;}
+		input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+			-webkit-appearance: none; 
+			margin: 0; 
+		}
+		.form-control-icon{
+			background: url("../img/voucher-form-sprite.png") center no-repeat;
+			opacity: 0.5;
+			display: inline-block;
+			height: 24px;
+			width: 24px;
+		}
+		.firstname{
+			background-position: -0px 0;
+		}
+		.email-id{
+			background-position: -24px 0;
+		}
+		.phone-number{
+			background-position: -48px 0;
+		}
+		.industry{
+			background-position: -72px 0;
+		}
+		.pincode{
+			background-position: -96px 0;
+		}
+		button{
+			background: #ed2d5a;
+			width: 100%;
+			&:hover{
+				background: darken(#ed2d5a, 20%);
+			}
+			@media (max-width: 480px){
+				padding: 0;
+				height: 38px;
+			}
+
+		}
+		.validate{
+			display: none;
+			text-align: left;
+			margin-bottom: 5px;
+			color: #4E5961;
+		}
+	}
+}
+
+/*Order Page Margin Issue in form */
+#order .voucher-popup .form-section .form-group{
+	margin-bottom: 18px !important;
+}

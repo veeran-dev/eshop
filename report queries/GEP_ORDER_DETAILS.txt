@@ -1,0 +1,11 @@
+SELECT ko.id_order,kod.product_id,kod.product_name,kod.product_quantity,kod.unit_price_tax_excl,koha.date_add,kosl.name FROM kob_customer kc
+LEFT JOIN kob_orders ko ON ko.id_customer=kc.id_customer
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order
+LEFT JOIN kob_order_history koh on koh.id_order=ko.id_order
+LEFT JOIN kob_order_history koha on koh.id_order=koha.id_order
+LEFT JOIN kob_order_state_lang kosl on kosl.id_lang=1 AND kosl.id_order_state=koh.id_order_state
+WHERE kc.id_default_group=244
+AND koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order)
+AND koha.id_order_history IN(SELECT id_order_history FROM kob_order_history WHERE id_order=koh.id_order AND id_order_state=22)
+AND ko.id_fc=4
+AND koha.date_add BETWEEN '2018-12-01 00:00:00' AND '2019-02-12 23:59:59'

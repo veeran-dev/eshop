@@ -1,0 +1,39 @@
+
+
+	
+	Kobster Customer Verification Email
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Dear Customer, 
+		
+		
+		This is to bring to your notice that, to register {firstname}{lastname} in Kobster.com, we require few 
+
+		necessary documents. Request you to upload the same at the earliest for processing the upcoming 
+
+		orders.
+		Kindly take this as top priority and help in registering your concern with Kobster.com.
+		
+		
+			
+				
+					Please Click Here to upload the documents.
+				
+				
+			
+		
+		
+		
+		
+		 		
+	
+
+

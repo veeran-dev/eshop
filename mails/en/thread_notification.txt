@@ -1,0 +1,9 @@
+{thread_name}
+
+{content_main}
+
+Scheduled On: {thread_scheduled}
+Owner: {thread_owner}
+Status: {thread_status}
+Pilot: {thread_assignee}
+Landing Time: {thread_timeline}

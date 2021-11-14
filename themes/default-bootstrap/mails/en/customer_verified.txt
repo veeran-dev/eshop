@@ -1,0 +1,34 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Dear Customer, 
+		
+		
+		Thanks.{firstname} has been registered with Kobster.com.
+		
+		
+			
+				
+					Expecting a long term relationship with your concern.
+				
+				
+			
+		
+		
+		
+		
+		 		
+	
+
+

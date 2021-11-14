@@ -1,0 +1,13 @@
+.e-procurement-section{
+    .container{
+        @media (max-width: 768px){
+            .col-10{
+                overflow: hidden;
+                max-height: 70%;
+                svg{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

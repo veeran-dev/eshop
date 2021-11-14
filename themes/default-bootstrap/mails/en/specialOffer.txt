@@ -1,0 +1,3 @@
+Special Offer
+{str}
+{shop_url} 	

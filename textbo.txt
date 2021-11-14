@@ -1,0 +1,1950 @@
+*ERROR* 	2020/06/01 - 10:51:15: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/01 - 17:12:43: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/01 - 17:14:19: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/01 - 17:19:21: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/01 - 20:47:16: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/01 - 20:49:15: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 00:50:07: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 00:52:25: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 00:52:40: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 00:53:10: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                
+                
+                WHERE 1  
+                 AND c.`active` = 1
+                
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:36:51: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:36:52: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:36:53: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:37:35: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:37:36: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:37:37: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:38:17: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:38:18: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:38:19: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:42:56: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:42:58: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:43:00: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:43:39: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:43:42: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:43:43: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:44:28: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:44:29: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/02 - 01:44:31: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/05 - 14:02:44: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/05 - 14:02:44: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/05 - 14:02:44: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/05 - 18:26:24: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/05 - 18:26:24: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/05 - 18:26:25: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:04:01: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:04:02: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:04:02: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:06:49: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:06:49: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:06:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:06:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:06:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:06:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:13:55: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:13:56: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:13:56: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:35:11: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:35:11: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 12:35:12: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 13:40:16: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 13:40:16: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 13:40:16: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 15:55:49: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 15:55:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 15:55:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 15:58:21: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 15:58:22: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 15:58:22: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:02:25: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:02:26: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:02:26: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:10:02: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:10:03: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:10:03: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:10:35: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:10:36: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:10:36: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:11:17: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:11:17: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 16:11:17: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 18:11:44: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 18:11:44: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 18:11:44: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:34:15: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:34:15: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:34:15: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:39:09: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:39:10: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:39:10: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:41:35: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:41:35: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:41:35: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:42:20: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:42:20: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:42:20: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:42:48: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:42:48: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:42:48: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:43:12: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:43:12: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:43:13: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:43:13: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:43:14: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/10 - 19:43:14: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/11 - 12:54:39: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/11 - 12:54:39: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/11 - 12:54:39: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 12:25:46: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 12:25:47: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 12:25:47: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 13:04:34: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 13:04:36: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 13:04:36: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 13:04:46: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 13:04:46: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 13:04:47: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 18:37:31: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 18:37:31: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 18:37:31: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 18:40:59: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 18:41:00: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 18:41:00: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 19:16:32: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 19:16:32: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 19:16:32: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 19:17:58: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 19:17:58: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/12 - 19:17:59: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/13 - 18:13:29: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/13 - 18:13:29: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/13 - 18:13:29: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/13 - 18:30:49: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/13 - 18:30:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/06/13 - 18:30:50: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/08/28 - 15:55:04: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/08/28 - 15:55:04: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/08/28 - 15:55:04: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/08/28 - 15:59:56: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 3 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/08/28 - 15:59:56: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 4 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                
+*ERROR* 	2020/08/28 - 15:59:56: 
+                SELECT c.*, cl.*, cl.name as label, c.id_category as value,
+                FROM `kob_category` c
+                 INNER JOIN kob_category_shop category_shop
+		ON (category_shop.id_category = c.id_category AND category_shop.id_shop = 1)
+                LEFT JOIN `kob_category_lang` cl ON c.`id_category` = cl.`id_category` AND cl.id_shop = 1 
+                LEFT JOIN `kob_category_group` cg ON c.`id_category` = cg.`id_category`
+                RIGHT JOIN `kob_category` c2 ON c2.`id_category` = 11 AND c.`nleft` >= c2.`nleft` AND c.`nright` <= c2.`nright`
+                WHERE 1  AND `id_lang` = 1
+                
+                 AND cg.`id_group` IN (1,3)
+                 GROUP BY c.`id_category`
+                 ORDER BY c.`level_depth` ASC
+                , category_shop.`position` ASC
+                

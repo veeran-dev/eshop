@@ -1,0 +1,11 @@
+{cust_name}
+
+{company_name}
+
+{city}
+
+{mobile}
+
+{email}
+
+{details}

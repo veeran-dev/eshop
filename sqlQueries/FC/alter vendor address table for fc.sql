@@ -1,0 +1,1 @@
+ALTER TABLE `kob_vendor_address` ADD `id_fc` INT(5) NOT NULL AFTER `alise`;

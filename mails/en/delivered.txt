@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Message from {shop_name}</title>
+</head>
+<body>
+	<table style="font-family:Verdana,sans-serif; font-size:11px; color:#374953; width: 550px;">
+		<tr>
+			<td align="left">
+				<a href="{shop_url}" title="{shop_name}"><img alt="{shop_name}" src="https://www.kobster.com/images/mail_imgs/delivered.jpg" style="border:none;" ></a>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">Hello <strong style="color:##dc5046;">{firstname} {lastname}</strong>,<br /><br /></td>
+		</tr>
+		<tr><td>
+		<p>Greetings from Kobster.com!<br /><br /></p>
+		</td></tr>
+		<tr>
+			<td align="left">
+				<b>Your shipment with the order ID #{id_order} has been delivered to your shipping address.</b>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">
+				We hope you are satisfied with our service and the products received.</a>
+				<br />
+				<br />
+				If you had faced any problems or if you have suggestions for us, then please send us your feedback at feedback@kobster.com.
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">
+				We hope to serve you again.
+			</td>
+		</tr>
+		<tr><td><br />
+			<p>Thank You for Shopping with Us!</p>
+			<p><b>Kobster.com Team</b></p><br />
+			</td></tr>
+		<tr>
+		<tr>
+			<td>
+				<p>If you have any questions, please contact our friendly <a href="https://www.kobster.com/contact.php">Customer Support Team</a> Or reach to us at 1800 121 0405 (9am to 9pm, Monday through Saturday).</p> 
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-size:10px; border-top: 1px solid #D9DADE;">
+				Kobster.com – Your one stop shop for all your office needs | <a href="{shop_url}" style="color:##dc5046; font-weight:bold; text-decoration:none;">{shop_name}</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

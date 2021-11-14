@@ -1,0 +1,18 @@
+select d.id,d.ref,d.name,sum(d.MAY) as may,sum(d.JUN) as jun,sum(d.JUL) as jul,sum(d.AUG) as aug,sum(d.SEP) as sep,sum(d.OCT) as oct
+from (SELECT kod.product_id as id, kod.product_reference as ref,kod.product_name as name,
+IF(MONTH(ko.date_add)=5, SUM(kod.product_quantity),0) as MAY,
+IF(MONTH(ko.date_add)=6, SUM(kod.product_quantity),0) as JUN,
+IF(MONTH(ko.date_add)=7, SUM(kod.product_quantity),0) as JUL,
+IF(MONTH(ko.date_add)=8, SUM(kod.product_quantity),0) as AUG,
+IF(MONTH(ko.date_add)=9, SUM(kod.product_quantity),0) as SEP,
+IF(MONTH(ko.date_add)=10, SUM(kod.product_quantity),0) as OCT
+FROM `kob_orders` ko
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order
+LEFT JOIN kob_product kp ON kp.id_product=kod.product_id
+WHERE kc.id_default_group=80
+AND ko.id_fc IN(1)
+AND ko.date_add BETWEEN '2018-05-01 00:00' AND '2018-11-01 00:00'
+GROUP BY month(ko.date_add), kod.product_id
+ORDER by kod.product_id) as d
+GROUP BY d.id

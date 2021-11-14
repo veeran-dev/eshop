@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_group` ADD  `id_kam` INT( 10 ) UNSIGNED NOT NULL AFTER  `po_mandatory` ;

@@ -1,0 +1,5 @@
+ALTER TABLE `kobstereshop`.`kob_deal`   
+  ADD COLUMN `id_employee` INT NULL AFTER `id_specific_price`,		/* Duplicate column name */
+  ADD COLUMN `date_add` DATETIME NULL AFTER `id_employee`,		/* Duplicate column name */
+  ADD COLUMN `date_upd` DATETIME NULL AFTER `date_add`		/* Duplicate column name */;
+  ADD COLUMN `active` INT(11) DEFAULT 1 NULL AFTER `date_upd`,

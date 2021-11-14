@@ -1,0 +1,289 @@
+.hero-section{
+	background: linear-gradient(to left, #ff8200, #ffe100);
+	padding: 72px;
+	//min-height: calc(100vh - 94px);
+	@media (max-width: 480px){
+		padding: 24px 0 0 0;
+		background-position: left center;
+	}
+	.container{
+		background: linear-gradient(to left, #ffe100, #ff8200);
+		@media (max-width: 768px){
+			display: block;
+			padding: 0;
+			background-image: url(../../img/campaigns/electronics/mobile-electronics-bg.png);
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
+.hero-elements{
+	flex-grow: 1;
+}
+.hero-text{
+	text-align: right;
+	position: absolute;
+	right: 60px;
+	top: 150px;
+	font-weight: bold;
+	color: #454545;
+	font-size: 57px;
+	font-weight: 700;
+	line-height: 74px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+	z-index: 3;
+	@media (max-width: 768px){
+		padding: 150px 16px 0 16px;
+		position: initial;
+		text-align: center;
+		font-size: 54px;
+		line-height: 74px;
+		transform: none !important;
+	}
+	@media (max-width: 480px){
+		padding: 72px 16px 0 16px;
+		font-size: 36px;
+		line-height: 48px;
+	}
+}
+.hero-form{
+	margin: 64px 0 64px auto;
+	flex-basis: 280px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 4px;
+	@media (max-width: 480px){
+		background: rgba(254, 213, 140, 0.61);
+		margin: 32px 0;
+	}
+}
+.form-group{
+    margin-bottom: 16px;
+}
+input.form-control,
+select.form-control{
+	background: #efefef;
+    height: 45px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    border: 1px solid #dedede;
+	padding: 0 16px;
+	box-sizing:border-box;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 16px;
+	color: #666;
+	@media (min-width: 769px) and (max-width: 1440px){
+		height: 36px;
+	}
+	&:focus{
+		outline: none;
+		border-color: #886df8;
+		border-width: 1px;
+		background: #fff;
+	}
+	&.error{
+		border-color: #e28984;
+		color: #666;
+	}
+}
+select.form-control{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+	background: url("https://www.kobster.com/themes/default-bootstrap/img/dropdown.png") 95% center no-repeat #efefef;;
+}
+@-moz-document url-prefix() {
+	select {
+	  -moz-appearance: none;
+	  text-indent: 0.01px;
+	  text-overflow: "";
+	}
+}
+select::-ms-expand {
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button{
+	font-family: 'Didact Gothic', sans-serif;
+	width: 100%;
+	height: 45px;
+	border-radius: 4px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 0;
+	color: #fff;
+	outline: none;
+	background: linear-gradient(to left, #886df8, #523bca);
+	&.success{
+		background: #24E428;
+	}
+	&.failed{
+		background: #F35E98;
+	}
+}
+option[default] {
+	display: none;
+}
+span.error{
+	display: block;
+	margin-top: 4px;
+	color: #e28984;
+}
+.contact-form-success{
+	background: #ddfddd;
+	color: #232323;
+	padding: 32px;
+	border-radius: 4px;
+	max-width: 420px;
+	margin: 0 auto;
+	h1{
+		font-size: 32px;
+		line-height: 36px;
+		margin-bottom: 24px;
+	}
+	a{
+		background: linear-gradient(to left, #ef4136 0%, #faae40 100%);
+		color: #fff;
+		padding: 4px 8px;
+		text-decoration: none;
+		border-radius: 2px;
+	}
+
+}
+
+.elements{
+	position: relative;
+	height: 100%;
+}
+
+.gadget,
+.dot{
+	background-size: contain;
+	background-position: left center;
+	background-repeat:no-repeat;
+	position:absolute;
+	@media (max-width: 768px){
+		display: none;
+	}
+}
+
+.dots{
+	z-index: 1;
+}
+.gadgets{
+	z-index: 2;
+}
+
+.macbook{
+	background-image: url('../../img/campaigns/electronics/macbook.png');
+	width: 336px;
+	height: 296px;
+	left: -74px;
+	top: -74px;
+}
+.clock{
+	background-image: url('../../img/campaigns/electronics/clock.png');
+	width: 218px;
+	height: 192px;
+	top: 168px;
+	left: -60px;
+}
+.harddisk{
+	background-image: url('../../img/campaigns/electronics/harddisk.png');
+	top: -22px;
+	left: 150px;
+	width: 168px;
+	height: 149px;
+}
+.iphone{
+	background-image: url('../../img/campaigns/electronics/iphone.png');
+	top: 140px;
+	left: 80px;
+	width: 120px;
+	height: 106px;
+}
+.camera{
+	background-image: url('../../img/campaigns/electronics/camera.png');
+	top: 120px;
+	left: 170px;
+	width: 198px;
+	height: 174px;
+}
+.printer{
+	background-image: url('../../img/campaigns/electronics/printer.png');
+	top: 288px;
+	left: -90px;
+	width: 340px;
+	height: 300px;
+}
+.calculator{
+	background-image: url('../../img/campaigns/electronics/calculator.png');
+	top: 250px;
+	left: 108px;
+	width: 210px;
+	height: 184px;
+}
+
+.dot1{
+	background-image: url('../../img/campaigns/electronics/violet.png');
+	top: 0;
+	right: 100px;
+    width: 270px;
+	height: 141px;
+	z-index: 2;
+}
+.dot1-blur{
+	background-image: url('../../img/campaigns/electronics/violet-blur.png');
+	top: -134px;
+    right: 70px;
+    width: 340px;
+    height: 299px;
+	z-index: 1;
+	opacity: 0.85;
+}
+.dot2{
+	background-image: url('../../img/campaigns/electronics/yellow.png');
+	top: 114px;
+	right: 100px;
+	width: 48px;
+	height: 48px;
+}
+.dot3{
+	background-image: url('../../img/campaigns/electronics/green.png');
+	top: 350px;
+	right: 130px;
+	width: 48px;
+	height: 48px;
+}
+.dot4{
+	background-image: url('../../img/campaigns/electronics/blue.png');
+	bottom: -59px;
+    right: 238px;
+    width: 160px;
+	height: 140px;
+	z-index: 2;
+}
+.dot4-blur{
+	background-image: url('../../img/campaigns/electronics/violet-blur.png');
+	bottom: -87px;
+    right: 222px;
+    width: 190px;
+    height: 190px;
+    z-index: 1;
+}
+.dot5{
+	background-color: #fff;
+    border-radius: 150px;
+    top: 27px;
+    left: 135px;
+    width: 300px;
+    height: 300px;
+}

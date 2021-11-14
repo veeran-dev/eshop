@@ -1,0 +1,112 @@
+*ERROR* 	2017/05/06 - 15:21:06: ------
+*ERROR* 	2017/05/06 - 15:21:06: QA analysis area 10
+*ERROR* 	2017/05/06 - 15:21:06: Array
+(
+    [0] => Array
+        (
+            [id_group] => 2
+            [email] => @kobster.com
+            [name] => QA analysis area 10
+            [address1] => abcd
+efgh
+            [city] => Bangalore
+            [state] => 325
+            [postcode] => 625007
+        )
+
+)
+
+*ERROR* 	2017/05/06 - 15:23:26: ------
+*ERROR* 	2017/05/06 - 15:23:26: QA analysis area 10
+*ERROR* 	2017/05/06 - 15:23:26: Array
+(
+    [0] => Array
+        (
+            [id_group] => 2
+            [email] => @kobster.com
+            [name] => QA analysis area 10
+            [address1] => abcd
+efgh
+            [city] => Bangalore
+            [state] => 325
+            [postcode] => 625007
+        )
+
+)
+
+*ERROR* 	2017/05/06 - 15:24:48: ------
+*ERROR* 	2017/05/06 - 15:24:48: QA analysis area 10
+*ERROR* 	2017/05/06 - 15:24:48: Array
+(
+    [0] => Array
+        (
+            [id_group] => 2
+            [email] => @kobster.com
+            [name] => QA analysis area 10
+            [address1] => abcd
+efgh
+            [city] => Bangalore
+            [state] => 325
+            [postcode] => 625007
+        )
+
+    [1] => Array
+        (
+            [id_group] => 2
+            [email] => @kobster.com
+            [name] => QA analysis area 10
+            [address1] => 
+            [city] => 
+            [state] => 0
+            [postcode] => 0
+        )
+
+)
+
+*ERROR* 	2017/05/06 - 15:28:34: ------
+*ERROR* 	2017/05/06 - 15:28:34: QA analysis area 10
+*ERROR* 	2017/05/06 - 15:28:34: Array
+(
+    [0] => Array
+        (
+            [id_group] => 2
+            [email] => @kobster.com
+            [name] => QA analysis area 10
+            [address1] => abcd
+efgh
+            [city] => Bangalore
+            [state] => 325
+            [postcode] => 625007
+        )
+
+    [1] => Array
+        (
+            [id_group] => 2
+            [email] => @kobster.com
+            [name] => QA analysis area 10
+            [address1] => 
+            [city] => 
+            [state] => 0
+            [postcode] => 0
+        )
+
+)
+
+*ERROR* 	2017/05/06 - 15:29:17: ------
+*ERROR* 	2017/05/06 - 15:29:17: QA analysis area 10
+*ERROR* 	2017/05/06 - 15:29:17: Array
+(
+)
+
+*ERROR* 	2017/05/12 - 17:00:12: ------
+*ERROR* 	2017/05/12 - 17:00:12: Guest
+*ERROR* 	2017/05/12 - 17:00:12: Array
+(
+)
+
+*ERROR* 	2017/05/16 - 19:06:02: ------
+*ERROR* 	2017/05/16 - 19:06:02: Kobster Group
+*ERROR* 	2017/05/16 - 19:06:02: Array
+(
+)
+

@@ -1,0 +1,115 @@
+.about{
+	.section-wrapper{
+		margin: 24px 0px;
+		max-width: 1024px;
+		margin: 16px auto;
+		    padding: 40px 0;
+		.title{
+		    text-align: center;
+		    line-height: 45px;
+		    font-weight: 700;
+		    color: #3D3D3D	;
+		    font-size: 2em;
+		}
+		.lead{
+			color: #5D5D5D !important;
+			width: 90%;
+			text-align:center;
+			margin: 0 auto;
+			line-height: 36px;
+			font-size: 1em;
+		    padding: 24px 0;
+		}
+		.btn-container{
+			text-align: center;
+			button,a{
+				margin: 0 auto;
+				width: 180px;
+				background: #62dbb0;
+				border: none;
+			    padding: 16px 24px;
+			    font-size: 18px;
+			    font-weight: bold;
+			    border-radius: 8px;
+			    cursor: pointer;
+			    color: #0c6143;
+			}
+		}
+		a{
+			cursor: pointer;
+		}
+		
+	}
+	.trio-section{
+		background: #fdfdfd;
+		.trio-wrapper{
+			display: flex;
+			flex-direction: row;
+			justify-content:space-between;
+			background: #fafbfd;
+			@media (max-width: 768px) {
+				flex-direction: column !important;
+			}
+			.wrapper-content{
+				flex:1;
+				text-align: center;
+				padding: 24px;
+				.face{
+					max-width: 80%;
+					border-radius: 80%;
+				}
+				.name{
+					font-size: 1.4em;
+				    font-weight: 600;
+				    padding: 16px 0;
+				}
+				.linkedin{
+					padding: 16px 0;
+					&:hover{
+						#linkedin{
+							fill: #0274b3;
+						}
+					}
+				}
+				.details{
+					font-size: 0.9em;
+				    text-align: justify;
+				}
+			}
+		}
+	}
+	.award-section{
+		.award-wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			background: #ededed;
+			padding: 8px 8px;
+			.award-wrapper-section{
+				flex:1;
+				background: #ededed;
+				.award-wrapper-content{
+					padding:24px 16px;
+					display:flex;
+					flex-direction: column;
+					align-items: center;
+					background-color: #fff;
+					margin:8px;
+					border-radius: 8px;
+				    min-height: 240px;
+					img{
+					    width: 180px;
+					    margin-bottom: 16px;
+					}
+					p{
+						width: 80%;
+						font-size: 0.8em;
+						font-weight: bold;
+						line-height: 24px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,6 @@
+SELECT v.name,p.reference,pl.name,sum(vpb.product_qty) as qty,vpb.unit_price,round(sum(vpb.product_qty)*vpb.unit_price)
+FROM `kob_vendor_purchase_bill` as vpb
+left join kob_vendor v on vpb.id_vendor = v.id_vendor left join kob_product p on vpb.id_product = p.id_product left join kob_product_lang pl on pl.id_product = p.id_product WHERE vpb.active =1 AND v.active =1 and pl.id_lang =1   
+GROUP BY vpb.id_product
+ORDER BY qty DESC
+LIMIT 100

@@ -1,0 +1,193 @@
+.container{
+    padding: 8px;
+}
+header{
+    display: flex;
+    padding: 32px 24px 16px 24px;
+    justify-content: space-between;
+    .timer{
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+        font-family: monospace;
+        color: #db3235;
+    }
+}
+.canvasjs-chart-credit{
+    display: none !important;
+}
+// Card
+.card{
+    .wrapper{
+        background: #fff;
+        padding: 8px 24px;
+        margin: 8px;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    &.padding-zero{
+        .wrapper{
+            padding: 0;
+        }
+    }
+}
+
+.kpi-info{
+    .kpi-info-primary{
+        padding: 16px 24px 0 24px;
+        h1{
+            font-size: 56px;
+            line-height: 56px;
+            font-weight: 700;
+            color: #F56F27;
+            span.unit{
+                color: #666;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 36px;
+                &#achieved{
+                    font-size: 56px;
+                    line-height: 56px;
+                    font-weight: 700;
+                    color: #F56F27;
+                }
+            }
+        }
+        h2{
+            margin-bottom: 8px;
+            line-height: 20px;
+            font-size: 20px;
+            font-weight: 400;
+            color: #999;
+        }
+        .icon{
+            text-align: right;
+            img{
+                width: 75px;
+                opacity: 0.18;
+            }
+        }
+        margin-bottom: 16px;
+    }
+    .kpi-info-secondary{
+        padding: 16px 24px;
+        background: #18ADED;
+        border-radius: 0 0 4px 4px;
+        &.padding-zero{
+            padding: 0;
+        }
+        h3{
+            margin-bottom: 8px;
+            line-height: 16px;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.75);
+        }
+        p{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #fff
+        }
+    }
+}
+
+.col-12by5{
+    flex-basis: 20%;
+}
+
+.delivery{
+    .kpi-info-primary h1{
+        color: #18ADED;
+    }
+    .kpi-info-secondary{
+        background: #18ADED;
+    }
+}
+
+.order-status{
+    .kpi-info-primary h1{
+        color: #e2453c;
+    }
+    .kpi-info-secondary{
+        background: #e2453c;
+    }
+}
+
+.finance{
+    .kpi-info-primary h1{
+        color: #ffc107;
+    }
+    .kpi-info-secondary{
+        background: #ffc107;
+    }
+}
+
+.customers{
+    .kpi-info-primary h1{
+        color: #4c9608;
+    }
+    .kpi-info-secondary{
+        background: #4c9608;
+    }
+}
+
+.brands{
+    .kpi-info-primary h1{
+        color: #607d8b;
+    }
+    .kpi-info-secondary{
+        background: #607d8b;
+    }
+}
+
+.vendors{
+    .kpi-info-primary h1{
+        color: #e91e63;
+    }
+    .kpi-info-secondary{
+        background: #e91e63;
+    }
+}
+
+.annual-revenue-target{
+    .kpi-info-primary h1{
+        color: #3f51b5;
+    }
+    .kpi-info-secondary{
+        background: #3f51b5;
+        position: relative;
+        p{
+            font-size: 28px;
+        }
+        &.padding-zero{
+            padding: 16px 24px;
+        }
+    }
+    .progress-bar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        width: 100%;
+        //opacity: 0.33;
+        z-index: 1;
+        .progressed{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(63, 81, 181, 0.45);
+            background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+            background-size: 48px 48px;
+            width: 100%;
+            transition: all 400ms ease-in;
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    margin: 16px;
+}

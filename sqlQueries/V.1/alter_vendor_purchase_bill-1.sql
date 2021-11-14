@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_vendor_purchase_bill` ADD  `quantity` INT( 10 ) NOT NULL AFTER  `tax` ;

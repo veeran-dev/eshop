@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Message from {shop_name}</title>
+</head>
+<body>
+	<table style="font-family:Verdana,sans-serif; font-size:11px; color:#374953; width: 550px;">
+		<tr>
+			<td align="left">
+				<a href="{shop_url}" title="{shop_name}"><img alt="{shop_name}" src="https://www.kobster.com/img/logo_mail.jpg" style="border:none;" ></a>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">Hello <strong style="color:##dc5046;">Relationship Manager</strong>,<br /><br /></td>
+		</tr>
+		<tr><td>
+		<p>Intimation from Kobster.com!</p>
+		</td></tr>
+		<tr>
+			<td>
+				<p>
+					This is to inform you that, below product is Disabled /Discontinued,
+					for Customers who are mentioned below.
+				</p><br />
+				<p>
+					The Product is Disabled/Discontinued by <strong><span style="color:##dc5046;">{emp_name}</span></strong>
+				</p><br />
+			</td>
+		</tr>
+		<tr>
+			<td align="left">Please find below the Product and List of Customers: <br /></td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">
+				Product Name: <strong><span style="color:##dc5046;">{product_name}</span></strong><br />
+				Product Refference: <strong>{product_ref}</strong><br >
+				Product Id: <strong>{product_id}</strong><br >
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">
+				<table style="width:100%; font-family:Verdana,sans-serif; font-size:11px; color:#374953;">
+					<!-- Title -->
+					<tr style="background-color:#B9BABE; text-align:center;">
+						<th style="width:20%; padding: 0.6em 0;">S.no</th>
+						<th style="width:35%; padding: 0.6em 0;">Customer Nmae</th>
+						<th style="width:45%; padding: 0.6em 0;">Email-ID</th>
+					</tr>
+					{details}
+					
+				</table>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		
+	</table>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Kobster - Payment Acknowledgement Slip</title>
+      
+      <style type="text/css">
+         /* Client-specific Styles */
+         #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+         /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+         .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  */
+         #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+         img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+         a img {border:none;}
+         .image_fix {display:block;}
+         p {margin: 0px 0px !important;}
+         table td {border-collapse: collapse;}
+         table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+         a {color: #33b9ff;text-decoration: none;text-decoration:none!important;}
+         /*STYLES*/
+         table[class=full] { width: 100%; clear: both; }
+         /*IPAD STYLES*/
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #33b9ff; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #33b9ff !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 440px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 420px!important;text-align:center!important;}
+         img[class=banner] {width: 440px!important;height:220px!important;}
+         img[class=colimg2] {width: 440px!important;height:220px!important;}
+         td[class=footer-spacing] {display: none !important;}
+         img[class=footer-pattern] {width: 440px!important;height:59px!important;}
+         }
+         /*IPHONE STYLES*/
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #ffffff; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #ffffff !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 280px!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 260px!important;text-align:center!important;}
+         img[class=banner] {width: 280px!important;height:140px!important;}
+         img[class=colimg2] {width: 280px!important;height:140px!important;}
+         td[class="padding-top15"]{padding-top:15px!important;}
+         img[class=footer-pattern] {width: 280px!important;height:38px!important;}
+         
+        
+         }
+      </style>
+   </head>
+   <body>  
+<!-- Start of running content -->
+<table width="100%" bgcolor="#f5f5f5" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" st-sortable="seperator">
+   <tbody>
+      <tr>
+         <td>
+            <table width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth" bgcolor="#ffffff">
+               <tbody>
+				<tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                </tr>
+				  <tr>
+                     <td align="center" style="font-family: Helvetica, arial, sans-serif; font-size: 20px; line-height:30px; color: #333333; text-align:center; padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">
+						<a target="_blank" href="#" style="text-align:center;"><img align="center" width="185" height="40" alt="Kobster" border="0" style="border:none; outline:none; text-decoration:none;text-align:center;" src="https://kobster.co/product_images/email/v1/kobster-logo.jpg"></a>
+					 </td>
+                  </tr>
+				  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                </tr>
+                  <tr>
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 20px; line-height:30px; color: #333333; text-align:left; padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">Dear {vendor_name},</td>
+                  </tr>
+                  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; line-height:24px; color: #333333; text-align:left; padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">We have made an online payment of <span style="color:#DC2D3C;">{amount}</span> with Transaction ID {payment_reference} towards payee <span style="font-weight:bold">{vendor_name}</span> to your account <span style="color:#DC2D3C;">{account_no}</span> on {date_paid}.</td>
+                  </tr>
+                  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+                  <tr>
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; line-height:24px; color: #333333; text-align:left; padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">
+                        Please find the detailed transaction information given below,
+                     </td>
+                  </tr>
+                  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+				  <tr>
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 18px; line-height:24px; color: #333333; font-weight: bold; padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">
+                        Transaction Details
+                     </td>
+                  </tr>
+				  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 10px; line-height:10px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+				  <tr>
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; line-height:24px; color: #222222; text-align:left; padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">
+						<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">
+							<tbody>
+								<tr>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">Reference No.</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">{payment_reference}</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">Account No.</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">{account_no}</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">Amount Paid</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">{amount}</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">Paid On</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+									<td align="left" valign="top" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; text-align:left">{date_paid}</td>
+								</tr>
+							</tbody>
+						</table>
+                     </td>
+                  </tr>
+				  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+				  <tr>   
+                     <td align="center" style="font-family: Helvetica, arial, sans-serif; font-size: 18px; line-height:24px; color: #333333; font-weight:bold; text-align:center;padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">Payment was made from</td>
+                  </tr>
+				  <tr>   
+                     <td align="center" style="font-family: Helvetica, arial, sans-serif; font-size: 18px; line-height:24px; color: #DC2D3C; text-align:center;">
+						<img src="https://kobster.co/product_images/email/v1/{payment_bank_logo}" width="226" height="51" align="center">
+					 </td>
+                  </tr>
+				  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+				  <tr>   
+                     <td align="center" style="font-family: Helvetica, arial, sans-serif; font-size: 18px; line-height:24px; color: #DC2D3C; text-align:center;">
+						<div><!--[if mso]>
+                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" strokecolor="#d41b29" fillcolor="#DC2D3C">
+                            <w:anchorlock/>
+                            <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Start Shopping</center>
+                          </v:roundrect>
+                        <![endif]-->
+						<a href="{shop_url}print.php?id_request={id_request}" style="background-color:#f4f4f4;border:1px solid #dddddd;border-radius:4px;color:#333333;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Print this Document</a></div>
+					 </td>
+                  </tr>
+				  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+				  
+				  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 16px; line-height:24px; color: #666666;text-align:left;padding-left: 24px; padding-right: 24px; padding-top:0px; padding-bottom: 0px;">Thanks,<br>Kobster.com</td>
+                  </tr>
+				  <tr>   
+                     <td align="left" style="font-family: Helvetica, arial, sans-serif; font-size: 30px; line-height:30px; color: #DC2D3C; text-align:left;">&nbsp;</td>
+                  </tr>
+                  
+               </tbody>
+            </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<!-- End of running content -->    
+   </body>
+   </html>

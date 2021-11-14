@@ -1,0 +1,9 @@
+CREATE TABLE `kob_delivery_signature` (
+  `id_signature` int(11) NOT NULL AUTO_INCREMENT,
+  `id_delivery` int(11) NOT NULL,
+  `delivery_number` int(11) NOT NULL,
+  `img_src` blob NOT NULL,
+  `Sign_name` varchar(60) NOT NULL,
+  PRIMARY KEY (`id_signature`),
+  KEY `id_signature` (`id_signature`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1

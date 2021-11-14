@@ -1,0 +1,14 @@
+*ERROR* 	2018/01/19 - 12:48:07: SELECT SQL_CALC_FOUND_ROWS o.`invoice_number` AS total,o.`invoice_number`,DATE_FORMAT(o.`invoice_date`, "%M %d, %Y") AS invoice_date,DATE_FORMAT(o.`date_add` , "%M %d, %Y") AS added_date,
+							 o.`id_order`,o.`total_paid_tax_incl`, o.`id_address_delivery`, o.`id_address_invoice`, oh.`id_order_state`,os.`delivery`, os.`invoice`, o.`total_paid` FROM `kob_order_history` AS oh
+			    LEFT JOIN `kob_orders` AS o ON oh.`id_order` = o.`id_order`
+			    LEFT JOIN `kob_order_state` AS os ON oh.`id_order_state` = os.`id_order_state`
+			    WHERE oh.id_Order_history IN (
+												SELECT  MAX(oh.`id_order_history`)
+												FROM `kob_order_history` AS oh
+												where o.`id_order` = oh.`id_order`
+												GROUP BY oh.`id_order`
+											)  
+			    AND o.`id_customer` IN (9,48,50,49) 
+			    
+			    AND o.`invoice_date` <> "0000-00-00 00:00:00"
+			    ORDER BY o.`id_order` DESC LIMIT 50, 25

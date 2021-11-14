@@ -1,0 +1,12 @@
+{feedback}
+
+{email}
+
+{mode}
+
+{detail_name}
+
+{detail}
+
+{message}
+

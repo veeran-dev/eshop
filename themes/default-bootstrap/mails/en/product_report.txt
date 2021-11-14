@@ -1,0 +1,38 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+		 
+		
+			Dear Catalog Team,
+		
+		
+			
+				Greetings from Kobster.com!
+			
+		
+		
+			Please find below the newly added products details from {from} to {to} 
+		
+		 
+		
+			category
+			count
+		
+		{str}
+		
+			Kobster.com Team
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

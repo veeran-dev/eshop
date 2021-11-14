@@ -1,0 +1,5 @@
+CREATE TABLE `kob_competitors`(  
+  `id_competitors` INT NOT NULL,
+  `id_product` INT NOT NULL,
+  `price` FLOAT NOT NULL
+);

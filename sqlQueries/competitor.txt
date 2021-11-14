@@ -1,0 +1,8 @@
+CREATE TABLE `kob_competitor` (
+  `id_competitors` int(11) NOT NULL AUTO_INCREMENT,
+  `id_product` int(11) NOT NULL,
+  `amazon` float NOT NULL,
+  `flipkart` float NOT NULL,
+  `snapdeal` float NOT NULL,
+  KEY `id_competitors` (`id_competitors`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1

@@ -1,0 +1,12 @@
+Specific price Added for : {product_name}
+ 
+Group Name: {groupname} 
+Customer Name: {name} 
+Customer Mail-Id: {email} 
+Product Name: {product_name} 
+Product Reference: {product_reference} 
+Product old Specific Price: {old_price} 
+Product New Specific Price: {new_price} 
+
+ 
+{shop_url} 	a

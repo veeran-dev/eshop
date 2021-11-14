@@ -1,0 +1,5 @@
+CREATE TABLE `kob_perks_group` (
+  `id_group` int(11) NOT NULL,
+  `email` varchar(254) NOT NULL,
+  `name` varchar(254) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

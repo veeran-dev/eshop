@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>exportproducts</name>
+	<displayName><![CDATA[Export Products]]></displayName>
+	<version><![CDATA[0.5]]></version>
+	<description><![CDATA[A module to export all products to csv]]></description>
+	<author><![CDATA[]]></author>
+	<tab><![CDATA[Tools]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

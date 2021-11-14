@@ -1,0 +1,1 @@
+﻿This is to inform you that {firstname} has sent you a report from {company}'s procurement portal Kobster Elite. Please find the attachment for the report.

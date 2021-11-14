@@ -1,0 +1,11 @@
+Hello Relationship Manager, 
+
+Product Disabled
+Employee Name: {emp_name} 
+ 
+Link: {link}
+Message:{message}
+title: {title}
+
+ 
+{shop_url} 	

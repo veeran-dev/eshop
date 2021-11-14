@@ -1,0 +1,13 @@
+{name}
+{email}
+{mobile}
+{org_name}
+{office_phone}
+{extn}
+{noofemp}
+{address1}
+{address2}
+{city}
+{min_pur}
+{max_pur}
+{dur}

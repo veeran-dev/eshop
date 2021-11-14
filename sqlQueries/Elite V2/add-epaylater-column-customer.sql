@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` ADD  `epaylater` TINYINT( 1 ) NOT NULL DEFAULT  '0' AFTER  `is_logged` ;

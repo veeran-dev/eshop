@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` ADD  `verified` VARCHAR( 250 ) NOT NULL AFTER  `id_relationship_manager` ;

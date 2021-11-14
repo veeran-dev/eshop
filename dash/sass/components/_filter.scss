@@ -1,0 +1,64 @@
+
+.filter{
+  text-align: left;
+  background-color: $kob-white;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px $kob-gray-eighty;
+  position: absolute;
+  top: 166px;
+  z-index: 6000;
+  transition: all 0.4s ease-out;
+  height: 0;
+  display: none;
+  opacity:0;
+  @media (max-width: 1250px){
+        top: 198px;
+      }
+  li{
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+      &:hover,&:active{
+         color: darken($kob-blue, 10%);
+         cursor: pointer;
+      }
+    i{
+      font-size: 14px;
+      padding: 0px 4px 0px 0px;
+    }
+    .icon-check-box{
+      color: darken($kob-blue, 10%);
+    }
+  }
+  .button-blue{
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+}
+
+.show{
+  display: block;
+  animation: slide-down .4s ease-out;
+  li{
+    display:block;
+  }
+  opacity: 1;
+  height: auto;
+}
+
+@keyframes slide-down {
+      0% { opacity: 0; -webkit-transform: translateY(-40%); }   
+      80% { opacity: 1; -webkit-transform: translateY(10%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+@-webkit-keyframes slide-down {
+      0% { opacity: 0; -webkit-transform: translateY(-40%); }   
+      80% { opacity: 1; -webkit-transform: translateY(10%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-down {
+      0% { opacity: 0; -moz-transform: translateY(-40%); }   
+      80% { opacity: 1; -webkit-transform: translateY(10%); }   
+    100% { opacity: 1; -moz-transform: translateY(0); }
+}

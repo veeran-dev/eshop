@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` ADD  `is_logged` BOOLEAN NOT NULL DEFAULT FALSE AFTER  `max_payment_days` ;

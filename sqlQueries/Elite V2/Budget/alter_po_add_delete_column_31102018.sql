@@ -1,0 +1,1 @@
+ALTER TABLE `kob_po` ADD `delete` TINYINT(1) NOT NULL DEFAULT '0' AFTER `active`;

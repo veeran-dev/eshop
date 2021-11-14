@@ -1,0 +1,88 @@
+SELECT ko.id_order,kc.email,ka.alias,kcl.name, kod.product_id, kod.product_name, kod.product_quantity, kod.unit_price_tax_excl, kod.unit_price_tax_incl,kfc.city_name,ko.date_add FROM kob_customer kc LEFT JOIN kob_orders ko on ko.id_customer=kc.id_customer LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order LEFT JOIN kob_order_history koh on koh.id_order=ko.id_order LEFT JOIN kob_order_state_lang kosl on kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1 LEFT JOIN kob_fulfillment_centre kfc on kfc.id_fulfillment_centre=ko.id_fc LEFT JOIN kob_address ka ON ka.id_address=ko.id_address_delivery LEFT JOIN kob_product kp ON kp.id_product=kod.product_id LEFT JOIN kob_category_lang kcl ON kcl.id_category=kp.id_category_default AND kcl.id_lang=1 WHERE kc.id_default_group=1012 AND koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order) ORDER BY ko.id_order
+
+
+SELECT DISTINCT(ko.id_order),kc.email,ka.alias,kcl.name, kod.product_id, kod.product_name, kod.product_quantity, kod.unit_price_tax_excl, kod.unit_price_tax_incl,kfc.city_name,ko.date_add,kosl.name 
+FROM kob_customer kc 
+LEFT JOIN kob_orders ko on ko.id_customer=kc.id_customer 
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order 
+LEFT JOIN kob_order_history koh on koh.id_order=ko.id_order 
+LEFT JOIN kob_order_history koha on koha.id_order=ko.id_order 
+LEFT JOIN kob_order_state_lang kosl on kosl.id_order_state=koha.id_order_state AND kosl.id_lang=1 
+LEFT JOIN kob_fulfillment_centre kfc on kfc.id_fulfillment_centre=ko.id_fc 
+LEFT JOIN kob_address ka ON ka.id_address=ko.id_address_delivery 
+LEFT JOIN kob_product kp ON kp.id_product=kod.product_id 
+LEFT JOIN kob_category_lang kcl ON kcl.id_category=kp.id_category_default AND kcl.id_lang=1 
+WHERE kc.id_default_group=1012 
+AND koha.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order)
+AND koh.id_order_history IN(SELECT id_order_history FROM kob_order_history WHERE id_order=ko.id_order AND id_order_state=5 AND date_add BETWEEN '2018-09-01 00:00' AND '2018-10-01 00:00')
+
+ORDER BY ko.id_order
+
+/*** invoice generated ***/
+SELECT DISTINCT(ko.id_order),kc.email,ka.alias,kcl.name, kod.product_id, kod.product_name, kod.product_quantity, kod.unit_price_tax_excl, kod.unit_price_tax_incl,kfc.city_name,ko.date_add,koha.date_add,kosl.name 
+FROM kob_customer kc 
+LEFT JOIN kob_orders ko on ko.id_customer=kc.id_customer 
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order 
+LEFT JOIN kob_order_history koh on koh.id_order=ko.id_order 
+LEFT JOIN kob_order_history koha on koha.id_order=ko.id_order 
+LEFT JOIN kob_order_state_lang kosl on kosl.id_order_state=koha.id_order_state AND kosl.id_lang=1 
+LEFT JOIN kob_fulfillment_centre kfc on kfc.id_fulfillment_centre=ko.id_fc 
+LEFT JOIN kob_address ka ON ka.id_address=ko.id_address_delivery 
+LEFT JOIN kob_product kp ON kp.id_product=kod.product_id 
+LEFT JOIN kob_category_lang kcl ON kcl.id_category=kp.id_category_default AND kcl.id_lang=1 
+WHERE kc.id_default_group=1012 
+AND koha.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order)
+AND koh.id_order_history IN(SELECT id_order_history FROM kob_order_history WHERE id_order=ko.id_order AND id_order_state=25 AND date_add BETWEEN '2018-10-01 00:00' AND '2018-11-15 00:00')
+
+ORDER BY ko.id_order
+
+
+/** new 
+SELECT ko.id_order,kc.email,ka.alias,kcl.name, kod.product_id, kod.product_name, kod.product_quantity, kod.unit_price_tax_excl, kod.unit_price_tax_incl,kfc.city_name,koha.date_add,kohb.date_add,kosl.name 
+FROM kob_customer kc 
+LEFT JOIN kob_orders ko on ko.id_customer=kc.id_customer 
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order 
+LEFT JOIN kob_order_history koha on koha.id_order=ko.id_order 
+LEFT JOIN kob_order_history kohb on kohb.id_order=ko.id_order 
+LEFT JOIN kob_order_history kohc on kohc.id_order=ko.id_order 
+LEFT JOIN kob_order_state_lang kosla on kosla.id_order_state=koha.id_order_state AND kosla.id_lang=1 
+LEFT JOIN kob_order_state_lang koslb on koslb.id_order_state=kohb.id_order_state AND koslb.id_lang=1 
+LEFT JOIN kob_order_state_lang kosl on kosl.id_order_state=kohc.id_order_state AND kosl.id_lang=1 
+LEFT JOIN kob_fulfillment_centre kfc on kfc.id_fulfillment_centre=ko.id_fc 
+LEFT JOIN kob_address ka ON ka.id_address=ko.id_address_delivery 
+LEFT JOIN kob_product kp ON kp.id_product=kod.product_id 
+LEFT JOIN kob_category_lang kcl ON kcl.id_category=kp.id_category_default AND kcl.id_lang=1 
+WHERE kc.id_default_group=1012 
+and ko.id_order in(SELECT id_order FROM kob_order_history WHERE id_order=ko.id_order AND id_order_state=25 AND date_add BETWEEN '2018-10-01 00:00' AND '2018-11-15 00:00')
+and koha.id_order_history in(SELECT id_order_history FROM kob_order_history WHERE id_order=ko.id_order AND id_order_state=22)
+and kohb.id_order_history in(SELECT id_order_history FROM kob_order_history WHERE id_order=ko.id_order AND id_order_state=25)
+AND kohc.id_order_history in(SELECT MAX(id_order_history) FROM kob_order_history oh WHERE oh.id_order=ko.id_order)
+ORDER BY ko.id_order
+
+
+
+select d.id,d.ref,d.name,sum(d.JUN) as jun,sum(d.JUL) as jul,sum(d.AUG) as aug,sum(d.SEP) as sep,sum(d.OCT) as oct
+from (SELECT kod.product_id as id, kod.product_reference as ref,kod.product_name as name,
+IF(MONTH(ko.date_add)=6, SUM(kod.product_quantity),0) as JUN,
+IF(MONTH(ko.date_add)=7, SUM(kod.product_quantity),0) as JUL,
+IF(MONTH(ko.date_add)=8, SUM(kod.product_quantity),0) as AUG,
+IF(MONTH(ko.date_add)=9, SUM(kod.product_quantity),0) as SEP,
+IF(MONTH(ko.date_add)=10, SUM(kod.product_quantity),0) as OCT
+FROM `kob_orders` ko
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order
+LEFT JOIN kob_product kp ON kp.id_product=kod.product_id
+WHERE kod.product_name LIKE '%Kimberly%'
+AND kc.id_default_group=1012
+AND ko.id_fc=6
+GROUP BY month(ko.date_add), kod.product_id
+ORDER by kod.product_id) as d
+GROUP BY d.id
+
+
+
+SELECT kod.product_id, kod.product_reference,kod.product_name,kod.product_quantity,ko.date_add FROM `kob_orders` ko LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer LEFT JOIN kob_order_detail kod on kod.id_order=ko.id_order WHERE kod.product_name LIKE '%Kimberly%'  AND ko.id_fc=6 AND kc.id_default_group=1012 AND ko.date_add > '01-06-2018 00:00:00' AND ko.date_add < '31-10-2018 00:00:00' order by kod.product_id
+
+
+################cowrks rate contract########################
+SELECT kob_product.id_product,kob_product.reference,kpl.name,ksp.price,tax.name,ksp.`to`,city.name FROM `kob_product` LEFT JOIN kob_product_lang kpl ON kob_product.id_product=kpl.id_product LEFT JOIN ( SELECT map.product_id as pid, GROUP_CONCAT(kfc.city_name) as name from kob_fulfillment_centre kfc LEFT JOIN kob_product_zone_mapping map on map.zone_id=kfc.id_fulfillment_centre GROUP by map.product_id ) as city ON kob_product.id_product=city.pid LEFT JOIN kob_tax_rules_group tax on tax.id_tax_rules_group=kob_product.id_tax_rules_group LEFT JOIN kob_specific_price ksp on ksp.id_product=kob_product.id_product WHERE ksp.id_group = 1012 AND kob_product.active=1 AND ksp.to > '2019-01-08 00:00:00'

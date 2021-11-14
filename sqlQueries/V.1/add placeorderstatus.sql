@@ -1,0 +1,1 @@
+INSERT INTO `kob_configuration` (NAME,VALUE,DATE_ADD,date_upd) VALUE ('PS_OS_ORDERPLACED','22',NOW(),NOW())

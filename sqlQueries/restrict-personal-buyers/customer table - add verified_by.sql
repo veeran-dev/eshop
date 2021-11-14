@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` ADD  `verified_by` INT( 11 ) NULL DEFAULT  '0' AFTER  `verification_status` ;

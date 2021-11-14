@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>storeexport</name>
+	<displayName><![CDATA[Store export for PrestaShop]]></displayName>
+	<version><![CDATA[0.1]]></version>
+	<description><![CDATA[Export data to CSV compatible with PrestaShop import]]></description>
+	<author><![CDATA[Presta FABRIQUE]]></author>
+	<tab><![CDATA[Tools]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

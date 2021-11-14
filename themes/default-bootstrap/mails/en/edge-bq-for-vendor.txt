@@ -1,0 +1,43 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Hello {firstname},
+		
+		Greetings from Kobster.com!  Your one stop shop for all office supplies.
+		
+			
+				Product Details :
+				   Name    : {product_name}
+				   Quantity: {quantity} {unit}
+			
+		
+		
+			Thank you for your trust,
+			Kobster.com Team
+			
+		
+		
+			
+				If you have any questions, please contact our friendly Customer Support Team Or reach to us at 1800 121 0405 (9am to 9pm, Monday through Saturday). 
+				
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

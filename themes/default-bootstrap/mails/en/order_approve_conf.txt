@@ -1,0 +1,144 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Hello {firstname} {lastname},
+		
+		
+		Greetings from Kobster.com!
+		We thank you for your order !
+		
+		
+			
+				
+					Your order has been placed and is being processed. 
+					This email contains your order summary. When your product(s) get shipped,
+					you will receive an email with the Courier Tracking ID and the link where you can track 
+					your order. You can also check the status of your order by clicking 
+					here.
+				
+			
+		{payment_informations}
+		
+			Please find below the summary of your order: 
+		
+		 
+		
+			
+				Order No: {order_name}
+				Payment Mode: {payment}
+				Order placed on: {date}
+			
+		
+		 
+		
+			
+				
+					
+					
+						Reference
+						Product
+						Unit price
+						Quantity
+						Total price
+					
+					
+						{products}
+						{discounts}
+					
+					
+						 
+						Product Cost
+						{total_products}
+					
+					
+						 
+						Discounts
+						{total_discounts}
+					
+					
+						 
+						Gift-wrapping
+						{total_wrapping}
+										
+					
+						 
+						Shipping
+						{total_shipping}
+					
+					
+						 
+						Total
+						{total_paid}
+					
+				
+			
+		
+		 
+		
+			Shipping Details:
+		
+		 
+		
+			
+				
+					
+						Shipping address
+						Billing address
+					
+					
+						
+							{delivery_company}
+							{delivery_firstname} {delivery_lastname}
+							{delivery_address1}
+							{delivery_address2}
+							{delivery_city} {delivery_postal_code}
+							{delivery_country} {delivery_state}
+							{delivery_phone}
+							{delivery_other}
+						
+						
+							{invoice_company}
+							{invoice_firstname} {invoice_lastname}
+							{invoice_address1}
+							{invoice_address2}
+							{invoice_city} {invoice_postal_code}
+							{invoice_country} {invoice_state}
+							{invoice_phone}
+							{invoice_other}
+						
+					
+				
+			
+		
+		 
+		
+			
+				You can track this order and download your invoice from the 
+				"Order history" 
+				section of your account by clicking "Your account" on our Website.
+			
+		
+		
+			Thank You for Shopping with Us!
+			Kobster.com Team
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

@@ -1,0 +1,16 @@
+SELECT details.id_product,details.product_name, details.price, details.`to`,details.tax, MAX(details.Ben), MAX(details.Che), MAX(details.Hyd), MAX(details.Mum), MAX(details.Del)
+ from (
+SELECT kp.id_product,kpl.name as product_name, ksp.price, ksp.`to`, ktrg.name as tax,
+(CASE when map.zone_id=1 then kfc.city_name else '' END) as Ben,
+(CASE when map.zone_id=2 then kfc.city_name else '' END) as Che,
+(CASE when map.zone_id=3 then kfc.city_name else '' END) as Hyd,
+(CASE when map.zone_id=4 then kfc.city_name else '' END) as Mum,
+(CASE when map.zone_id=6 then kfc.city_name else '' END) as Del
+ from `kob_specific_price` ksp
+left join kob_product_lang kpl on kpl.id_product=ksp.id_product and kpl.id_lang=1
+LEFT JOIN kob_product kp on kp.id_product=ksp.id_product
+LEFT JOIN kob_product_zone_mapping map on map.product_id=ksp.id_product
+LEFT JOIN kob_fulfillment_centre kfc on kfc.id_fulfillment_centre=map.zone_id
+LEFT JOIN kob_tax_rules_group ktrg on ktrg.id_tax_rules_group=kp.id_tax_rules_group
+WHERE ksp.id_group = 37 ORDER BY ksp.id_product ) as details
+GROUP BY details.id_product

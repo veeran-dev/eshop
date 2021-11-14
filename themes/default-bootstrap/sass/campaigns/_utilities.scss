@@ -1,0 +1,35 @@
+.flex{
+    display: flex;
+    display: -webkit-flex;
+}
+// Flex Horizontal centering
+.flex-hc{
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+// Flex Vertical centering
+.flex-vc{
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+// Conatiner
+.container{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 16px;
+    @media (max-width: 480px){
+        max-width: 100%;
+    }
+}
+
+// Text Alignment
+.text-ac{
+    text-align: center;
+}
+.text-al{
+    text-align: left;
+}
+.text-ar{
+    text-align: right;
+}

@@ -1,0 +1,4 @@
+ALTER TABLE `kob_fulfillment_centre`   
+  ADD COLUMN `cst` INT(16) NOT NULL AFTER `id_employee`,
+  ADD COLUMN `tin` INT(16) NOT NULL AFTER `cst`,
+  ADD COLUMN `cst_date` DATE NOT NULL AFTER `tin`;

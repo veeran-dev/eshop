@@ -1,0 +1,10 @@
+CREATE TABLE `kob_zonal_price`(  
+  `id_zonal_price` INT NOT NULL,
+  `id_fulfillment_centre` INT NOT NULL,
+  `id_product` INT NOT NULL,
+  `price` INT NOT NULL,
+  PRIMARY KEY (`id_zonal_price`)
+);
+
+ALTER TABLE `kob_zonal_price`   
+  CHANGE `id_zonal_price` `id_zonal_price` INT(11) NOT NULL AUTO_INCREMENT;

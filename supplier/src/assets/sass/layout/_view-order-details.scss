@@ -1,0 +1,32 @@
+.view-order-details{
+    .page-container{
+        padding: 16px;
+    }
+    .order-flow-container,
+    .product-details-container,
+    .address-section{
+        padding: 0;
+    }
+    .product-details-container .widget-compressed-table tr td{
+        max-width: inherit;
+    }
+    .status{
+        display: -webkit-flex;
+        display: flex;
+    }
+    .cta{
+        padding: 16px;
+        text-align: right;
+        background: #ccc;
+        border-radius: 0 0 2px 2px;
+        margin: 16px -16px -16px -16px;
+    }
+    
+    .order-total{
+        margin-top: 16px;
+        p{
+            margin: 8px 0 0 0;
+            font-size: 16px;
+        }
+    }
+}

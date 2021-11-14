@@ -1,0 +1,16 @@
+SELECT ko.id_order,kod.product_id,kod.product_name,kod.product_reference, kod.product_quantity,kod.unit_price_tax_excl,kod.unit_price_tax_incl,ks.name,kfc.city_name,ko.date_add FROM `kob_order_detail` kod
+LEFT JOIN kob_orders ko ON ko.id_order=kod.id_order
+LEFT JOIN kob_order_history	koh	 ON koh.id_order=ko.id_order
+LEFT JOIN kob_fulfillment_centre kfc ON kfc.id_fulfillment_centre=ko.id_fc
+LEFT JOIN kob_address ka ON ka.id_address=ko.id_address_delivery
+LEFT JOIN kob_state ks ON ks.id_state=ka.id_state
+WHERE kod.product_name LIKE '%bailley%'
+AND koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order)
+AND koh.id_order_state NOT IN(6,7)
+AND ko.date_add > '2018-06-01 00:00:00'
+ORDER BY kfc.city_name,ko.date_add
+
+
+
+/***loyalty points ***/
+SELECT kob_loyalty.*,kosl.name FROM `kob_loyalty` LEFT JOIN kob_order_history koh ON koh.id_order=kob_loyalty.id_order LEFT JOIN kob_order_state_lang kosl ON kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1 WHERE kob_loyalty.id_customer IN(29001,28999,29929,6717) AND kob_loyalty.id_loyalty_state NOT IN(2,3,4) AND koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=kob_loyalty.id_order) AND koh.id_order_state IN(38)

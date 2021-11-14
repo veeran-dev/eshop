@@ -1,0 +1,1 @@
+ALTER TABLE `kob_order_detail_bckup` ADD `unit_price_tax_excl` DECIMAL(20,6) NOT NULL AFTER `product_quantity`;

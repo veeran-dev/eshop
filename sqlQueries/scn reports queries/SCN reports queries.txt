@@ -1,0 +1,32 @@
+ /*customer Top 30 products report for SCN*/
+ 
+SELECT p.reference, od.`product_id` , od.`product_name` , sum( od.`product_quantity`) as qty, od.`product_price`,round(sum( od.`product_quantity`)*od.`product_price`) as totalprice,round(sum(od.product_quantity)/(select PERIOD_DIFF(DATE_FORMAT(now(),'%Y%m'),(SELECT Date_format(date_add,'%Y%m') FROM `kob_orders` where id_customer = 2140 order by id_order asc limit 1)))) as avgconsumption
+FROM kob_order_detail AS od, kob_orders AS o,kob_product p,kob_order_history as oh,kob_product_lang pl
+WHERE o.id_customer =2140
+AND od.id_order = o.id_order
+AND pl.id_product = od.product_id
+AND o.id_order= oh.id_order
+and p.id_product = od.product_id
+and oh.id_Order_history IN (
+							SELECT  MAX(oha.`id_order_history`)
+							FROM kob_order_history AS oha
+							LEFT JOIN kob_orders AS oa
+							ON oa.id_order = oha.id_order
+							where oa.id_customer = 2140
+							GROUP BY oha.id_order)
+AND oh.id_order_state IN (5,25)
+AND pl.id_lang=1  
+group by p.id_product
+order by qty desc
+LIMIT 0 , 30
+
+/*Top 100 Vendors report for SCN*/
+
+SELECT v.name,p.reference,pl.name,sum(vpb.product_qty) as qty,vpb.unit_price,round(sum(vpb.product_qty)*vpb.unit_price)
+FROM `kob_vendor_purchase_bill` as vpb
+left join kob_vendor v on vpb.id_vendor = v.id_vendor left join kob_product p on vpb.id_product = p.id_product left join kob_product_lang pl on pl.id_product = p.id_product WHERE vpb.active =1 AND v.active =1 and pl.id_lang =1   
+GROUP BY vpb.id_product
+ORDER BY qty DESC
+LIMIT 100
+
+

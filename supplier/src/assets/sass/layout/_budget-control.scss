@@ -1,0 +1,288 @@
+// Add PO
+.add-po-container{
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: 4px;
+  .page-container{
+    padding: 16px;
+    overflow: hidden;
+  }
+  .action-block{
+    padding: 16px;
+    margin-top: 24px;
+    button{
+      width: 220px;
+      float: right;
+      font-size: 16px;
+      height: 36px;
+      i{
+        margin-right: 8px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        font-size: 12px;
+        padding: 2px;
+      }
+    }
+  }
+  #scroll-wrapper{
+    padding: 0 16px;
+  }
+}
+
+.po-information{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  & > div{
+    min-width: 50%;
+    padding: 0 16px;
+  }
+  &.po-address {
+    & > div {
+      min-width: 100%;
+    }
+  }
+}
+.block-title{
+  color: $kob-blue;
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 0 16px;
+}
+.control-group{
+  display: flex;
+  display: -webkit-flex;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  label{
+    min-width: 150px;
+    padding: 0;
+    & + div {
+      width: 100%;
+    }
+  }
+  input[type="text"]{
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .po-address {
+    .react-select__value-container {
+      &.react-select__value-container--is-multi {
+        min-height: 24px;
+      }
+    }
+  }
+
+  .Select-control{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2px;
+    border-color: #ccc;
+    .Select-placeholder{
+      line-height: 28px;
+      height: 28px;
+    }
+    .Select-input{
+      height: 28px;
+      line-height: 28px;
+      vertical-align: top;
+    }
+    .Select-value{
+      margin-top: 2px !important;
+    }
+    .Select-clear-zone,
+    .Select-arrow-zone{
+      vertical-align: top;
+      padding-top: 0;
+    }
+  }
+}
+
+.po-set-value,
+.po-download,
+.po-upload{
+  margin-bottom: 16px;
+  & > div{
+    padding: 0 15px;
+  }
+}
+
+.po-upload{
+  #upload-purchase-order{
+    margin-top: 0;
+    label{
+      max-width: 220px;
+      width: 220px;
+    }
+  }
+}
+// Spend Bar
+.spend-bar{
+  width: 100px;
+  height: 14px;
+  border-radius: 2px;
+  background: rgba(0, 113, 188, 0.10);
+}
+.spend-progressed{
+  background: $kob-blue;
+  border-radius: 2px;
+  height: 14px;
+}
+.po-list{
+  padding: 0 16px 16px 16px;
+  background: #fff;
+}
+// Toggle PO Order Details
+.po-information-wrapper{
+  padding: 0 16px 16px 16px;
+  .po-address{
+    padding: 0 16px 0 0;
+  }
+  .po-dates{
+    padding: 0 0 0 16px;
+    text-align: right;
+  }
+  .po-inline-wrapper{
+    display: flex;
+    p:first-child{
+      width: 113px;
+      color: #999;
+    }
+    p:nth-child(2){
+      width: 24px;
+      text-align: center;
+      color: #999;
+    }
+    p:nth-child(3){
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+.po-history{
+  padding: 0 16px 16px 16px;
+  background: #fff;
+  & > table thead tr th{
+    padding: 10px 12px;
+    &:nth-child(1){
+      width: 20%;
+    }
+    &:nth-child(2){
+      width: 40%;
+    }
+    &:nth-child(3){
+      width: 20%;
+    }
+    &:nth-child(4){
+      width: 20%;
+    }
+  }
+}
+.po-order-item{
+  table tr td{
+    padding: 4px 12px;
+    &:nth-child(1){
+      width: 20%;
+    }
+    &:nth-child(2){
+      width: 40%;
+    }
+    &:nth-child(3){
+      width: 20%;
+    }
+    &:nth-child(4){
+      width: 20%;
+    }
+  }
+}
+.po-order-item + .po-order-products{
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  transition: all 300ms ease-in;
+  //padding: 0 16px;
+  border-radius: 0;
+  table{
+    border-radius: 0;
+    tr th{
+      background: #f5f5f5;
+    }
+    tr td{
+      padding: 4px 12px;
+      background: #f5f5f5;
+    }
+  }
+}
+.po-order-item.active{
+  padding-bottom: 0;
+  table tr td{
+    background: #ddedf9;
+  }
+}
+.po-order-item.active + .po-order-products{
+  display: block;
+  visibility: visible;
+  height: auto;
+  padding-bottom: 8px;
+}
+
+.view-more{
+  width: 28px;
+  padding: 0;
+  border-radius: 50%;
+  border-color: #ccc;
+  text-align: center;
+  margin: 0;
+  i{
+    line-height: 26px;
+    font-size: 22px;
+  }
+  &.active{
+    background: #fff;
+  }
+}
+
+// Button 
+.button-switch{
+  display: inline-block;
+  margin-left: 8px;
+  button{
+    border-color: $kob-blue;
+    color: $kob-blue;
+    margin: 0;
+    &.button-blue{
+      color: #fff;
+    }
+    &:first-child{
+      border-radius: 2px 0 0 2px;
+    }
+    &:last-child{
+      border-radius: 0 2px 2px 0;
+    }
+  }
+}
+
+// Input Button with Symbol
+.control-group .input-with-symbol{
+  width: 224px;
+  .symbol{
+    border: 1px solid #ccc;
+    color: #999;
+    width: 24px;
+    font-size: 16px;
+    display: inline-block;
+    height: 28px;
+    vertical-align: top;
+    border-radius: 2px 0 0 2px;
+    border-right: 0;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 700;
+  }
+  input{
+    width: calc(100% - 24px);
+    border-radius: 0 2px 2px 0;
+  }
+}

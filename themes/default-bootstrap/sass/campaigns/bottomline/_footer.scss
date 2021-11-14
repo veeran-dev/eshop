@@ -1,0 +1,127 @@
+footer{
+	padding: 96px 0;
+    background: #444;
+    color: #fff;
+    @media (max-width: 480px){
+        padding: 48px 0;
+    }
+	a{
+		text-decoration: none;
+        color: #fff;
+        &:hover{
+            opacity: 0.66;
+        }
+	}
+}
+
+.About {
+    background: #444;
+
+    h4 {
+        color: #8d8d8d;
+    }
+}
+
+.footer-pattern{
+    text-align: center;
+    margin-bottom: 48px;
+    img{
+        display: block;
+        max-width: 592px;
+        width: 100%;
+        margin: 0 auto 32px auto;
+        transition: opacity 300ms ease-in;
+        opacity: 0.5;
+    }
+    p{
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &:hover{
+        img{
+            opacity: 1;
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 32px;
+}
+
+.footer-links-container{
+    h4 {
+       font-size: 20px;
+    }
+    margin-bottom: 32px;
+    .footer-link-column{
+        flex-basis: 25%;
+    }
+}
+
+
+.social-links{
+	text-align: center;
+	margin-top: 16px;
+	a{
+		width: 24px;
+        height: 24px;
+		display:inline-block;
+		margin-right: 8px;
+		border: none;
+		background: #fff url(../../img/sprite.png) center no-repeat;
+		&:hover{
+			text-decoration: none;
+			border-color: #ff5500;
+		}
+    }
+    .facebook{
+        background-position: 0 -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: 0px -216px;
+            opacity: 1;
+        }
+    }
+    .twitter{
+        background-position: -24px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -24px -216px;
+            opacity: 1;
+        }
+    }
+    .google-plus{
+        background-position: -48px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -48px -216px;
+            opacity: 1;
+        }
+    }
+    .linkedin{
+        background-position: -72px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -72px -216px;
+            opacity: 1;
+        }
+    }
+    .rss{
+        background-position: -96px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -96px -216px;
+            opacity: 1;
+        }
+    }
+}
+
+.success-social-share {
+    a {
+        height: 18px;
+        width: 10px;
+        border-radius: 50%;
+    }
+}

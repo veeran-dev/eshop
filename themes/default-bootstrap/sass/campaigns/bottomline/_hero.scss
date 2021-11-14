@@ -1,0 +1,165 @@
+.hero-section{
+    background: #ffffff url(../../img/campaigns/bottomline/pattern.png) repeat;
+    padding: 64px 0;
+    @media (max-width: 1440px){
+        padding: 45px 0;
+	}
+	@media (max-width: 480px){
+		padding: 24px 0 48px 0;
+	}
+    img{
+		display: block;
+		padding: 196px 0 60px 0;
+		@media (max-width: 480px){
+			margin-bottom: 24px;
+			width: 100%;
+			padding: 40px 0 8px 0;
+		}
+    }
+}
+.form-container{
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 294px;
+    margin: 0 auto;
+    box-shadow: 5px 10px #00000005;
+}
+.form-group{
+    margin-bottom: 16px;
+}
+input.form-control,
+select.form-control{
+    height: 45px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+	padding: 0 16px;
+	box-sizing:border-box;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 16px;
+	color: #666;
+	&:focus{
+		outline: none;
+		border-color: #e919ff;
+		border-width: 2px;
+	}
+	&.error{
+		border-color: #e28984;
+		color: #666;
+	}
+}
+select.form-control{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+	background: url("https://www.kobster.com/themes/default-bootstrap/img/dropdown.png") 95% center no-repeat #fff;;
+}
+@-moz-document url-prefix() {
+	select {
+	  -moz-appearance: none;
+	  text-indent: 0.01px;
+	  text-overflow: "";
+	}
+}
+select::-ms-expand {
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button{
+	font-family: 'Didact Gothic', sans-serif;
+	width: 100%;
+	height: 45px;
+	border-radius: 4px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 0;
+	color: #fff;
+	outline: none;
+	background: #00024d;
+	&.success{
+		background: #24E428;
+	}
+	&.failed{
+		background: #F35E98;
+	}
+}
+option[default] {
+	display: none;
+}
+span.error{
+	display: block;
+	margin-top: 4px;
+	color: #e28984;
+}
+.contact-form-success{
+	background: #ddfddd;
+	color: #232323;
+	padding: 32px;
+	border-radius: 4px;
+	max-width: 420px;
+	margin: 0 auto;
+	h1{
+		font-size: 21px;
+		line-height: 36px;
+		margin-bottom: 12px;
+	}
+	h2 {
+		font-size: 24px;
+		text-align: center;
+	}
+	a{
+		background: linear-gradient(to left, #ef4136 0%, #faae40 100%);
+		color: #fff;
+		padding: 4px 8px;
+		text-decoration: none;
+		border-radius: 2px;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.success-border {
+		border: 0.5px solid #a1d1f5;
+    	margin: 16px 0 5px 0;
+	}
+
+}
+
+.form-title {
+	text-align: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.double-column{
+	display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	.form-group{
+		width: 50%;
+		& > div{
+			width: 100%;
+		}
+	}
+	.firstname {
+		padding-right: 8px;
+	}
+	.lastname {
+		padding-left: 8px;
+	}
+	.form-control{
+		display: flex;
+		display: -webkit-flex;
+		flex-basis: auto;
+	}
+}

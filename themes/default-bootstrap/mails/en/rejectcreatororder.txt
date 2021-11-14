@@ -1,0 +1,51 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Hello {creater_name},
+		
+		
+		Greetings from Kobster.com!
+		Your Order #{order_id} has been rejected.
+		
+		
+		
+			
+				
+					Rejected By :- {approver_name}
+					Order Id :- {order_id}
+					Reason :-  {reason} 
+					
+					Please Click Here to visit your Dashboard.
+				
+			
+		
+		 
+		
+			
+				For more details, contact {approver_name}.
+			
+		
+		
+			Thank You for Shopping with Us!
+			Kobster.com Team
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

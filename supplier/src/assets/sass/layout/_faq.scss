@@ -1,0 +1,118 @@
+.faq{
+    max-width: 640px;
+    margin: 0 auto;
+    .page-container{
+        padding: 32px 64px;
+        @media (max-width: $mobile-large){
+            padding: 32px;
+        }
+    }
+}
+.faq-search{
+    margin-left: 32px;
+    width: 100%;
+    input{
+        //float: right;
+        width: 240px;
+        transition: width 300ms ease-in;
+        &:focus{
+            width: 80%;
+        }
+    }
+    @media (max-width: $tablet-large){
+        margin-left: 0;
+        input{
+            width: 100%;
+            &:focus{
+                width: 100%;
+            }
+        }
+    }
+}
+.faq-question-category{
+    color: $kob-gray-light;
+    font-size: 13px;
+    margin-left: 16px;
+}
+.faq-index{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    animation: enter 300ms ease-in;
+    .faq-category{
+        flex-basis: 33%;
+        -webkit-flex-basis: 33%;
+        padding-right: 32px;
+        @media (max-width: $tablet-large){
+            flex-basis: 50%;
+            -webkit-flex-basis: 50%;
+        }
+        @media (max-width: $mobile-large){
+            flex-basis: 100%;
+            -webkit-flex-basis: 100%;
+        }
+    }
+    .faq-category-title{
+        display: block;
+        color: $kob-gray;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .faq-questions{
+        max-height: 210px;
+        overflow: hidden;
+    }
+    .faq-question{
+        margin-bottom: 0;
+        a{
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.view-all-question{
+    font-size: 13px;
+    color: $kob-gray-medium;
+    display: block;
+    margin-top: 10px;
+}
+.faq-category{
+    padding: 32px 0;
+    animation: enter 300ms ease-in;
+    .faq-category-title{
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .faq-question{
+        margin-bottom: 16px;
+        a{
+            font-size: 16px;
+            line-height: 20px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+.faq-item{
+    max-width: 640px;
+    padding: 32px 0;
+    animation: enter 300ms ease-in;
+    .faq-question{
+        font-weight: bold;
+        font-size: 20px;
+        color: $kob-black;
+        margin-bottom: 18px;
+    }
+    .faq-answer{
+        font-size: 16px;
+        color: $kob-gray;
+        line-height: 24px;
+    }
+}

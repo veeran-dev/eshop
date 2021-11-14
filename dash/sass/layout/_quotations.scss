@@ -1,0 +1,245 @@
+.quotation-container{
+	.qr_wrapper{
+		transition: 0.8s ease;
+		@media (max-width: #{$tablet-large - 32px}){
+			align-items: center;
+	    	justify-content: center;
+			.qr_image_block, .qr_product_details ,.qr_block_top{
+				flex:100% !important;
+			}
+		}
+
+		.image_block{
+			text-align: center;
+			img{
+				width: 64px;
+				height: 64px;
+				z-index:0;
+			}
+		}
+		.name{
+			max-width: 320px;
+		}
+	}
+
+	/***** MOBILE RESPONSIVE ****/
+	@media (max-width: #{$tablet-large - 32px}){
+		.page-container{
+			background: transparent;
+			.table-filter{
+				padding: 8px;
+				background: $kob-white;
+				margin-bottom: 8px;
+			}
+		}
+	}
+	.quote_response_mobile{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: row;
+		margin-bottom: 16px;
+		background: #ffff;
+		padding: 16px;
+		border-radius: 4px;
+		flex-wrap: wrap;
+
+		.image_block{
+			img{
+				width: 120px;
+			}
+		}
+		.detail_section{
+			display: flex;
+			justify-content: space-evenly;
+			flex-direction: column;
+			width: 100%;
+			.product_name{
+				font-weight: bold;
+				margin-bottom: 16px;
+			}
+			.quote_ref{
+				font-size: 14px;
+				font-weight: bold;
+				margin-bottom: 16px;
+				p:nth-child(1){
+					color: $kob-gray;
+				}
+				p:nth-child(2){
+					color: $kob-blue;
+					font-size: 18px;
+				}
+			}
+			.quote_details{
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 16px;
+				justify-content: space-between;
+				div{
+					p:nth-child(1){
+						font-size: 14px;
+						font-weight: bold;
+						color: $kob-gray;
+					}
+					p:nth-child(2){
+						font-size: 16px;
+						font-weight: bold;
+						color: $kob-black;
+					}	
+				}
+			}
+		}
+	}
+}
+
+
+.quotation-container-home{
+	padding: 16px;
+	flex-direction: column;
+	.layer{
+		margin-bottom: 24px;
+	}
+	.upload{
+		form{
+			margin-top: 0;
+			padding: 0px !important;
+			button{
+    			width: 238px;
+    			min-width: auto;	
+    		}
+		}
+	}
+	.wrapper{
+		margin: 0 auto;
+		h3{
+			margin-bottom: 24px;
+		}
+		.ex{
+			margin: 8px 0;
+		}
+		.info{
+			max-width: 320px;
+		}
+		.sp-container{
+			margin: 0;
+		}
+		.quotation-details-wrapper{
+			margin-top: 24px;
+		    overflow: hidden;
+		    height: 0;
+		    transition: height 100ms ease;
+		    &.animate{
+		    	height: 100%;
+		    	form{
+		    		transition: transform 500ms ease;
+		    		transform: translateY(0%);
+		    	}
+		    }
+		}
+	}
+}
+
+.quotationForm{
+	max-width: 320px;
+	transform: translateY(0);
+	background: $kob-gray-background;
+	padding: 16px;
+	margin: 0 auto;
+	.modal-dialog{
+		max-width: 440px;
+	}
+	form{
+		margin-top: 0;
+	}
+	.upload{
+		form{
+			margin-top: 0;
+			padding: 0px !important;
+			button{
+    			width: 238px;
+    			min-width: auto;	
+    		}
+		}
+	}
+	.form-wrapper{
+		.step{
+			padding: 8px;
+			.form-control, .form-group{
+				margin: 0;
+				.title{
+					margin-bottom: 8px;
+				}
+				input{
+					height: 28px;
+					padding: 0 8px;
+				}
+				select{
+					width: 100%;
+				}
+			}
+		}
+	}
+	h3{
+		margin-bottom: 8px;
+		padding: 0 16px;
+	}
+	.step{
+		button{
+			min-width: fit-content;
+			margin-left: 0;
+		}
+	}
+	.form-footer{
+		padding: 0 16px;
+		margin-top: 16px;
+	}
+}
+
+#quotationForm{
+	.modal-content{
+		max-width: 420px;
+	}
+}
+
+.desc{
+	max-width: 320px;
+	.desc-wrapper{
+		.section{
+			display: flex;
+			flex-direction: column;
+			.details{
+				h3, button{
+					margin-bottom: 16px;
+				}
+				p{
+					margin: 8px 0;
+					color:$kob-black;
+				}
+				.categories{
+					display: flex;
+	    			flex-wrap: wrap;
+	    			div{
+	    				background: $kob-gray-eighty;
+					    padding: 0px 8px;
+					    border-radius: 18px;
+					    margin: 0 4px 4px 0;
+	    			}
+				}
+
+			}
+		}
+		.bottom-section{
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 16px;
+			p{
+				color: $kob-gray-eighty;
+				padding: 8px 0;
+			}
+			a{
+				cursor:pointer;
+				margin-right: 16px;
+			}
+		}
+	}
+}

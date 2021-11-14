@@ -1,0 +1,42 @@
+.report-section{
+    transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+    opacity: 0;
+    transition-delay: 300ms;
+    transform: scale(0.8);
+    transform-origin: 50% 50%;
+    .section-title{
+        margin-bottom: 64px;
+    }
+    .section-lead{
+        text-align: left;
+        margin-top: 90px;
+    }
+    .section-cta{
+        display: inline-block;
+    }
+}
+.section-thumb{
+    .zoom-in,
+    .slide-down,
+    .slide-up{
+        animation-fill-mode: both;
+        animation: none;
+    }
+}
+.section-thumb.active{
+    .zoom-in{
+        animation: zoomIn 3s ease-in;
+        transform-origin: 50% 50%;
+        transition-delay: 500ms;
+    }
+
+    .slide-down{
+        animation: slideDown 3s ease-in;
+        transform-origin: 50% 50%;
+    }
+
+    .slide-up{
+        animation: slideUp 3s ease-in;
+        transform-origin: 50% 50%;
+    }
+}

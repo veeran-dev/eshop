@@ -1,0 +1,8 @@
+{firstname}
+{lastname}
+{id_order}
+{order_name}
+{bankwire_owner}
+{bankwire_details}
+{bankwire_address}
+{total_paid}

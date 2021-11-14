@@ -1,0 +1,3 @@
+Hello,
+
+Your customer {company_name} has invited you to register with Kobster's suppliers panel to sell products. Please go through the link {shop_url}supplier/#/signup/{id_group}/{id_customer} to register.

@@ -1,0 +1,43 @@
+.flex{
+    display: flex;
+    display: -webkit-flex;
+}
+// Flex Horizontal centering
+.flex-hc{
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+// Flex Vertical centering
+.flex-vc{
+	align-items: center;
+	-webkit-align-items: center;
+}
+.flex-etoe{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.flex-asc{
+    align-self: center;
+}
+
+// Conatiner
+.container{
+    //width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    @media (max-width: 480px){
+        padding: 0 16px;
+    }
+}
+
+// Text Alignment
+.text-ac{
+    text-align: center;
+}
+.text-al{
+    text-align: left;
+}
+.text-ar{
+    text-align: right;
+}

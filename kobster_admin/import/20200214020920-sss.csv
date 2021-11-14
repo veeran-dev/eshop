@@ -1,0 +1,4 @@
+id_supplier,id_product,id_zone,moq,oos
+x,,5,1,12
+1,6,.,1,0
+1,7,0,1a,0

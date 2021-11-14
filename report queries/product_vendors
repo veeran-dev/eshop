@@ -1,0 +1,7 @@
+SELECT kpl.name,kv.name, bill.id_bill_no,bill.product_qty,bill.bill_date,kfc.city_name FROM `kob_vendor_purchase_bill` bill
+LEFT JOIN kob_product kp on kp.id_product=bill.id_product
+LEFT JOIN kob_product_lang kpl on kp.id_product=kpl.id_product AND kpl.id_lang=1
+LEFT JOIN kob_vendor kv ON kv.id_vendor=bill.id_vendor
+LEFT JOIN kob_vendor_address kva on kva.id_address=kv.id_default_address
+LEFT JOIN kob_fulfillment_centre kfc ON kfc.id_state=kva.id_state
+WHERE kpl.name LIKE '%diversey%' OR kpl.name LIKE '%taski%'

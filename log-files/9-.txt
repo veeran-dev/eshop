@@ -1,0 +1,3 @@
+*INFO* 	2016/11/16 - 12:15:57: Ajax Response  :/kobstereshop/dashpaymentoption.php Type: 5 Customer name:  Response size : 37.38KB  Payment Status -> Customer Role-> 1
+*INFO* 	2016/11/16 - 12:15:58: Ajax Response  :/kobstereshop/dash-getcartproduct.php Type: 0 Customer name:  Response size : 1233.56KB
+*INFO* 	2016/11/16 - 12:15:58: Ajax Response  :/kobstereshop/dashpaymentoption.php Type: 1 Customer name:  Response size : 39.45KB  Payment Status -> Customer Role-> 1

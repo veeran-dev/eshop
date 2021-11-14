@@ -1,0 +1,162 @@
+.settings-container{
+    display: flex;
+    display: -webkit-flex;
+	flex-direction: column;
+    -webkit-flex-direction: column;
+	min-height: calc(100vh - 248px);
+	background: #fff;
+	border-radius: 4px;
+	padding: 16px;
+    margin-bottom: 16px;
+    @media (max-width: #{$tablet-small - 1px}){
+        min-height: calc(100vh - 123px);
+    }
+    .column-wrapper{
+        display: flex;
+        display: -webkit-flex;
+        @media (max-width: #{$tablet-small - 1px}){
+            flex-direction: column;
+            -webkit-flex-direction: column;
+        }
+    }
+    .column{
+        margin: 8px 36px;
+        flex-basis: 30%;
+        -webkit-flex-basis: 30%;
+        @media (max-width: $tablet-small){
+           margin: 8px 8px 32px 8px;
+        }
+    }
+}
+
+.column-content-contaier{
+    padding: 16px;
+}
+
+.setting-title{
+    margin-bottom: 32px;
+}
+
+.prefix{
+  text-transform: uppercase;  
+}
+.customer-logo #current-logo{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    border: 1px solid $kob-gray-eighty;
+    margin: 0 auto 16px auto; 
+}
+
+.new-logo{
+    display: flex;
+    display: -webkit-flex;
+    .customer-logo{
+        margin-right: 16px;
+    }
+    .upload-button-wrapper{
+        .button-blue{
+            margin: 10px 0 0 0;
+        }
+    }
+    @media (max-width: $tablet-small){
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+}
+#upload-profile-picture{
+    input[type="file"]{
+        background: $kob-white;
+        padding: 4px 8px;
+    }
+}
+
+.column-content-container{
+    .form-control span{
+        display: block;
+        margin-bottom: 8px;
+        color: $kob-gray;
+    }
+    @media (min-width: #{$tablet-small + 1px}){
+        .form-control{
+            max-width: 260px;
+        }
+    }
+    .info{
+        p{
+            color: $kob-gray;
+            line-height: 21px;
+        }
+        span{
+            color: $kob-blue;
+            font-weight: bold;
+        }
+    }
+}
+
+
+// Address Page
+.settings-container{
+
+    .address-item-wrapper .address-item{
+        position:relative;
+        height:380px;
+        border: 1px solid $kob-gray-eighty;
+        flex-basis: calc(25% - 16px);
+        -webkit-flex-basis: calc(25% - 16px);
+        @media (max-width: $tablet-small){
+            flex-basis: calc(50% - 8px);
+            -webkit-flex-basis: calc(50% - 8px);
+        }
+        @media (max-width: $mobile-large){
+            flex-basis: 100%;
+            -webkit-flex-basis: 100%;
+            margin: 8px 0 !important;
+        }
+        @media (max-width: $mobile-small){
+            height:auto;
+        }
+        p{
+            padding-left: 0;
+            width:256px;
+            word-wrap:break-word;
+            
+            @media (max-width: $mobile-small){
+                width:206px;
+            }
+
+        }
+        .address-item-actions{
+            padding-left: 0;
+            .button-left
+            {
+                position:absolute;
+                left:16px;
+                bottom:16px;
+                @media (max-width: $mobile-small){
+                    position:unset;
+                }
+            }
+            .button-right
+            {
+                position:absolute;
+                right:16px;
+                bottom:16px;
+                @media (max-width: $mobile-small){
+                    position:unset;
+                }
+            }
+        }
+    }
+    .address-item:nth-child(even) {
+        margin: 8px;
+    }
+    .address-item:nth-child(odd) {
+        margin: 8px;
+    }
+
+}
+
+.settings-container-budget > .widget {
+    margin-right: 0px;
+}

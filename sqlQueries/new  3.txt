@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_employee` ADD  `phone` VARCHAR( 15 ) NULL AFTER  `email` ;

@@ -1,0 +1,2 @@
+ALTER TABLE  `kob_group` ADD  `verification_document` VARCHAR( 300 ) NULL DEFAULT NULL AFTER  `price_display_method` ,
+ADD  `verification_status` INT( 11 ) NOT NULL DEFAULT  '0' AFTER  `verification_document` ;

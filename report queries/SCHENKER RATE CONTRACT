@@ -1,0 +1,16 @@
+SCHENKER RATE CONTRACT
+
+SELECT DISTINCT(kp.id_product), kod.product_name, kp.reference, ksp.price,ksp.`to`, ktrg.name,zone.city FROM `kob_orders` LEFT JOIN kob_customer kc on kc.id_customer=kob_orders.id_customer
+LEFT JOIN kob_order_detail kod ON kob_orders.id_order=kod.id_order
+LEFT JOIN kob_product kp on kp.id_product=kod.product_id
+LEFT JOIN kob_specific_price ksp on ksp.id_product=kod.product_id
+LEFT JOIN kob_tax_rules_group ktrg on ktrg.id_tax_rules_group = kp.id_tax_rules_group
+LEFT JOIN (
+    SELECT map.product_id, GROUP_CONCAT(fc.city_name) as city FROM kob_fulfillment_centre fc
+    LEFT JOIN kob_product_zone_mapping map on map.zone_id=fc.id_fulfillment_centre
+    GROUP by map.product_id
+) as zone ON zone.product_id = kp.id_product
+WHERE kob_orders.date_add > '2018-10-01 00:00:00'
+AND kc.id_default_group=498
+GROUP BY kp.id_product  
+

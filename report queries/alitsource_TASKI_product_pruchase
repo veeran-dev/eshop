@@ -1,0 +1,23 @@
+SELECT kc.email, kod.product_name, kod.product_quantity, kod.unit_price_tax_excl,koh.id_order_state,ko.date_add, koh.date_add, koh.id_order_state FROM `kob_order_detail` kod
+LEFT JOIN kob_orders ko on ko.id_order=kod.id_order
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+WHERE kod.product_name LIKE '%taski%'
+AND koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order)
+AND koh.id_order_state NOT IN(6,7)
+AND kc.id_default_group = 80
+AND ko.date_add > '2018-06-01 00:00:00'
+
+
+
+SELECT kc.email, ko.id_order, koi.number, ka.alias, ka.city, kod.product_name, kod.product_quantity, kod.unit_price_tax_excl,kosl.name ,koha.date_add 
+FROM kob_orders ko
+LEFT JOIN kob_order_invoice koi on koi.id_order=ko.id_order
+LEFT JOIN `kob_order_detail` kod on ko.id_order=kod.id_order
+LEFT JOIN kob_address ka ON ka.id_address=ko.id_address_delivery
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+LEFT JOIN kob_order_history koh ON koh.id_order=ko.id_order
+LEFT JOIN kob_order_history koha ON koha.id_order=koh.id_order AND koha.id_order_state=22
+LEFT JOIN kob_order_state_lang kosl on kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+WHERE koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order)
+AND kc.id_default_group = 80

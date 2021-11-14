@@ -1,0 +1,249 @@
+footer{
+	padding: 96px 0;
+    background: #393848;
+    color: #fff;
+    @media (max-width: 480px){
+        padding: 48px 0;
+    }
+	a{
+		text-decoration: none;
+        color: #fff;
+        &:hover{
+            opacity: 0.66;
+        }
+	}
+}
+.footer-pattern{
+    text-align: center;
+    margin-bottom: 48px;
+    img{
+        display: block;
+        max-width: 592px;
+        width: 100%;
+        margin: 0 auto 32px auto;
+        transition: opacity 300ms ease-in;
+        opacity: 0.5;
+    }
+    p{
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &:hover{
+        img{
+            opacity: 1;
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-links-container{
+    margin-bottom: 32px;
+    & > .footer-link-column:first-child{
+        flex-basis: 50%;
+        img{
+            max-width: 64px;
+            margin-right: 8px;
+        }
+    }
+    .footer-link-column{
+        flex-basis: 25%;
+    }
+}
+
+
+.social-links{
+	text-align: left;
+	margin-top: 16px;
+	a{
+		width: 24px;
+        height: 24px;
+        border-radius: 12px;
+		display:inline-block;
+		margin-right: 8px;
+		border: none;
+		background: #fff url(../../img/sprite.png) center no-repeat;
+		&:hover{
+			text-decoration: none;
+			border-color: #ff5500;
+		}
+    }
+    .facebook{
+        background-position: 0 -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: 0px -216px;
+            opacity: 1;
+        }
+    }
+    .twitter{
+        background-position: -24px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -24px -216px;
+            opacity: 1;
+        }
+    }
+    .google-plus{
+        background-position: -48px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -48px -216px;
+            opacity: 1;
+        }
+    }
+    .linkedin{
+        background-position: -72px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -72px -216px;
+            opacity: 1;
+        }
+    }
+    .rss{
+        background-position: -96px -192px;
+        opacity: 0.8;
+        &:hover{
+            background-position: -96px -216px;
+            opacity: 1;
+        }
+    }
+}
+
+// Define vars we'll be using
+// $brand-success: #5cb85c;
+$brand-success: #31d3ae;
+$loader-size: 5em;
+$check-height: $loader-size/2;
+$check-width: $check-height/2;
+$check-left: ($loader-size/6 + $loader-size/12);
+$check-thickness: 3px;
+$check-color: #fff;
+
+.checkmark-container{
+    padding: 16px;
+    background: #fff;
+    min-width: 320px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 32px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px #ccc;
+}
+.checkmark-wrapper {
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    z-index: 6000;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.circle-loader {
+  margin-bottom: $loader-size/2;
+  border: 4px solid #db3235;
+  border-left-color: $check-color;
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: $loader-size;
+  height: $loader-size;
+}
+
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: $brand-success;
+  transition: border 500ms ease-out;
+}
+
+.checkmark {
+  display: none;
+  
+  &.draw:after {
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+    animation-name: checkmark;
+    transform: scaleX(-1) rotate(135deg);
+  }
+  
+  &:after {
+    opacity: 1;
+    height: $check-height;
+    width: $check-width;
+    transform-origin: left top;
+    border-right: $check-thickness solid $brand-success;
+    border-top: $check-thickness solid $brand-success;
+    content: '';
+    left: $check-left;
+    top: $check-height;
+    position: absolute;
+  }
+}
+
+.content{
+    color: #383838;
+    background: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+    h3{
+        color: #31d3ae;
+        font-size: 48px;
+    }
+    h5{
+        font-size: 18px;
+    }
+}
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: $check-width;
+    opacity: 1;
+  }
+  40% {
+    height: $check-height;
+    width: $check-width;
+    opacity: 1;
+  }
+  100% {
+    height: $check-height;
+    width: $check-width;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,6 @@
+ALTER TABLE `kob_product_shop`   
+  ADD COLUMN `mrp` DECIMAL(20,6) DEFAULT 0.000000  NOT NULL AFTER `minimal_quantity`,
+  CHANGE `unit_price_ratio` `unit_price_ratio` DECIMAL(20,6) UNSIGNED DEFAULT 0.000000  NOT NULL;
+ALTER TABLE `kob_product`   
+  ADD COLUMN `mrp` DECIMAL(20,6) DEFAULT 0.000000  NOT NULL AFTER `minimal_quantity`,
+  CHANGE `unit_price_ratio` `unit_price_ratio` DECIMAL(20,6) UNSIGNED DEFAULT 0.000000  NOT NULL;

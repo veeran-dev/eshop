@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` CHANGE  `verified`  `verification_document` VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;

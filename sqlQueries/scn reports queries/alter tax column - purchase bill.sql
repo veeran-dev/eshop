@@ -1,0 +1,1 @@
+ALTER TABLE `kob_vendor_purchase_bill` CHANGE `tax` `tax` INT(10) NOT NULL;

@@ -1,0 +1,2 @@
+ALTER TABLE `kob_fulfillment_centre`   
+  ADD COLUMN `gst` VARCHAR(24) NOT NULL AFTER `cst_date`;

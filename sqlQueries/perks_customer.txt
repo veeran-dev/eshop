@@ -1,0 +1,6 @@
+CREATE TABLE `kob_perks_customer` (
+  `id_perks_customer` int(2) NOT NULL AUTO_INCREMENT,
+  `id_group` int(2) NOT NULL,
+  `id_customer` int(2) NOT NULL,
+  PRIMARY KEY (`id_perks_customer`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

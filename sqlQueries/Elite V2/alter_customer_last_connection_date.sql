@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` ADD  `last_connection_date` DATE NOT NULL DEFAULT  '0000-00-00' AFTER  `id_proof` ;

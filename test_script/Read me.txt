@@ -1,0 +1,18 @@
+Selenium script for automating Kobster's Elite portal
+======================================================
+- This is a simple script which automates the Ordering process.
+- Products would be ordered through PURCHASE LIST followed by another order through QUICK BUY.
+
+THINGS REQUIRED
+---------------
+- Eclipse IDE
+- Selenium WebDriver
+- Firefox/Chrome Browser
+
+
+NOTE: 
+=====
+To get basic understanding on how to Automate a Website through Selenium WebDriver visit the following links
+
+- http://www.guru99.com/introduction-to-selenium.html
+- http://www.toolsqa.com/selenium-webdriver/webelement-commands/

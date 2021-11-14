@@ -1,0 +1,5 @@
+First Name: {firstname}<br/><br/>
+last name : {lastname}<br/><br/>
+order Id : {id_order}<br/><br/>
+
+{shop_url} 	

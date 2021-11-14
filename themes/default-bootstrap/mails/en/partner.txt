@@ -1,0 +1,15 @@
+Hi {firstname} {lastname},
+
+You have received a message from a partner via your shop: {shop_name}
+
+Details of message:
+
+E-mail address: {email}
+
+Partner details:
+
+{message}
+
+
+
+{shop_url} 

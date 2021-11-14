@@ -1,0 +1,1972 @@
+*ERROR* 	2020/01/18 - 18:12:32: =======QUERY============
+*ERROR* 	2020/01/18 - 18:12:33: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/01/20 - 12:45:34: =======QUERY============
+*ERROR* 	2020/01/20 - 12:45:34: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/17 - 18:37:32: =======QUERY============
+*ERROR* 	2020/02/17 - 18:37:32: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/17 - 19:07:43: =======QUERY============
+*ERROR* 	2020/02/17 - 19:07:43: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/02/17 - 19:07:55: =======QUERY============
+*ERROR* 	2020/02/17 - 19:07:55: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/17 - 19:07:57: =======QUERY============
+*ERROR* 	2020/02/17 - 19:07:57: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/17 - 19:11:36: =======QUERY============
+*ERROR* 	2020/02/17 - 19:11:36: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/17 - 19:11:37: =======QUERY============
+*ERROR* 	2020/02/17 - 19:11:37: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,osl.color as status_color,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/19 - 23:34:46: =======QUERY============
+*ERROR* 	2020/02/19 - 23:34:47: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/19 - 23:48:40: =======QUERY============
+*ERROR* 	2020/02/19 - 23:48:40: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/19 - 23:48:42: =======QUERY============
+*ERROR* 	2020/02/19 - 23:48:42: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/19 - 23:59:54: =======QUERY============
+*ERROR* 	2020/02/19 - 23:59:54: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/20 - 12:59:16: =======QUERY============
+*ERROR* 	2020/02/20 - 12:59:16: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/20 - 16:45:06: =======QUERY============
+*ERROR* 	2020/02/20 - 16:45:06: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/02/20 - 23:37:24: =======QUERY============
+*ERROR* 	2020/02/20 - 23:37:24: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/20 - 23:37:30: =======QUERY============
+*ERROR* 	2020/02/20 - 23:37:30: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/20 - 23:38:11: =======QUERY============
+*ERROR* 	2020/02/20 - 23:38:11: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/02/20 - 23:38:17: =======QUERY============
+*ERROR* 	2020/02/20 - 23:38:17: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/02/21 - 13:13:02: =======QUERY============
+*ERROR* 	2020/02/21 - 13:13:02: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/21 - 18:20:33: =======QUERY============
+*ERROR* 	2020/02/21 - 18:20:33: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/24 - 11:18:46: =======QUERY============
+*ERROR* 	2020/02/24 - 11:18:47: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/25 - 11:32:53: =======QUERY============
+*ERROR* 	2020/02/25 - 11:32:53: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/26 - 15:44:10: =======QUERY============
+*ERROR* 	2020/02/26 - 15:44:10: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/27 - 01:37:58: =======QUERY============
+*ERROR* 	2020/02/27 - 01:37:58: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/27 - 15:45:54: =======QUERY============
+*ERROR* 	2020/02/27 - 15:45:54: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/27 - 20:32:04: =======QUERY============
+*ERROR* 	2020/02/27 - 20:32:04: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/27 - 20:32:12: =======QUERY============
+*ERROR* 	2020/02/27 - 20:32:12: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/27 - 20:36:36: =======QUERY============
+*ERROR* 	2020/02/27 - 20:36:36: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/28 - 16:42:10: =======QUERY============
+*ERROR* 	2020/02/28 - 16:42:10: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/29 - 14:11:57: =======QUERY============
+*ERROR* 	2020/02/29 - 14:11:58: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/02/29 - 23:25:37: =======QUERY============
+*ERROR* 	2020/02/29 - 23:25:37: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/01 - 10:43:04: =======QUERY============
+*ERROR* 	2020/03/01 - 10:43:04: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/02 - 11:08:18: =======QUERY============
+*ERROR* 	2020/03/02 - 11:08:18: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/02 - 11:47:14: =======QUERY============
+*ERROR* 	2020/03/02 - 11:47:14: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/02 - 11:47:24: =======QUERY============
+*ERROR* 	2020/03/02 - 11:47:24: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/03/02 - 12:23:49: =======QUERY============
+*ERROR* 	2020/03/02 - 12:23:49: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/02 - 16:39:50: =======QUERY============
+*ERROR* 	2020/03/02 - 16:39:50: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/03 - 01:28:55: =======QUERY============
+*ERROR* 	2020/03/03 - 01:28:55: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/03 - 11:14:21: =======QUERY============
+*ERROR* 	2020/03/03 - 11:14:21: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/03 - 11:16:11: =======QUERY============
+*ERROR* 	2020/03/03 - 11:16:11: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/03/03 - 11:17:03: =======QUERY============
+*ERROR* 	2020/03/03 - 11:17:03: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/03/03 - 11:27:36: =======QUERY============
+*ERROR* 	2020/03/03 - 11:27:36: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/03 - 11:52:40: =======QUERY============
+*ERROR* 	2020/03/03 - 11:52:40: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/03/03 - 12:37:35: =======QUERY============
+*ERROR* 	2020/03/03 - 12:37:35: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/03/03 - 12:38:08: =======QUERY============
+*ERROR* 	2020/03/03 - 12:38:08: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 25
+*ERROR* 	2020/03/03 - 12:38:16: =======QUERY============
+*ERROR* 	2020/03/03 - 12:38:16: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 25, 25
+*ERROR* 	2020/03/03 - 13:31:07: =======QUERY============
+*ERROR* 	2020/03/03 - 13:31:08: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/03 - 15:24:12: =======QUERY============
+*ERROR* 	2020/03/03 - 15:24:12: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/03/03 - 15:59:45: =======QUERY============
+*ERROR* 	2020/03/03 - 15:59:46: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 100
+*ERROR* 	2020/03/03 - 15:59:52: =======QUERY============
+*ERROR* 	2020/03/03 - 15:59:52: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 100, 100
+*ERROR* 	2020/03/03 - 16:00:05: =======QUERY============
+*ERROR* 	2020/03/03 - 16:00:05: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 200, 100
+*ERROR* 	2020/03/04 - 00:54:49: =======QUERY============
+*ERROR* 	2020/03/04 - 00:54:49: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/04 - 10:50:57: =======QUERY============
+*ERROR* 	2020/03/04 - 10:50:57: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/05 - 02:13:41: =======QUERY============
+*ERROR* 	2020/03/05 - 02:13:41: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/05 - 02:13:48: =======QUERY============
+*ERROR* 	2020/03/05 - 02:13:48: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 10
+*ERROR* 	2020/03/05 - 23:56:46: =======QUERY============
+*ERROR* 	2020/03/05 - 23:56:47: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/06 - 11:52:20: =======QUERY============
+*ERROR* 	2020/03/06 - 11:52:20: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/10 - 12:25:44: =======QUERY============
+*ERROR* 	2020/03/10 - 12:25:45: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/10 - 23:18:05: =======QUERY============
+*ERROR* 	2020/03/10 - 23:18:05: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/10 - 23:18:42: =======QUERY============
+*ERROR* 	2020/03/10 - 23:18:42: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/11 - 12:45:43: =======QUERY============
+*ERROR* 	2020/03/11 - 12:45:44: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/11 - 13:09:15: =======QUERY============
+*ERROR* 	2020/03/11 - 13:09:15: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/11 - 13:31:03: =======QUERY============
+*ERROR* 	2020/03/11 - 13:31:04: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/11 - 15:44:57: =======QUERY============
+*ERROR* 	2020/03/11 - 15:44:57: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/11 - 15:47:54: =======QUERY============
+*ERROR* 	2020/03/11 - 15:47:55: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/11 - 15:54:24: =======QUERY============
+*ERROR* 	2020/03/11 - 15:54:24: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/03/15 - 11:47:13: =======QUERY============
+*ERROR* 	2020/03/15 - 11:47:13: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4
+*ERROR* 	2020/08/28 - 16:22:53: =======QUERY============
+*ERROR* 	2020/08/28 - 16:22:53: SELECT SQL_CALC_FOUND_ROWS DISTINCT(o.`id_order`) AS total, o.`id_order`, 
+						(select MAX(date_add) from kob_order_history where id_order=o.id_order and id_order_state=22) as date_add, 
+						DATE_FORMAT(o.`estimated_delivery_time`, "%M %d, %Y") AS `estimated_time`, 
+						os.`id_order_state`, osl.`name` AS order_state,
+						(CASE WHEN q.quantity is NULL THEN FORMAT(total.tot,2) ELSE FORMAT(IFNULL(total.tot,0)+o.total_paid,2) END) as total_paid, es.`id_supplier`, IFNULL(es.`company`, "Not Available") AS supplier_name, es.email,o.`payment` AS payment FROM `kob_orders` o
+			    LEFT JOIN `kob_order_history` oh ON(oh.`id_order` = o.`id_order`)
+			    LEFT JOIN `kob_order_state` os ON (os.`id_order_state` = oh.`id_order_state`)
+			    LEFT JOIN `kob_order_state_lang` osl ON (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` = 1)
+			    LEFT JOIN `kob_elite_supplier_orders` osp ON o.`id_order` = osp.`id_order`
+			    LEFT JOIN `kob_elite_supplier` as es ON (osp.`id_supplier` = es.`id_supplier`)
+			    LEFT JOIN(
+                        SELECT id_order, COUNT(product_quantity) as quantity FROM kob_order_detail GROUP BY id_order
+                    ) as q on q.id_order=o.id_order
+			    LEFT JOIN (
+                        SELECT ksd.root, SUM(ko.total_paid_tax_incl) as tot, SUM(ord.q) as quantity FROM kob_split_details ksd
+                        LEFT JOIN kob_orders ko ON ko.id_order=ksd.id_order
+                        LEFT JOIN(
+                            SELECT id_order, COUNT(product_quantity) as q FROM kob_order_detail 
+                            GROUP BY id_order) as ord ON ord.id_order=ko.id_order
+                        GROUP BY ksd.root
+                    ) as total on total.root = o.id_order
+			    WHERE o.`id_customer` IN(9,48,50,49) 
+			    AND o.id_order NOT IN(select ksd.id_order from kob_split_details ksd
+								LEFT JOIN kob_orders ord on ord.id_order = ksd.id_order
+								where ord.`id_customer` IN(9,48,50,49))
+			    AND oh.`id_order_history` = (SELECT MAX(`id_order_history`) FROM `kob_order_history` moh 
+										 WHERE moh.`id_order` = o.`id_order` GROUP BY moh.`id_order`)
+			    ORDER BY o.`id_order` DESC LIMIT 0, 4

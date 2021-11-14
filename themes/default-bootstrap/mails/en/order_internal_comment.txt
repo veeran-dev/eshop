@@ -1,0 +1,10 @@
+Message from {shop_name}
+
+Hi all,
+
+You have received a new message regarding order #{id_order}:
+{message}
+
+{company}
+
+{shop_url} 

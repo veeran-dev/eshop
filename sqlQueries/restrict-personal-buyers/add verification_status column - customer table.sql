@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_customer` ADD  `verification_status` INT( 11 ) NOT NULL AFTER  `verified` ;

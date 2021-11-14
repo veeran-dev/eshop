@@ -1,0 +1,27 @@
+.regions-selection .select2-selection {
+	max-height: 34px;
+    overflow-y: scroll;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #999;
+}
+
+#payment_options img{
+	border-radius: 50%;
+	background: #dc2d3c;
+	height: 40px;
+	width: 40px;
+}
+
+#payment_options > div {
+	max-width: 120px;
+}

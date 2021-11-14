@@ -1,0 +1,11 @@
+{po_number}
+
+Purchase order expires on {validity_date}. Please utilize it before expires!
+
+Company Name: {company}
+PO Name: {po_number}
+PO Date: {po_date}
+Expires on: {validity_date}
+PO option: {budget_type}
+Available Budget: {available_budget}
+Total Budget: {total_budget}

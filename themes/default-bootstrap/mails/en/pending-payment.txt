@@ -1,0 +1,48 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Dear {firstname},
+		
+		
+		Greetings from Kobster.com!
+
+		This is just a friendly reminder that your payment for the order {order_name} is pending. If you have not already made the payment, please do so now.
+		Credit Days for this Order End-On :{credit_date}
+
+		
+		
+			Please find below the summary of your order: 
+		
+		 
+		
+			
+				Order No: {order_name}
+				Payment Mode: {payment}
+				Order placed on: {date}
+				Order Value: {payment_amount}
+			
+		
+		
+			Thank You for Shopping with Us!
+			Kobster.com Team
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

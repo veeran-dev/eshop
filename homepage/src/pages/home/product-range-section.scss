@@ -1,0 +1,19 @@
+.product-range-section{
+ .container{
+    .row{
+      @media(max-width: 768px){
+          flex-direction: column-reverse;
+          flex-wrap: nowrap;
+          .col-10{
+            width: 100%;
+          }
+          svg{
+                max-height: 100%;
+                max-width: 100%;
+                width: calc(100%);
+                height: calc(100%);
+          }
+      }
+    }
+  }
+}

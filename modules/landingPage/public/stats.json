@@ -1,0 +1,116 @@
+{
+  "assetsByChunkName": {
+    "path---home-product-range-section": [
+      "path---home-product-range-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-product-range-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---home-reports-section": [
+      "path---home-reports-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-reports-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-home-career-section-js": [
+      "component---src-pages-home-career-section-js-f01df769b57ddc623aea.js",
+      "component---src-pages-home-career-section-js-f01df769b57ddc623aea.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-48f90865858ed6a77958.js",
+      "component---src-pages-index-js-48f90865858ed6a77958.js.map"
+    ],
+    "component---src-pages-home-e-procurement-section-js": [
+      "component---src-pages-home-e-procurement-section-js-37e4dead76321fc94601.js",
+      "component---src-pages-home-e-procurement-section-js-37e4dead76321fc94601.js.map"
+    ],
+    "component---src-pages-home-report-section-js": [
+      "component---src-pages-home-report-section-js-3b2ad52a7b8c0092718d.js",
+      "component---src-pages-home-report-section-js-3b2ad52a7b8c0092718d.js.map"
+    ],
+    "component---src-pages-home-customer-service-section-js": [
+      "component---src-pages-home-customer-service-section-js-c189c6d3fc1a867a4ca7.js",
+      "component---src-pages-home-customer-service-section-js-c189c6d3fc1a867a4ca7.js.map"
+    ],
+    "path---home-notification": [
+      "path---home-notification-a0e39f21c11f6a62c5ab.js",
+      "path---home-notification-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---home-inspection-section": [
+      "path---home-inspection-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-inspection-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---home-e-procurement-section": [
+      "path---home-e-procurement-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-e-procurement-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-ab8f8b3cc70ad1858c5b.js",
+      "component---src-layouts-index-js-ab8f8b3cc70ad1858c5b.js.map"
+    ],
+    "component---src-pages-home-delivery-section-js": [
+      "component---src-pages-home-delivery-section-js-0e9926e1d0b31c357049.js",
+      "component---src-pages-home-delivery-section-js-0e9926e1d0b31c357049.js.map"
+    ],
+    "path---home-strategic-section": [
+      "path---home-strategic-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-strategic-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---home-delivery-section": [
+      "path---home-delivery-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-delivery-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-64b0fe9dbeeba94c8697.js",
+      "commons-64b0fe9dbeeba94c8697.js.map"
+    ],
+    "component---src-pages-home-strategic-section-js": [
+      "component---src-pages-home-strategic-section-js-d3356bedf6f5bc3e0730.js",
+      "component---src-pages-home-strategic-section-js-d3356bedf6f5bc3e0730.js.map"
+    ],
+    "component---src-pages-home-reports-section-js": [
+      "component---src-pages-home-reports-section-js-aff9eabc4b3d7d63a450.js",
+      "component---src-pages-home-reports-section-js-aff9eabc4b3d7d63a450.js.map"
+    ],
+    "app": [
+      "app-6ce3fd7cea05f65ed92b.js",
+      "app-6ce3fd7cea05f65ed92b.js.map"
+    ],
+    "path---home-career-section": [
+      "path---home-career-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-career-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---home-customer-service-section": [
+      "path---home-customer-service-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-customer-service-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-home-notification-js": [
+      "component---src-pages-home-notification-js-8e46d4431c0de84f3cc7.js",
+      "component---src-pages-home-notification-js-8e46d4431c0de84f3cc7.js.map"
+    ],
+    "component---src-pages-home-inspection-section-js": [
+      "component---src-pages-home-inspection-section-js-1023ad33bd51abeb3a47.js",
+      "component---src-pages-home-inspection-section-js-1023ad33bd51abeb3a47.js.map"
+    ],
+    "component---src-pages-home-intelligent-section-js": [
+      "component---src-pages-home-intelligent-section-js-dfdbbff98f2053e4538d.js",
+      "component---src-pages-home-intelligent-section-js-dfdbbff98f2053e4538d.js.map"
+    ],
+    "path---home-report-section": [
+      "path---home-report-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-report-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---home-intelligent-section": [
+      "path---home-intelligent-section-a0e39f21c11f6a62c5ab.js",
+      "path---home-intelligent-section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-home-product-range-section-js": [
+      "component---src-pages-home-product-range-section-js-c86ea57b17d617905e71.js",
+      "component---src-pages-home-product-range-section-js-c86ea57b17d617905e71.js.map"
+    ]
+  }
+}

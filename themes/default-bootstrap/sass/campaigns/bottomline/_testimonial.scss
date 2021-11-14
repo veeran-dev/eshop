@@ -1,0 +1,117 @@
+.testimonial-section{
+    padding: 96px 0;
+    background: #f7f7f7;
+    @media (max-width: 480px){
+        padding: 48px 0;
+    }
+    .section-title{
+        margin-bottom: 48px;
+    }
+}
+
+.section-mark{
+    &:before{
+        content: "\201C \0020 \201D";
+        font-size: 101px;
+        line-height: 100px;
+        color: #a29f9f;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        font-family: Georgia;
+    }
+}
+
+.testimonial-container{
+    display: flex;
+    -webkit-display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    .testimonial{
+        flex-basis: 20%;
+        -webkit-flex-basis: 20%;
+        @media (max-width: 768px){
+            flex-basis: 33%;
+        }
+        @media (max-width: 640px){
+            flex-basis: calc(50% - 8px);
+        }
+        @media (max-width: 420px){
+            flex-basis: 100%;
+        }
+    }
+}
+
+.testimonial{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        display: block;
+        height: 5px;
+        background: #7815ce;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 300ms ease-in;
+    }
+    &:hover{
+        &:before{
+            opacity: 1;
+        }
+    }
+    .wrapper{
+        padding: 24px;
+        margin-right: -1px;
+        border: 1px solid #ccc;
+        .testimonial-mark{
+            opacity: 0;
+            transition: opacity 300ms ease-in;
+            &:after{
+                content: "\201C";
+                font-size: 64px;
+                line-height: 64px;
+                color: #7815ce;
+                display: block;
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+                font-family: Georgia;
+            }
+        }
+        .testimonial-text{
+            color: #666;
+            text-align: center;
+            margin-bottom: 12px;
+            min-height: 160px;
+        }
+        .testimonial-author{
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            margin-bottom: 24px;
+        }
+        .testimonial-logo{
+            max-width: 130px;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            opacity: 0.33;
+            transition: opacity 300ms ease-in;
+        }
+        &:hover{
+            cursor: default;
+            z-index: 1;
+            background: #fff;
+            box-shadow: 0 32px 64px rgba(0,0,0,0.3), 0 -4px 36px rgba(0,0,0,0.22);
+            .testimonial-mark{
+                opacity: 1;
+            }
+            .testimonial-logo{
+                opacity: 1;
+            }
+        }
+    }
+}

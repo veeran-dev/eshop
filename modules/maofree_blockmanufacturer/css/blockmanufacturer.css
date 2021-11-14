@@ -1,0 +1,19 @@
+.manufacturerslide {
+	overflow: hidden;
+	padding-top: 2px;
+	text-align:left; margin-top:0px; height:335px!important;
+}
+.manufacturerslide ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.manufacturerslide ul li a img { float: left; }
+.manufacturerslide ul li div.manufacturerdesc { float: right; width: 50%; }
+.manufacturerslide ul li div.manufacturerdesc p { margin-top: 3px; }
+.manufacturerslide ul li div.manufacturerdesc p a{ text-decoration:none;}
+.manufacturerslide ul li div.manufacturerdesc p a:hover{color:#999;}
+.manufacturerslide ul li div.manufacturerdesc h5  a{ text-decoration:none; color:#c21e37;}
+.manufacturerslide ul li div.manufacturerdesc h5  a:hover{ color:#333;}
+.block.blockmanufacturer .block_content{ border:1px solid #e6e4e4; padding-top:0px!important; border-radius:2px;}

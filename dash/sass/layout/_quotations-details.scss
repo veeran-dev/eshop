@@ -1,0 +1,214 @@
+.quotation-detail-container{
+	background: $kob-white;
+    border-radius: 4px;
+    padding: 0 32px 32px 32px;
+    margin-bottom: 16px;
+}
+.quotation-product-container{
+	.quote_details_wrapper{
+		display: flex;
+		justify-content: center;
+		@media (max-width: #{$tablet-large - 32px}){
+			flex-wrap: wrap;
+		}
+		.quote_details_image_block{
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+			img{
+				width: 248px;
+			}
+		}
+		.quote_details_product_details{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 16px;
+			width: 100%;
+			.quote_details_product_name_wrapper{
+				margin-bottom: 16px;
+				.quote_details_product_name{
+					font-size: 16px;
+					margin-bottom: 8px;
+				}
+				.quote_ref{
+					display: flex;
+    				flex-direction: column;
+    				font-weight: bold;
+    				font-size: 16px;
+    				span{
+    					font-size: 14px;
+    					font-weight: bold;
+    					color: $kob-blue;
+    				}
+				}
+			}
+			.quote_details_block_bottom{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				.detail-block{
+					background: #f4f4f4;
+				    padding: 16px;
+				    border-radius: 4px;
+				    text-align: center;
+				    margin: 8px 8px 8px 0px;
+				    @media (max-width: #{$tablet-large - 32px}){
+						width: 96px;
+    					height: 110px;
+					}
+				    .label{
+				    	font-weight: bold;
+						color: $kob-gray;
+						margin-bottom: 8px;
+						@media (max-width: #{$tablet-large - 32px}){
+							font-size: 12px;
+						}
+				    }
+				    .detail{
+				    	font-size: 18px;
+    					font-weight: bold;
+    					@media (max-width: #{$tablet-large - 32px}){
+							font-size: 14px;
+						}
+				    }
+				}
+			}
+		}
+	}
+}
+
+.quotation-supplier-list{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+	table{
+		tr{
+			.action{
+				@media (max-width: #{$tablet-large - 32px}){
+			    	padding: 0px !important	;
+			    	button{
+			    		cursor: pointer;
+			    	}
+		    	}
+		    }
+			.supplier{
+				@media (max-width: #{$tablet-large - 32px}){
+			    	min-height: 120px;
+			    }
+				.sp-supplier-name{
+					min-height: 64px;
+					display: flex;
+					align-items: center;
+				    align-items: center;
+				    flex-wrap: wrap;
+				    @media (max-width: #{$tablet-large - 32px}){
+				    	justify-content: flex-end;
+				    }
+					span{
+						margin-right: 8px;
+					}
+					span:nth-child(1){
+						i{
+							@media (max-width: #{$tablet-large - 32px}){
+						    	display:none;
+						    }
+							font-size: 18px;
+							background: #f4f4f4;
+							border-radius: 50px;
+							padding: 8px;
+							font-weight: bold;
+						}
+					}
+					span:nth-child(2){
+						font-weight: bold;
+						font-size: 16px;
+						color: $kob-blue;
+					}
+					span:nth-child(3){
+					
+					}
+					span:nth-child(4){
+					
+					}
+				}
+			}
+			.action{
+				div{
+					p{
+						i{
+							color: $kob-white;
+						    background: $kob-blue;
+						    padding: 4px;
+						    border-radius: 40px;
+						    font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+	.supplier_mobile_wrapper{
+		padding: 16px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex: 1;
+		align-items: center;
+		border: 1px solid $kob-gray;
+		margin-bottom: 8px;
+		border-radius: 4px;
+		min-width: 240px;
+		max-width: 240px;
+		.supplier{
+			padding: 8px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			.sp-supplier-reference{
+				font-size: 24px;
+			    font-weight: bold;
+			    color: $kob-blue;
+			}
+		}
+		.action{
+			div{
+				p{
+					i{
+						color: $kob-white;
+					    background: $kob-blue;
+					    padding: 4px;
+					    border-radius: 40px;
+					    font-weight: bold;
+					}
+				}
+			}
+		}
+		.detail{
+			margin-bottom: 8px;
+			text-align: center;
+			p:nth-child(1){
+				color: $kob-gray;
+				font-size: 12px;
+			}
+			p:nth-child(2){
+				font-size: 16px;
+			}
+		}
+	}
+}
+.quotation-redirect{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    background: $kob-warning;
+    p{
+		font-size: 24px;
+		margin-bottom: 16px;
+		text-align: center;
+    }
+}

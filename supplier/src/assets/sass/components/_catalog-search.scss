@@ -1,0 +1,51 @@
+.catalog-search-container{
+    display: flex;
+    flex-direction: column;
+    .search-box{
+        text-align:center;
+        input{
+            min-height: 36px;
+            padding: 0 16px;
+            width: calc(100% - 32px);
+        }
+    }
+    .catalog-results{
+        table{
+            width: calc(100% - 32px);
+            margin: 0 auto;
+            tbody{
+                tr{
+                    color: $kob-black;
+                    border-bottom: 1px solid $kob-gray-background;
+                    td{
+                        img{
+                            width: 60px;
+                            height: 60px;
+                        }
+                        &.price div{
+                            &:nth-child(1){
+                                font-size: 14px;
+                            }
+                            &:nth-child(2){
+                                font-weight: bold;
+                                font-size: 24px;
+                            }
+                        }
+                        &.name-section{
+                            display: flex;
+                            flex-direction: column;
+                            .name{
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+                            .code{
+                                font-size: 16px;
+                                margin-top: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

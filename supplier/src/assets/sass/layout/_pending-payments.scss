@@ -1,0 +1,68 @@
+.pending-payments{
+
+	.table-filter{
+		.action-block{
+			.button{
+				font-size: 17px;
+			    line-height: 17px;
+			    width: 48px;
+			    border-color: #ccc;
+			    margin: 0;
+			}
+			@media (max-width: #{$tablet-small + 1px}){
+				margin-left:0px;
+				margin-right: 10px;
+				width: auto;
+			}
+		}
+		
+		.pagination-container{
+			select{
+				@media (max-width: #{$mobile-large + 1px}){
+					margin: 0px 10px 0px 0px;
+				}
+			}
+		}
+	}
+	table{
+		thead{
+			th{
+				.on{
+				  color: $kob-red;
+				}
+				.icon-filter{
+					cursor:pointer;
+					margin: 4px;
+				}
+			}
+		}
+		tbody{
+			tr{
+				td:last-child{
+					div{
+						overflow: inherit;
+					}
+					.split-button-dropdown{
+						width: auto;
+					}
+					button,.button{
+						margin: 0px;
+					}
+				}
+			}
+		}
+	}
+	.split-button{
+		float: right;
+		.split-button-dropdown	{
+			left: -34px;
+			li{
+				width: 150px;
+				a{
+					border:none;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.date-box{
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  min-height: 140px;
+  .title{
+    margin-bottom: 16px;
+  }
+  .date-section{
+    display: flex;
+    justify-content: space-between;
+    min-height: 140px;
+  }
+}

@@ -1,0 +1,2 @@
+ALTER TABLE `kob_orders`   
+  ADD COLUMN `credit_alert_date` DATETIME NOT NULL AFTER `credit_days`;

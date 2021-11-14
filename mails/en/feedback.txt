@@ -1,0 +1,15 @@
+Hi {firstname} {lastname},
+
+You have received a feedback for: {shop_name}
+
+Feedback:
+
+From: {name} <br /><br />
+
+Email: {email} <br /><br />
+
+Feedback: {message} <br /><br />
+
+
+
+{shop_url} 

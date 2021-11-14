@@ -1,0 +1,308 @@
+// Media Object
+.media-object{
+    display: flex;
+    display: -webkit-flex;
+}
+.media-figure{
+    margin-right: 15px;
+}
+.media-body{
+    flex: 1;
+    text-align: left;
+}
+
+// Product Grid
+.perks-product{
+    margin: 32px;
+    -webkit-flex-basis: calc(33% - 64px);
+    flex-basis: calc(33% - 64px);
+    @media (max-width: 768px){
+        -webkit-flex-basis: calc(50% - 32px);
+        flex-basis: calc(50% - 32px);
+    }
+    @media (max-width: 480px){
+        -webkit-flex-basis: 100%;
+        flex-basis: 100%;
+    }
+    .product-info{
+        overflow: hidden;
+    }
+}
+.product-visual{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+    .single-image{
+        max-width: 240px;
+        margin: 0 auto;
+        display: block;
+    }
+    &.hover-offers{
+        overflow: initial;
+    }
+    &.hover{
+        .other-site-prices{
+            visibility: visible;
+            bottom: 0;
+            z-index: 3;
+        }
+    }
+    &.hover-emi{
+        .emi-details{
+            visibility: visible;
+            bottom: 0;
+            z-index: 4;
+            //pointer-events: none;
+        }
+    }
+    &.hover-offers{
+        .offer-details{
+            visibility: visible;
+            top: 0;
+            z-index: 5;
+            height: 420px;
+            overflow-y: auto;
+        }
+    }
+}
+.product-carousel{
+    max-width: 240px;
+    margin: 0 auto;
+    z-index: 1;
+    .owl-theme .owl-dots{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+.product-color{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    height: 16px;
+    margin-bottom: 12px;
+    .palette{
+        margin: 0 4px;
+        label{
+            height: 16px;
+            width: 16px;
+            border: 2px solid #ccc;
+            display: block;
+            margin: 0;
+            cursor: pointer;
+            &:hover{
+                border-color: #666;
+            }
+        }
+        input[type="radio"]{
+            display: none;
+            &:checked + label{
+                border-color: #000;
+            }
+        }
+    }
+}
+
+// Name
+.product-title{
+    height: 68px;
+    text-align: left;
+    margin-right: 12px;
+    margin-bottom: 18px;
+    a{
+        font-size: 19px;
+        line-height: 24px;
+        max-height: 48px;
+        color: #666;
+        display: block;
+        overflow: hidden;
+        &:hover{
+            color: $perks-red;
+        }
+    }
+}
+.delivery-info{
+    line-height: 16px;
+    font-size: 16px;
+    color: #999;
+    display: block;
+    margin-top: 4px;
+}
+.product-value{
+    margin-bottom: 18px;
+}
+.product-price{
+    color: #333;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+.offer-percentage{
+    color: #ff5722;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+// Product Labels
+.product-labels{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: #fff;
+    z-index: 2;
+    span{
+        padding: 4px 8px;
+        text-align: center;
+        border-radius: 2px;
+        margin-bottom: 8px;
+        display: block;
+        opacity: 0.75;
+        cursor: pointer;
+        &.emi{
+            background: $perks-blue;
+        }
+        &.offers{
+            background: #ff5722;
+        }
+        &:hover{
+            opacity: 1
+        }
+    }
+}
+
+// Price seal
+.price-seal{
+    position: relative;
+    //background-color: #fef468;
+    //color: #B57300;
+    display: inline-block;
+    margin-left: 4px;
+    //padding-left: 4px;
+    //padding-right: 13px;
+    //height: 18px;
+    //line-height: 18px;
+    font-size: 12px;
+    overflow: hidden;
+    vertical-align: middle;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -110%;
+        left: -210%;
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+        transform: rotate(30deg);
+        background: linear-gradient( to right, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.5) 77%, rgba(255, 255, 255, 0.7) 92%, rgba(255, 255, 255, 0.01) 100% );
+    }
+    // &:after{
+    //     border-color: transparent #fff;
+    //     right: 0px;
+    //     border-width: 9px 9px 9px 0;
+    //     content: '';
+    //     position: absolute;
+    //     height: 0;
+    //     width: 0;
+    //     border-style: solid;
+    // }
+
+    // Styles overridden for removing seal
+    padding: 0 4px;
+    height: 20px;
+    color: #4bc315 ;
+    border-radius: 2px;
+    border: 1px solid #4bc315 ;
+    opacity: 0.8;
+}
+.product-value:hover{
+    cursor: pointer;
+    .price-seal{
+        background: #4bc315;
+        color: #fff;
+        opacity: 1;
+    }
+    .price-seal:before{
+        opacity: 1;
+        top: -30%;
+        left: 30%;
+        transition-property: left, top, opacity;
+        transition-duration: 0.7s, 0.7s, 0.15s;
+        transition-timing-function: ease;
+    }
+}
+// Buttons
+.product-actions{
+    display: flex;
+    display: -webkit-flex;
+    button{
+        font-size: 16px;
+        font-weight: bold;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background: #222;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        min-width: 180px;
+        &:hover{
+            background: #323232;
+            color: #fff;
+            border-color: transparent;
+        }
+        &.disabled{
+            pointer-events: none;
+        }
+        @media (max-width: 480px){
+            width: 100%;
+        }
+    }
+}
+
+// Modal
+.perks-modal{
+    .modal-header{
+        text-align: center;
+        border: 0;
+        h2{
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+    .modal-body{
+        text-align: left !important;
+        padding-left:  32px;
+        padding-right: 32px;
+    }
+}
+.product-exclusive{
+    text-align: center;
+    margin-top: 24px;
+    img{
+        margin-bottom: 16px;
+        opacity: 0.6;
+    }
+}
+// Buttons
+.perks-primary-button,
+.perks-secondary-button{
+    width: 164px;
+    height: 36px;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+    border: 1px solid $perks-green;
+}
+.perks-primary-button{
+    background: $perks-green;
+    border-color: transparent;
+    color: #fff;    
+}
+.perks-secondary-button{
+    background: #fff;
+    color: $perks-green;    
+}

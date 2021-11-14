@@ -1,0 +1,2 @@
+ALTER TABLE `kob_delivery_details`   
+  ADD COLUMN `id_product_attribute` INT(11) NULL AFTER `id_product`;

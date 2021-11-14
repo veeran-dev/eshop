@@ -1,0 +1,27 @@
+<?php /* Smarty version Smarty-3.1.19, created on 2020-02-23 21:30:15
+         compiled from "dash\dash-index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:309215e52a18f7d1fe2-66231087%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'fb49adbf46708e648de6e357aaca0017f667ae7c' => 
+    array (
+      0 => 'dash\\dash-index.tpl',
+      1 => 1478085809,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '309215e52a18f7d1fe2-66231087',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5e52a18f7f64d7_03383287',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5e52a18f7f64d7_03383287')) {function content_5e52a18f7f64d7_03383287($_smarty_tpl) {?><div id="preloader">
+	<img src="dash/img/preloader.gif" alt="loading">
+	<span>Your shop is loading, please wait...</span>
+</div>
+<div id="app">
+</div><?php }} ?>

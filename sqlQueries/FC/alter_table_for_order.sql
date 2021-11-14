@@ -1,0 +1,1 @@
+ALTER TABLE `kob_orders`  ADD id_fc INT(11);

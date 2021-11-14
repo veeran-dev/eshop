@@ -1,0 +1,1 @@
+ALTER TABLE `kob_customer_escalation` ADD PRIMARY KEY(`id_group`);

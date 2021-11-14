@@ -1,0 +1,9 @@
+Product Price Added for : {product_name}
+ 
+Product Name: {product_name} <br /><br />
+Product Reference: {product_reference} <br /><br />
+Product old Specific Price: {old_price} <br /><br />
+Product New Specific Price: {new_price} <br /><br />
+
+ 
+{shop_url} 	

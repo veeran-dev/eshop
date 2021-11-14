@@ -1,0 +1,2388 @@
+*ERROR* 	2017/07/04 - 16:12:16: cancelTest
+*ERROR* 	2017/07/04 - 16:12:16: 348
+*ERROR* 	2017/07/04 - 16:12:16: 348
+*ERROR* 	2017/07/04 - 16:12:16: cgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:12:16: sgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:12:16: igst 1=>0
+*ERROR* 	2017/07/04 - 16:12:16: gst 1=>0
+*ERROR* 	2017/07/04 - 16:13:20: cancelTest
+*ERROR* 	2017/07/04 - 16:13:20: 348
+*ERROR* 	2017/07/04 - 16:13:20: 348
+*ERROR* 	2017/07/04 - 16:13:20: cgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:13:20: sgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:13:20: igst 1=>0
+*ERROR* 	2017/07/04 - 16:13:20: gst 2=>1
+*ERROR* 	2017/07/04 - 16:17:05: cancelTest
+*ERROR* 	2017/07/04 - 16:17:05: 348
+*ERROR* 	2017/07/04 - 16:17:05: 348
+*ERROR* 	2017/07/04 - 16:17:05: cgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:17:05: sgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:17:05: igst 1=>0
+*ERROR* 	2017/07/04 - 16:17:05: gst 2=>1
+*ERROR* 	2017/07/04 - 16:17:59: cancelTest
+*ERROR* 	2017/07/04 - 16:17:59: 348
+*ERROR* 	2017/07/04 - 16:17:59: 348
+*ERROR* 	2017/07/04 - 16:17:59: cgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:17:59: sgst 1=>31.145
+*ERROR* 	2017/07/04 - 16:17:59: igst 1=>0
+*ERROR* 	2017/07/04 - 16:17:59: gst 2=>1
+*ERROR* 	2017/07/04 - 16:18:42: cancelTest
+*ERROR* 	2017/07/04 - 16:18:42: 312
+*ERROR* 	2017/07/04 - 16:18:42: 348
+*ERROR* 	2017/07/04 - 16:18:42: cgst 1=>0
+*ERROR* 	2017/07/04 - 16:18:42: sgst 1=>0
+*ERROR* 	2017/07/04 - 16:18:42: igst 1=>62.29
+*ERROR* 	2017/07/04 - 16:18:42: gst 2=>1
+*ERROR* 	2017/07/04 - 17:14:21: cancelTest
+*ERROR* 	2017/07/04 - 17:14:21: 312
+*ERROR* 	2017/07/04 - 17:14:21: 348
+*ERROR* 	2017/07/04 - 17:14:21: cgst 1=>0
+*ERROR* 	2017/07/04 - 17:14:21: sgst 1=>0
+*ERROR* 	2017/07/04 - 17:14:21: igst 1=>62.29
+*ERROR* 	2017/07/04 - 17:14:21: gst 2=>1
+*ERROR* 	2017/07/04 - 17:14:21: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:14:22: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:34:35: cancelTest
+*ERROR* 	2017/07/04 - 17:34:35: 348
+*ERROR* 	2017/07/04 - 17:34:35: 348
+*ERROR* 	2017/07/04 - 17:34:35: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:34:35: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:34:35: igst 1=>0
+*ERROR* 	2017/07/04 - 17:34:35: gst 1=>0
+*ERROR* 	2017/07/04 - 17:34:35: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:34:36: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:41:02: cancelTest
+*ERROR* 	2017/07/04 - 17:41:02: 348
+*ERROR* 	2017/07/04 - 17:41:02: 348
+*ERROR* 	2017/07/04 - 17:41:02: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:41:02: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:41:02: igst 1=>0
+*ERROR* 	2017/07/04 - 17:41:02: gst 1=>0
+*ERROR* 	2017/07/04 - 17:41:02: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:41:02: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:42:38: cancelTest
+*ERROR* 	2017/07/04 - 17:42:38: 348
+*ERROR* 	2017/07/04 - 17:42:38: 348
+*ERROR* 	2017/07/04 - 17:42:38: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:42:38: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:42:38: igst 1=>0
+*ERROR* 	2017/07/04 - 17:42:38: gst 1=>0
+*ERROR* 	2017/07/04 - 17:42:38: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:42:38: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:51:00: cancelTest
+*ERROR* 	2017/07/04 - 17:51:00: 348
+*ERROR* 	2017/07/04 - 17:51:00: 348
+*ERROR* 	2017/07/04 - 17:51:00: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:51:00: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:51:00: igst 1=>0
+*ERROR* 	2017/07/04 - 17:51:00: gst 1=>0
+*ERROR* 	2017/07/04 - 17:51:00: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:51:00: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:51:38: cancelTest
+*ERROR* 	2017/07/04 - 17:51:38: 348
+*ERROR* 	2017/07/04 - 17:51:38: 348
+*ERROR* 	2017/07/04 - 17:51:38: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:51:38: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 17:51:38: igst 1=>0
+*ERROR* 	2017/07/04 - 17:51:38: gst 1=>0
+*ERROR* 	2017/07/04 - 17:51:38: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 17:51:39: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:11:40: cancelTest
+*ERROR* 	2017/07/04 - 18:11:40: 348
+*ERROR* 	2017/07/04 - 18:11:40: 348
+*ERROR* 	2017/07/04 - 18:11:40: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:11:40: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:11:40: igst 1=>0
+*ERROR* 	2017/07/04 - 18:11:40: gst 1=>0
+*ERROR* 	2017/07/04 - 18:11:40: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:11:41: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:12:19: cancelTest
+*ERROR* 	2017/07/04 - 18:12:19: 348
+*ERROR* 	2017/07/04 - 18:12:19: 348
+*ERROR* 	2017/07/04 - 18:12:19: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:12:19: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:12:19: igst 1=>0
+*ERROR* 	2017/07/04 - 18:12:19: gst 1=>0
+*ERROR* 	2017/07/04 - 18:12:19: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:12:19: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:13:18: cancelTest
+*ERROR* 	2017/07/04 - 18:13:18: 348
+*ERROR* 	2017/07/04 - 18:13:18: 348
+*ERROR* 	2017/07/04 - 18:13:18: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:13:18: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:13:18: igst 1=>0
+*ERROR* 	2017/07/04 - 18:13:18: gst 1=>0
+*ERROR* 	2017/07/04 - 18:13:18: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:13:19: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:14:08: cancelTest
+*ERROR* 	2017/07/04 - 18:14:08: 348
+*ERROR* 	2017/07/04 - 18:14:08: 348
+*ERROR* 	2017/07/04 - 18:14:08: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:14:08: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:14:08: igst 1=>0
+*ERROR* 	2017/07/04 - 18:14:08: gst 1=>0
+*ERROR* 	2017/07/04 - 18:14:08: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:14:08: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:16:10: cancelTest
+*ERROR* 	2017/07/04 - 18:16:10: 348
+*ERROR* 	2017/07/04 - 18:16:10: 348
+*ERROR* 	2017/07/04 - 18:16:10: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:16:10: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:16:10: igst 1=>0
+*ERROR* 	2017/07/04 - 18:16:10: gst 1=>0
+*ERROR* 	2017/07/04 - 18:16:10: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:16:10: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:20:25: cancelTest
+*ERROR* 	2017/07/04 - 18:20:25: 348
+*ERROR* 	2017/07/04 - 18:20:25: 348
+*ERROR* 	2017/07/04 - 18:20:25: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:20:25: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:20:25: igst 1=>0
+*ERROR* 	2017/07/04 - 18:20:25: gst 1=>0
+*ERROR* 	2017/07/04 - 18:20:25: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:20:25: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:23:22: cancelTest
+*ERROR* 	2017/07/04 - 18:23:22: 348
+*ERROR* 	2017/07/04 - 18:23:22: 348
+*ERROR* 	2017/07/04 - 18:23:22: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:23:22: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:23:22: igst 1=>0
+*ERROR* 	2017/07/04 - 18:23:22: gst 1=>0
+*ERROR* 	2017/07/04 - 18:23:22: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:25:05: cancelTest
+*ERROR* 	2017/07/04 - 18:25:05: 348
+*ERROR* 	2017/07/04 - 18:25:05: 348
+*ERROR* 	2017/07/04 - 18:25:05: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:25:05: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:25:05: igst 1=>0
+*ERROR* 	2017/07/04 - 18:25:05: gst 1=>0
+*ERROR* 	2017/07/04 - 18:25:05: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:25:50: cancelTest
+*ERROR* 	2017/07/04 - 18:25:50: 348
+*ERROR* 	2017/07/04 - 18:25:50: 348
+*ERROR* 	2017/07/04 - 18:25:50: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:25:50: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:25:50: igst 1=>0
+*ERROR* 	2017/07/04 - 18:25:50: gst 1=>0
+*ERROR* 	2017/07/04 - 18:25:50: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:26:20: cancelTest
+*ERROR* 	2017/07/04 - 18:26:20: 348
+*ERROR* 	2017/07/04 - 18:26:20: 348
+*ERROR* 	2017/07/04 - 18:26:20: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:26:20: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:26:20: igst 1=>0
+*ERROR* 	2017/07/04 - 18:26:20: gst 1=>0
+*ERROR* 	2017/07/04 - 18:26:20: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:26:47: cancelTest
+*ERROR* 	2017/07/04 - 18:26:47: 348
+*ERROR* 	2017/07/04 - 18:26:47: 348
+*ERROR* 	2017/07/04 - 18:26:47: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:26:47: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:26:47: igst 1=>0
+*ERROR* 	2017/07/04 - 18:26:47: gst 1=>0
+*ERROR* 	2017/07/04 - 18:26:47: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:27:02: cancelTest
+*ERROR* 	2017/07/04 - 18:27:02: 348
+*ERROR* 	2017/07/04 - 18:27:02: 348
+*ERROR* 	2017/07/04 - 18:27:02: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:27:02: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:27:02: igst 1=>0
+*ERROR* 	2017/07/04 - 18:27:02: gst 1=>0
+*ERROR* 	2017/07/04 - 18:27:02: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:27:03: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:27:26: cancelTest
+*ERROR* 	2017/07/04 - 18:27:26: 348
+*ERROR* 	2017/07/04 - 18:27:26: 348
+*ERROR* 	2017/07/04 - 18:27:26: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:27:26: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:27:26: igst 1=>0
+*ERROR* 	2017/07/04 - 18:27:26: gst 1=>0
+*ERROR* 	2017/07/04 - 18:27:26: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:27:27: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:27:48: cancelTest
+*ERROR* 	2017/07/04 - 18:27:48: 348
+*ERROR* 	2017/07/04 - 18:27:48: 348
+*ERROR* 	2017/07/04 - 18:27:48: cgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:27:48: sgst 1=>409.1
+*ERROR* 	2017/07/04 - 18:27:48: igst 1=>0
+*ERROR* 	2017/07/04 - 18:27:48: gst 1=>0
+*ERROR* 	2017/07/04 - 18:27:48: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/04 - 18:27:48: Array
+(
+    [product_tax] => Array
+        (
+            [10.000] => Array
+                (
+                    [total_price_tax_excl] => 3600
+                    [total_amount] => 441
+                    [id_tax] => 3
+                    [rate] => 10.000
+                    [total_tax_excl] => 3600
+                )
+
+            [14.500] => Array
+                (
+                    [total_price_tax_excl] => 3160
+                    [total_amount] => 539.2
+                    [id_tax] => 2
+                    [rate] => 14.500
+                    [total_tax_excl] => 3160
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:36:58: cancelTest
+*ERROR* 	2017/07/10 - 16:36:58: 348
+*ERROR* 	2017/07/10 - 16:36:58: 348
+*ERROR* 	2017/07/10 - 16:36:58: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:36:58: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:36:58: igst 1=>0
+*ERROR* 	2017/07/10 - 16:36:58: gst 1=>0
+*ERROR* 	2017/07/10 - 16:36:58: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:36:59: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:37:06: cancelTest
+*ERROR* 	2017/07/10 - 16:37:06: 348
+*ERROR* 	2017/07/10 - 16:37:06: 348
+*ERROR* 	2017/07/10 - 16:37:06: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:37:06: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:37:06: igst 1=>0
+*ERROR* 	2017/07/10 - 16:37:06: gst 1=>0
+*ERROR* 	2017/07/10 - 16:37:06: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:37:07: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:38:57: cancelTest
+*ERROR* 	2017/07/10 - 16:38:57: 348
+*ERROR* 	2017/07/10 - 16:38:57: 348
+*ERROR* 	2017/07/10 - 16:38:57: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:38:57: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:38:57: igst 1=>0
+*ERROR* 	2017/07/10 - 16:38:57: gst 1=>0
+*ERROR* 	2017/07/10 - 16:38:57: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:38:58: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:39:37: cancelTest
+*ERROR* 	2017/07/10 - 16:39:37: 348
+*ERROR* 	2017/07/10 - 16:39:37: 348
+*ERROR* 	2017/07/10 - 16:39:37: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:39:37: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:39:37: igst 1=>0
+*ERROR* 	2017/07/10 - 16:39:37: gst 1=>0
+*ERROR* 	2017/07/10 - 16:39:37: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:39:38: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:40:32: cancelTest
+*ERROR* 	2017/07/10 - 16:40:32: 348
+*ERROR* 	2017/07/10 - 16:40:32: 348
+*ERROR* 	2017/07/10 - 16:40:32: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:40:32: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:40:32: igst 1=>0
+*ERROR* 	2017/07/10 - 16:40:32: gst 2=>1
+*ERROR* 	2017/07/10 - 16:40:32: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:40:32: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:40:56: cancelTest
+*ERROR* 	2017/07/10 - 16:40:56: 348
+*ERROR* 	2017/07/10 - 16:40:56: 348
+*ERROR* 	2017/07/10 - 16:40:56: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:40:56: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:40:56: igst 1=>0
+*ERROR* 	2017/07/10 - 16:40:56: gst 2=>1
+*ERROR* 	2017/07/10 - 16:40:56: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:40:56: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:43:07: cancelTest
+*ERROR* 	2017/07/10 - 16:43:07: 348
+*ERROR* 	2017/07/10 - 16:43:07: 348
+*ERROR* 	2017/07/10 - 16:43:07: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:43:07: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:43:07: igst 1=>0
+*ERROR* 	2017/07/10 - 16:43:07: gst 2=>1
+*ERROR* 	2017/07/10 - 16:43:07: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:43:07: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:43:09: cancelTest
+*ERROR* 	2017/07/10 - 16:43:09: 348
+*ERROR* 	2017/07/10 - 16:43:09: 348
+*ERROR* 	2017/07/10 - 16:43:09: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:43:09: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:43:09: igst 1=>0
+*ERROR* 	2017/07/10 - 16:43:09: gst 2=>1
+*ERROR* 	2017/07/10 - 16:43:09: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:43:10: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:43:33: cancelTest
+*ERROR* 	2017/07/10 - 16:43:33: 348
+*ERROR* 	2017/07/10 - 16:43:33: 348
+*ERROR* 	2017/07/10 - 16:43:33: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:43:33: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:43:33: igst 1=>0
+*ERROR* 	2017/07/10 - 16:43:33: gst 2=>1
+*ERROR* 	2017/07/10 - 16:43:33: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:43:33: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:45:39: cancelTest
+*ERROR* 	2017/07/10 - 16:45:39: 348
+*ERROR* 	2017/07/10 - 16:45:39: 348
+*ERROR* 	2017/07/10 - 16:45:39: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:45:39: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:45:39: igst 1=>0
+*ERROR* 	2017/07/10 - 16:45:39: gst 2=>1
+*ERROR* 	2017/07/10 - 16:45:39: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:45:40: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:48:19: cancelTest
+*ERROR* 	2017/07/10 - 16:48:19: 348
+*ERROR* 	2017/07/10 - 16:48:19: 348
+*ERROR* 	2017/07/10 - 16:48:19: cgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:48:19: sgst 1=>31.145
+*ERROR* 	2017/07/10 - 16:48:19: igst 1=>0
+*ERROR* 	2017/07/10 - 16:48:19: gst 2=>1
+*ERROR* 	2017/07/10 - 16:48:19: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:48:19: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:55:36: cancelTest
+*ERROR* 	2017/07/10 - 16:55:36: 348
+*ERROR* 	2017/07/10 - 16:55:36: 348
+*ERROR* 	2017/07/10 - 16:55:36: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:55:36: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:55:36: igst 1=>0
+*ERROR* 	2017/07/10 - 16:55:36: gst 2=>1
+*ERROR* 	2017/07/10 - 16:55:36: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:55:37: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:57:50: cancelTest
+*ERROR* 	2017/07/10 - 16:57:50: 348
+*ERROR* 	2017/07/10 - 16:57:50: 348
+*ERROR* 	2017/07/10 - 16:57:50: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:57:50: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:57:50: igst 1=>0
+*ERROR* 	2017/07/10 - 16:57:50: gst 2=>1
+*ERROR* 	2017/07/10 - 16:57:50: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:57:50: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:58:50: cancelTest
+*ERROR* 	2017/07/10 - 16:58:50: 348
+*ERROR* 	2017/07/10 - 16:58:50: 348
+*ERROR* 	2017/07/10 - 16:58:50: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:58:50: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:58:50: igst 1=>0
+*ERROR* 	2017/07/10 - 16:58:50: gst 2=>1
+*ERROR* 	2017/07/10 - 16:58:50: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:58:51: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:59:49: cancelTest
+*ERROR* 	2017/07/10 - 16:59:49: 348
+*ERROR* 	2017/07/10 - 16:59:49: 348
+*ERROR* 	2017/07/10 - 16:59:49: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:59:49: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 16:59:49: igst 1=>0
+*ERROR* 	2017/07/10 - 16:59:49: gst 2=>1
+*ERROR* 	2017/07/10 - 16:59:49: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 16:59:49: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:01:15: cancelTest
+*ERROR* 	2017/07/10 - 17:01:15: 348
+*ERROR* 	2017/07/10 - 17:01:15: 348
+*ERROR* 	2017/07/10 - 17:01:15: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:01:15: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:01:15: igst 1=>0
+*ERROR* 	2017/07/10 - 17:01:15: gst 2=>1
+*ERROR* 	2017/07/10 - 17:01:15: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:01:16: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:04:39: cancelTest
+*ERROR* 	2017/07/10 - 17:04:39: 348
+*ERROR* 	2017/07/10 - 17:04:39: 348
+*ERROR* 	2017/07/10 - 17:04:39: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:04:39: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:04:39: igst 1=>0
+*ERROR* 	2017/07/10 - 17:04:39: gst 2=>1
+*ERROR* 	2017/07/10 - 17:04:39: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:04:39: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:14:06: cancelTest
+*ERROR* 	2017/07/10 - 17:14:06: 348
+*ERROR* 	2017/07/10 - 17:14:06: 348
+*ERROR* 	2017/07/10 - 17:14:06: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:14:06: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:14:06: igst 1=>0
+*ERROR* 	2017/07/10 - 17:14:06: gst 2=>1
+*ERROR* 	2017/07/10 - 17:14:06: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:14:07: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:16:15: cancelTest
+*ERROR* 	2017/07/10 - 17:16:15: 348
+*ERROR* 	2017/07/10 - 17:16:15: 348
+*ERROR* 	2017/07/10 - 17:16:15: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:16:15: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:16:15: igst 1=>0
+*ERROR* 	2017/07/10 - 17:16:15: gst 2=>1
+*ERROR* 	2017/07/10 - 17:16:15: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:16:16: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:18:03: cancelTest
+*ERROR* 	2017/07/10 - 17:18:03: 348
+*ERROR* 	2017/07/10 - 17:18:03: 348
+*ERROR* 	2017/07/10 - 17:18:03: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:18:03: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:18:03: igst 1=>0
+*ERROR* 	2017/07/10 - 17:18:03: gst 2=>1
+*ERROR* 	2017/07/10 - 17:18:03: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:18:03: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:21:23: cancelTest
+*ERROR* 	2017/07/10 - 17:21:23: 348
+*ERROR* 	2017/07/10 - 17:21:23: 348
+*ERROR* 	2017/07/10 - 17:21:23: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:21:23: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:21:23: igst 1=>0
+*ERROR* 	2017/07/10 - 17:21:23: gst 2=>1
+*ERROR* 	2017/07/10 - 17:21:23: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:21:24: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:23:41: cancelTest
+*ERROR* 	2017/07/10 - 17:23:41: 348
+*ERROR* 	2017/07/10 - 17:23:41: 348
+*ERROR* 	2017/07/10 - 17:23:41: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:23:41: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:23:41: igst 1=>0
+*ERROR* 	2017/07/10 - 17:23:41: gst 2=>1
+*ERROR* 	2017/07/10 - 17:23:41: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:23:42: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:24:03: cancelTest
+*ERROR* 	2017/07/10 - 17:24:03: 312
+*ERROR* 	2017/07/10 - 17:24:03: 348
+*ERROR* 	2017/07/10 - 17:24:03: cgst 1=>0
+*ERROR* 	2017/07/10 - 17:24:03: sgst 1=>0
+*ERROR* 	2017/07/10 - 17:24:03: igst 1=>62.29
+*ERROR* 	2017/07/10 - 17:24:03: gst 2=>1
+*ERROR* 	2017/07/10 - 17:24:03: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:24:04: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:24:32: cancelTest
+*ERROR* 	2017/07/10 - 17:24:32: 348
+*ERROR* 	2017/07/10 - 17:24:32: 348
+*ERROR* 	2017/07/10 - 17:24:32: cgst 1=>13824.865
+*ERROR* 	2017/07/10 - 17:24:32: sgst 1=>13824.865
+*ERROR* 	2017/07/10 - 17:24:32: igst 1=>0
+*ERROR* 	2017/07/10 - 17:24:32: gst 1=>0
+*ERROR* 	2017/07/10 - 17:24:32: 
+*ERROR* 	2017/07/10 - 17:24:32: 
+*ERROR* 	2017/07/10 - 17:43:48: cancelTest
+*ERROR* 	2017/07/10 - 17:43:48: 348
+*ERROR* 	2017/07/10 - 17:43:48: 348
+*ERROR* 	2017/07/10 - 17:43:48: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:43:48: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 17:43:48: igst 1=>0
+*ERROR* 	2017/07/10 - 17:43:48: gst 2=>1
+*ERROR* 	2017/07/10 - 17:43:48: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 17:43:49: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 18:22:03: cancelTest
+*ERROR* 	2017/07/10 - 18:22:03: 348
+*ERROR* 	2017/07/10 - 18:22:03: 348
+*ERROR* 	2017/07/10 - 18:22:03: cgst 1=>64777.145
+*ERROR* 	2017/07/10 - 18:22:03: sgst 1=>64777.145
+*ERROR* 	2017/07/10 - 18:22:03: igst 1=>0
+*ERROR* 	2017/07/10 - 18:22:03: gst 2=>1
+*ERROR* 	2017/07/10 - 18:22:03: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/10 - 18:22:04: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/11 - 16:49:46: cancelTest
+*ERROR* 	2017/07/11 - 16:49:46: 312
+*ERROR* 	2017/07/11 - 16:49:46: 348
+*ERROR* 	2017/07/11 - 16:49:46: cgst 1=>0
+*ERROR* 	2017/07/11 - 16:49:46: sgst 1=>0
+*ERROR* 	2017/07/11 - 16:49:46: igst 1=>62.29
+*ERROR* 	2017/07/11 - 16:49:46: gst 2=>1
+*ERROR* 	2017/07/11 - 16:49:46: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/11 - 16:49:48: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/11 - 16:49:51: cancelTest
+*ERROR* 	2017/07/11 - 16:49:51: 312
+*ERROR* 	2017/07/11 - 16:49:51: 348
+*ERROR* 	2017/07/11 - 16:49:51: cgst 1=>0
+*ERROR* 	2017/07/11 - 16:49:51: sgst 1=>0
+*ERROR* 	2017/07/11 - 16:49:51: igst 1=>62.29
+*ERROR* 	2017/07/11 - 16:49:51: gst 2=>1
+*ERROR* 	2017/07/11 - 16:49:51: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/11 - 16:49:52: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:43:11: cancelTest
+*ERROR* 	2017/07/14 - 13:43:11: 312
+*ERROR* 	2017/07/14 - 13:43:11: 348
+*ERROR* 	2017/07/14 - 13:43:11: cgst 1=>0
+*ERROR* 	2017/07/14 - 13:43:11: sgst 1=>0
+*ERROR* 	2017/07/14 - 13:43:11: igst 1=>62.29
+*ERROR* 	2017/07/14 - 13:43:11: gst 2=>1
+*ERROR* 	2017/07/14 - 13:43:11: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:43:12: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:43:55: cancelTest
+*ERROR* 	2017/07/14 - 13:43:55: 312
+*ERROR* 	2017/07/14 - 13:43:55: 348
+*ERROR* 	2017/07/14 - 13:43:55: cgst 1=>0
+*ERROR* 	2017/07/14 - 13:43:55: sgst 1=>0
+*ERROR* 	2017/07/14 - 13:43:55: igst 1=>62.29
+*ERROR* 	2017/07/14 - 13:43:55: gst 2=>1
+*ERROR* 	2017/07/14 - 13:43:55: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:43:56: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:44:49: cancelTest
+*ERROR* 	2017/07/14 - 13:44:49: 312
+*ERROR* 	2017/07/14 - 13:44:49: 348
+*ERROR* 	2017/07/14 - 13:44:49: cgst 1=>0
+*ERROR* 	2017/07/14 - 13:44:49: sgst 1=>0
+*ERROR* 	2017/07/14 - 13:44:49: igst 1=>62.29
+*ERROR* 	2017/07/14 - 13:44:49: gst 2=>1
+*ERROR* 	2017/07/14 - 13:44:49: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:44:50: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:45:36: cancelTest
+*ERROR* 	2017/07/14 - 13:45:36: 312
+*ERROR* 	2017/07/14 - 13:45:36: 348
+*ERROR* 	2017/07/14 - 13:45:36: cgst 1=>0
+*ERROR* 	2017/07/14 - 13:45:36: sgst 1=>0
+*ERROR* 	2017/07/14 - 13:45:36: igst 1=>62.29
+*ERROR* 	2017/07/14 - 13:45:36: gst 1=>0
+*ERROR* 	2017/07/14 - 13:45:36: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/14 - 13:45:37: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 1245.82
+                    [total_amount] => 62.29
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 1245.82
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/18 - 02:01:41: cancelTest
+*ERROR* 	2017/07/18 - 02:01:41: 325
+*ERROR* 	2017/07/18 - 02:01:41: 314
+*ERROR* 	2017/07/18 - 02:01:41: cgst 1=>0
+*ERROR* 	2017/07/18 - 02:01:41: sgst 1=>0
+*ERROR* 	2017/07/18 - 02:01:41: igst 1=>0.5
+*ERROR* 	2017/07/18 - 02:01:41: gst 1=>0
+*ERROR* 	2017/07/18 - 02:01:41: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 10
+                    [total_amount] => 0.5
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 10
+                )
+
+        )
+
+)
+
+*ERROR* 	2017/07/18 - 02:01:42: Array
+(
+    [product_tax] => Array
+        (
+            [5.000] => Array
+                (
+                    [total_price_tax_excl] => 10
+                    [total_amount] => 0.5
+                    [id_tax] => 1
+                    [rate] => 5.000
+                    [total_tax_excl] => 10
+                )
+
+        )
+
+)
+

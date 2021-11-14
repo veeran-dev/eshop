@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_product_zone_mapping` ADD PRIMARY KEY ( product_id, zone_id );

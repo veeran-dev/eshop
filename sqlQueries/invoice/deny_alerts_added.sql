@@ -1,0 +1,1 @@
+ALTER TABLE `kob_order_invoice`  ADD `deny_alerts` TINYINT(1) NOT NULL  AFTER `note`;

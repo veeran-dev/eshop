@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<links>
+	<!--<link>
+		<img>slides/diwali-banner.png</img>
+		<url>corporate-buyers</url>
+	</link>-->
+	<link>
+		<img>slides/diary_2016.jpg</img>
+		<url>diary.php</url>
+	</link>
+	<link>
+		<img>slides/dlecta.png</img>
+		<url>207_d-lecta-cafe</url>
+	</link>
+	<link>
+		<img>slides/kobra.png</img>
+		<url>212_kobra</url>
+	</link>
+	<link>
+		<img>slides/alkosign.png</img>
+		<url>213_alkosign</url>
+	</link>
+	
+	<!--<link>
+		<img>slides/analytics.png</img>
+		<url>#</url>
+	</link>-->
+	
+</links>

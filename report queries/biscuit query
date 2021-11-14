@@ -1,0 +1,24 @@
+SELECT ko.id_order,kp.id_product, kod.product_name, kod.product_quantity,kod.unit_price_tax_excl, kosl.name, ko.date_add, kc.email FROM `kob_product_lang` kpl
+LEFT JOIN kob_product kp on kp.id_product=kpl.id_product
+LEFT JOIN kob_order_detail kod on kod.product_id=kp.id_product
+LEFT JOIN kob_orders ko on ko.id_order=kod.id_order
+LEFT JOIN kob_order_history koh on koh.id_order = ko.id_order
+LEFT JOIN kob_order_state_lang kosl on kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+WHERE koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history oh WHERE oh.id_order=ko.id_order)
+AND koh.id_order_state IN(22,19,23,46,50)
+AND kpl.name LIKE '%biscuit%'
+
+
+SELECT kfc.city_name, ko.id_order, kod.product_name, kod.product_quantity, kod.unit_price_tax_excl, kosl.name, ko.date_add, kc.email FROM kob_product kp
+LEFT JOIN kob_order_detail kod on kod.product_id=kp.id_product
+LEFT JOIN kob_orders ko on ko.id_order=kod.id_order
+LEFT JOIN kob_customer kc on kc.id_customer=ko.id_customer
+LEFT JOIN kob_order_history koh on koh.id_order=ko.id_order
+LEFT JOIN kob_order_state_lang kosl on kosl.id_order_state=koh.id_order_state AND kosl.id_lang=1
+LEFT JOIN kob_fulfillment_centre kfc on kfc.id_fulfillment_centre=ko.id_fc
+WHERE kp.id_manufacturer IN(177,216,630,245,183)
+AND koh.id_order_history IN(SELECT MAX(id_order_history) FROM kob_order_history WHERE id_order=ko.id_order)
+AND koh.id_order_state IN(22,19,23,46,50)
+AND ko.date_add > '2018-01-01 00:00:00'
+ORDER BY kod.product_id

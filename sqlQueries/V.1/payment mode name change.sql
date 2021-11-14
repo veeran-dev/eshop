@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_payment_option_master` CHANGE  `Payment Name`  `payment_name` VARCHAR( 100 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL ;

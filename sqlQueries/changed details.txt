@@ -1,0 +1,41 @@
+SQL Table changes made by srini
+=================================
+/*This is for add the total price column in table*/
+	"prefix"_wishlist_product-> Added one more column called "totalprice".This is use to store the price of the particular product in wishlist.
+/*End of add column*/
+
+/*This alter made for corporate customer in the customer table*/
+	"prefix"_Customer-> Added three more columns called "company","occupation","mobile". this is use to corporate customers to save their details.
+/*End of alteration table*/
+
+/*Added table for Rate Contract to Corporate customer*/
+	Created one table called ""prefix_ratecontract". this contain the product details and corporate customer details for the rate contract.
+/*End of create table*/
+
+/*This is creating tab in back-end under the customer tab called Customer Master List*/
+	Add one more tab name in "prefix"_tab-> AdminCustomerMasterList and position as 4
+	Add one more row in "prefix"_tab_lang=->Customer Master List
+	For Adding product code to corporate user-> "prefix"_access->add access for that particular tab->"id_tab" add->1, edit->1,delete->1
+/*End of creating Tab*/
+
+/*Vendor table*/
+	Created vendor table called "prefix"_vendor-> this contain all details of the vendors's address etc..
+/*End of vendor table*/
+
+/*vendor_product_mapping*/
+	Created mapping table called "prefix"_vendor_product_mapping-> this contains all details abt product mapped with vendors 
+/*End vendor_product_mapping*/
+/*alter rate contract table */
+	Added two more columns in the table 
+	/**/
+/*Added purchase list table for corporate customers */
+	Added new table 
+/**/
+/*Payment group mapping */
+Added new table for payment group
+/**/
+/*Payment options table*/
+	Added new payment option table
+/*Rate contract list mapping*/
+	added new table to map the purchase list and the customer 
+/**/

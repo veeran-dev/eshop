@@ -1,0 +1,40 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		 
+		
+			Dear {req_made_by},
+		
+		
+		Your Payment Request Has Been Rejected!
+		
+		
+			
+				
+					Your payment request was rejected by {req_completed_by}. Please contact {req_completed_by} for further queries.
+				
+				Request Id: {id_request}
+				Request Rejected by: {req_completed_by}
+				Order Id(s): {order_numbers}
+				Amount: {amount}
+				Vendor Name: {vendor_name}
+				Comments: {comments}
+			
+		
+		
+			
+				Thank you,
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

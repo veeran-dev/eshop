@@ -1,0 +1,5 @@
+{firstname}
+{cheque_name}
+{total_paid}
+{cheque_address}
+{order_name}

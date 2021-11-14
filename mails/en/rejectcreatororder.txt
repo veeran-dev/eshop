@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Message from {shop_name}</title>
+</head>
+<body>
+	<table style="font-family:Verdana,sans-serif; font-size:11px; color:#374953; width: 550px;">
+		<tr>
+			<td align="left">
+				<a href="{shop_url}" title="{shop_name}"><img alt="{shop_name}" src="https://www.kobster.com/images/mail_imgs/logo.jpg" style="border:none;" ></a>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">Hello <strong style="color:#dc5046;">{creater_name}</strong>,<br /><br /></td>
+		</tr>
+		<tr><td>
+		<p>Greetings from Kobster.com!</p>
+		<p><b>Your Order #{order_id} has been rejected.</b></p><br />
+		
+		</td></tr>
+		<tr>
+			<td>
+				<p>
+					Rejected By :- <b>{approver_name}</b><br/>
+					Order Id :- <b>{order_id}</b><br/>
+					Reason :-  {reason} <br/>
+					
+					Please <a href="https://www.kobster.com/dash-index.php">Click Here</a> to visit your Dashboard.
+				</p><br />
+			</td>
+		</tr>
+		 
+		<tr>
+			<td align="left">
+				For more details, please contact your relationship manager.
+			</td>
+		</tr>
+		<tr><td><br />
+			<p>Thank You for Shopping with Us!</p>
+			<p><b>Kobster.com Team</b></p><br />
+			</td></tr>
+		<tr>
+		<tr>
+			<td align="center" style="font-size:10px; border-top: 1px solid #D9DADE;">
+				Kobster.com – Your one stop shop for all your office needs | <a href="{shop_url}" style="color:#dc5046; font-weight:bold; text-decoration:none;">{shop_name}</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

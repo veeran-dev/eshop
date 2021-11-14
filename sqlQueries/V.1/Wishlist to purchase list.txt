@@ -1,0 +1,6 @@
+1.            Step 1: Create Purchase List
+a.            insert into `kob_purchase_list` (id_customer, list_name) SELECT id_customer, name FROM `kob_wishlist` where id_customer=2196
+2.            Step 2: Create Rate Contract
+a.            insert into kob_rate_contract(id_customer, id_product, id_product_attribute) SELECT 2196, id_product, id_product_attribute FROM `kob_wishlist_product` where id_wishlist in (SELECT id_wishlist FROM `kob_wishlist` where id_customer=2196)
+3.            Step 3: Add products to Pur List – Repeat for all Pur List
+a.            insert into kob_rate_contract_list_mapping(id_rate_contract, id_pur_list)  select id_rate_contract, 2 from kob_rate_contract where id_customer=2196 and id_product in (SELECT id_product FROM `kob_wishlist_product` where id_wishlist=16)

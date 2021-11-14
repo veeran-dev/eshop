@@ -1,0 +1,1 @@
+ALTER TABLE `kob_product_history` ADD UNIQUE(`id_product`, `id_product_state`, `id_employee`);

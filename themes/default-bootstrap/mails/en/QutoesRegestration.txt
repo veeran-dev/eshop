@@ -1,0 +1,15 @@
+Hi {firstname} {lastname},
+
+You have Price Quotation request for: {shop_name}
+
+Feedback:
+
+From: {name} 
+
+Email: {email} 
+
+phoneNumber : {phonenumber} 
+
+Quote Download link : {quotelink} 
+
+{shop_url} 

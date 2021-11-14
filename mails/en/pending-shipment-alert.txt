@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Delivery Alert from {shop_name}</title>
+</head>
+<body>
+	<table style="font-family:Verdana,sans-serif; font-size:11px; color:#374953; width: 550px;">
+		<tr>
+			<td align="left">
+				<a href="{shop_url}" title="{shop_name}"><img alt="{shop_name}" src="{shop_logo}" style="border:none;" ></a>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td align="left">
+			<p><b>Dear RMs / Supply Chain,</b></p><br />
+			<p>The order number <b> #{id_order} </b> placed by the customer <b>{customer_name}</b> is due for delivery in <b>{hours} hours.</b></p>
+			<p>However the same has not been shipped yet.</p>
+			<p>There could be a potential delay in the delivery.</p>
+			<p>The Supply Chain team is advised to either <b>expedite the delivery or update the delivery time</b> with proper reasons for the delay.</p>
+			<p>The RM is advised to <b>inform the customer</b> about this delay, if necessary.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>This is an automatic system generated alert. For any technical issues, please contact tech.team@kobster.com</p> 
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><i>This email is meant for internal circulation only. Not be forwarded outside of Kobster.com<i></p> 
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-size:10px; border-top: 1px solid #D9DADE;">
+				Kobster.com – Your one stop shop for all your office needs | <a href="{shop_url}" style="color:##dc5046; font-weight:bold; text-decoration:none;">{shop_name}</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

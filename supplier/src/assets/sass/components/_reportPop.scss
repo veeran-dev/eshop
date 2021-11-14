@@ -1,0 +1,23 @@
+#reportContent{
+	min-height: 420px;
+	padding: 24px;
+	.report-wrapper{
+	    max-width: 420px;
+    	margin: 0 auto;
+	}
+	.split-button{
+		margin-bottom: 16px;
+		ul{
+			width: auto;
+			li{
+				a{
+					width:100%;
+				}
+			}
+		}
+	}
+	h3, select, .date-range-picker-wrapper{
+		margin-bottom: 16px;
+	}
+
+}

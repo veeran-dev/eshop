@@ -1,0 +1,296 @@
+body.perks{
+    .columns-container{
+        padding-top: 69px;
+    }
+    .breadcrumb,
+    .support-container,
+    .footer-container{
+        display: none;
+    }
+}
+.perks-auth{
+    display: flex;
+    display: -webkit-flex;
+    //height: calc(100vh - 117px);
+    height: auto;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    @media (max-width: 980px){
+        height: auto;
+    }
+}
+.register-window,
+.register-window-alt{
+    display: none;
+    &.active{
+        display: flex;
+    }
+}
+@media (max-width: 980px) and (orientation:landscape) {
+    #perks.from-perks #header,
+    #authentication.from-perks #header{
+        position: initial;
+    }
+    #perks.from-perks .columns-container,
+    #authentication.from-perks .columns-container{
+        padding-top: 0;
+    }
+}
+.inline-loading{
+    display: none;
+    margin: 16px;
+}
+.no-config{
+    display: none;
+}
+.login-window{
+    padding: 32px;
+    @media (min-width: 767px){
+        min-width: 460px;
+    }
+    @media (max-width: 480px){
+        padding: 16px;
+    }
+    .alert{
+        margin-bottom: 16px;
+    }
+    input,
+    button{
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        height: 48px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        padding: 0 16px;
+        line-height: 48px;
+        width: 100%;
+        font-size: 16px;
+    }
+    input.error{
+        margin-bottom: 8px;
+    }
+    button{
+        background: $perks-blue;
+        color: #fff;
+        border-color: transparent;
+        cursor: pointer;
+    }
+    #gotoRegister{
+        border-color: $perks-blue;
+        background: transparent;
+        color: $perks-blue;
+    }
+    .forget-password{
+        margin: 16px 0;
+        line-height: 16px;
+        text-align: right;
+        a{
+            color: $perks-blue;
+        }
+    }
+}
+.form-title{
+    margin-bottom: 32px;
+    color: $perks-blue;
+    text-align: center;
+    font-weight: 600;
+    font-size: 21px;
+    @media (max-width: 767px){
+        font-size: 21px;
+    }
+}
+.login-window,
+.register-window,
+.register-window-alt,
+.forget-password-window{
+    #account-creation_form{
+        max-width: 450px;
+        margin: 0 auto;
+        .row{
+            margin: 0 0 16px 0 !important;
+            @media (max-width: 767px){
+                margin: 0 !important;
+            }
+        }
+        .required,
+        .footer-actions{
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+    .form-control{
+        padding: 0 16px !important;
+        margin: 0 !important;
+        height: 48px !important;
+        &:focus{
+            border-color: $perks-blue;
+        }
+        @media (max-width: 767px){
+            margin-bottom: 15px !important;
+        }
+    }
+}
+.footer-actions{
+    a,
+    button{
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 4px;
+        border: 1px solid $perks-blue; 
+        text-transform: uppercase;
+        color: $perks-blue;
+    }
+    button{
+        background: $perks-blue;
+        color: #fff;
+        height: 48px;
+        border-color: transparent;
+        @media (max-width: 767px){
+            margin-bottom: 15px !important;
+        }
+    }
+}
+
+#requestForDemo .register-window-alt{
+    display: block;
+    .row{
+        margin: 0 0 16px 0 !important;
+    }
+    .form-title{
+        margin-bottom: 16px;
+    }
+    .description{
+        margin-bottom: 24px;
+        padding: 0 16px;
+        text-align: center;
+    }
+}
+
+// Validation Styles
+.from-perks{
+    .error{
+        border-bottom: 1px solid #ccc;
+        background: transparent;
+        color: #666;
+    }
+    span.error{
+        margin-bottom: 0;
+        display: block;
+        border-bottom: 0;
+        color: #d54d4d;
+    }
+}
+
+#perks .right-links,
+#authentication .right-links{
+    & > .perks-top-button{
+        &:nth-child(1),
+        &:nth-child(2){
+            display: none;
+        }
+    }
+    .dropdown.black-dropdown{
+        display: none;
+        &.help{
+            display: block;
+            height: 87px;
+            @media (max-width: 768px){
+                height: 68px;
+                .dropdown-menu{
+                    top: 66px;
+                }
+            }
+            @media (max-width: 400px){
+                height: 52px;
+                .dropdown-menu{
+                    top: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+span.checkbox{
+    padding: 0 8px;
+}
+
+// Forget Password
+.forget-password-window{
+    .description{
+        margin-bottom: 16px;
+    }
+}
+
+// Validation Message
+.message{
+    padding: 8px 16px;
+    margin: 0 8px 16px 8px;
+    border-radius: 4px;
+    color: #666;
+    position: relative;
+    display: none;
+    &:before{
+        font-family: "FontAwesome";
+        padding-right: 16px;
+        font-weight: bold;
+    }
+    p{
+        padding-left: 32px;
+    }
+    a{
+        text-decoration: underline;
+        color: #d22f23;
+    }
+    @media (max-width: 480px){
+        margin: 16px 0;
+    }
+    &.default{
+        border: 1px solid #FF9800;
+        background: #f5efdf;
+    }
+    &.okay{
+        background: #e7f4e4;
+        border: 1px solid #c5eac5;
+        &:before{
+            content: "\f058";
+            color: #55c355;
+            font-size: 20px;
+            
+        }
+    }
+    &.error{
+        background: #f9dede;
+        border: 1px solid #FBC6C6;
+        &:before{
+            content: "\f071";
+            color: #e46c6c;
+            font-size: 18px;
+        }
+    }
+    &.info{
+        background: #f7f4de;
+        border: 1px solid #ece39d;
+        &:before{
+            content: "\f05a";
+            color: #dac611;
+            font-size: 20px;
+            position: absolute;
+            top: 12px;
+        }
+    }
+}
+
+// Header Margin Fix
+#authentication.from-perks #header .topbar,
+#perks.from-perks #header .topbar{
+    margin: 16px 0;
+}

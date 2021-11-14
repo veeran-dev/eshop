@@ -1,0 +1,1 @@
+ALTER TABLE `kob_vendor` ADD `id_fulfillment_centre` INT(5) NOT NULL AFTER `delivery`;

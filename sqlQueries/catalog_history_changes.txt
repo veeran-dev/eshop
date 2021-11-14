@@ -1,0 +1,24 @@
+CREATE TABLE `kob_catalog_history` (
+  `id_catalog_change` int(11) NOT NULL AUTO_INCREMENT,
+  `id_product` int(11) NOT NULL,
+  `type` int(11) NOT NULL,
+  `id_zone` int(11) NOT NULL,
+  `from` varchar(256) NOT NULL,
+  `to` varchar(256) NOT NULL,
+  `id_employee` int(11) NOT NULL,
+  `read` tinyint(4) NOT NULL,
+  `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_catalog_change`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1
+
+
+
+Create Table
+
+CREATE TABLE `kob_catalog_history_status` (
+  `id_catalog_history_status` int(11) NOT NULL AUTO_INCREMENT,
+  `id_group` int(11) NOT NULL,
+  `id_catalog_change` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  PRIMARY KEY (`id_catalog_history_status`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1

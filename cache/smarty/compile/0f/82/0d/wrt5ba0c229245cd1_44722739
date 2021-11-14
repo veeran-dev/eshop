@@ -1,0 +1,27 @@
+<?php /* Smarty version Smarty-3.1.19, created on 2018-09-18 14:45:21
+         compiled from "C:\wamp64\www\kobsterEshop\cortex\cortex.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:85195ba0c22904a141-32515301%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '0f820dee68b506cd1254a12fbe563496c97a4ddf' => 
+    array (
+      0 => 'C:\\wamp64\\www\\kobsterEshop\\cortex\\cortex.tpl',
+      1 => 1517921491,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '85195ba0c22904a141-32515301',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_5ba0c229218b87_91295905',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5ba0c229218b87_91295905')) {function content_5ba0c229218b87_91295905($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("./cortex-header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+<?php echo $_smarty_tpl->getSubTemplate ("./cortex-index.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
+<?php echo $_smarty_tpl->getSubTemplate ("./cortex-footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php }} ?>

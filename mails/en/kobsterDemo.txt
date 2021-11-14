@@ -1,0 +1,15 @@
+Hi {firstname} {lastname},
+
+You have Demonstration request for: {shop_name}
+
+Feedback:
+
+From: {name} <br /><br />
+
+Email: {email} <br /><br />
+
+phoneNumber : {phonenumber} <br /><br />
+
+
+
+{shop_url} 

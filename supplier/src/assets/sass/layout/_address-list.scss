@@ -1,0 +1,228 @@
+// Address Paage
+.address-list{
+	display: flex;
+	display: -webkit-flex;
+}
+
+.address-list-column{
+	flex-grow: 1;
+	flex-basis: 36%;
+	-webkit-flex-grow: 1;
+	-webkit-flex-basis: 36%;
+	&:nth-child(2){
+		padding-left: 16px;
+	}
+}
+.address-item-wrapper{
+	// margin-left: -8px;
+	// margin-right: -8px;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 16px;
+}
+.fetching-address{
+	padding: 0;
+	width: 80%;
+	height: 100px;
+	.fetching-content{
+		div{
+			height: 100px !important;
+		}
+	}
+	&.fetching-address-grid{
+		width: 100%;
+		.fetching-content{
+			display: flex !important;
+			display: -webkit-flex !important;
+			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			div{
+				margin: 8px;
+				width: 22%;
+				height: 200px !important;
+				@media (max-width: $mobile-large){
+					width: 44%;
+				}
+			}
+		}
+	}
+}
+.address-item-wrapper .empty-state-container{
+	flex-grow: 1;
+	height: calc(100vh - 328px);
+}
+// Empty state add address button
+.empty-state a.add-address-big{
+	background: $kob-blue;
+	color: $kob-white;
+	width: 240px;
+}
+.address-item{
+	background: $kob-white;
+	border-radius: 4px;
+	padding: 16px;
+	margin: 0 8px 16px 8px;
+	flex-basis: calc(50% - 8px);
+	-webkit-flex-basis: calc(50% - 8px);
+	//IE 10 Column Fix
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		flex-basis: calc(50% - 40px);
+		-webkit-flex-basis: calc(50% - 40px);
+	}
+	@media (min-width: $tablet-small){
+		&:nth-child(odd){
+			margin-left: 0;
+		}
+		&:nth-child(even){
+			margin-right: 0;
+		}
+	}
+	@media (min-width: #{$tablet-small + 1px}) and (max-width: #{$tablet-large - 32px}){
+		flex-basis: 100%;
+		-webkit-flex-basis: 100%;
+		&:nth-child(odd){
+			margin-left: 8px;
+		}
+		&:nth-child(even){
+			margin-right: 8px;
+		}
+	}
+	@media (max-width: $mobile-large){
+		flex-basis: 100%;
+		-webkit-flex-basis: 100%;
+	}
+	
+	.form-control{
+		margin-top: 0;
+		label{
+			text-transform: capitalize;
+			font-size: 16px;
+			color: $kob-gray-light;
+			font-weight: bold;
+		}
+		input[type=radio]+label{
+			&:before{
+				top: 0;
+				bottom: initial;
+			}
+		}
+		input[type=radio]:checked+label{
+			color: $kob-red;
+		}
+	}
+	p{
+		line-height: 18px;
+		padding-left: 24px;
+		text-transform: capitalize;
+	}
+	.address{
+		margin-bottom: 8px;
+	}
+	.gst-number{
+		margin: 8px 0;
+		color: #666;
+		line-height: 14px;
+		span{
+			padding-left: 24px;
+			position: relative;
+			display: block;
+			font-size: 12px;
+		}
+		span:before{
+			content: $icon-info;
+			font-family: 'kobicon';
+			margin-right: 8px;
+			color: $kob-orange;
+			font-size: 18px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	.sez{
+		line-height: 14px;
+		margin: 8px 0;
+		input[type=checkbox]+label{
+			color: #666;
+			pointer-events: none;
+			font-size: 12px;
+			&:before{
+				top: 0;
+				color: #666;
+			}
+			&:hover{
+				color: #666;
+			}
+		}
+		input[type="checkbox"]:checked+label{
+			&:before{
+				color: $kob-green;
+			}
+		}
+	}
+}
+
+.address-item-actions{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	margin-top: 16px;
+	padding-left: 24px;
+	button{
+		margin: 0;
+		line-height: 22px;
+		height: 22px;
+	}
+}
+
+//Edit Address Modal Styles
+.edit-address{
+	.double-column .form-control{
+		width: 100%;
+		select{
+			width: 100%;
+			-ms-background-position-x: 124px;
+		}
+	}
+	.double-column{
+		@media (max-width: $tablet-small){
+			flex-direction: column;
+		}	
+		.form-group:first-child{
+			margin-right: 8px
+		}
+		.form-group:nth-child(2){
+			margin-left: 8px
+		}
+	}
+}
+
+// Tablet Styles
+@media (max-width: $tablet-small){
+	.address-list{
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	.address-list-column:nth-child(2){
+		padding-left: 0;
+	}
+	.cart-column{
+		//margin:0 8px 16px 8px;
+	}
+}
+
+.address-header, .address-footer{
+	padding: 0 16px;
+}
+.address-footer{
+	margin-top: 16px;
+	text-align: right;
+}
+.sez{
+	color: green;
+}

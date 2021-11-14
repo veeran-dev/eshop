@@ -1,0 +1,7 @@
+ALTER TABLE `kobster_elite`.`kob_change_tax`   
+  ADD COLUMN `id_product` INT NOT NULL AFTER `id_employee`,
+  ADD COLUMN `vat_rate` INT NULL AFTER `id_product`;
+
+  
+  ALTER TABLE `kobster_elite`.`kob_change_tax`   
+  CHANGE `vat_rate` `vat_rate` FLOAT(11) NULL;

@@ -1,0 +1,25 @@
+.strategic-section{
+    background: #ffffff;
+    .container{
+        transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+        opacity: 0;
+        transform: scale(0.8);
+        transform-origin: 50% 50%;
+        &.fade-in{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    .section-title{
+        margin-bottom: 48px;
+        span{
+            background-color: #4fbd96;
+            color: #fff;
+        }
+    }
+}
+.hero-image{
+    margin: 0 auto;
+    max-width: 90%;
+    display: block;
+}

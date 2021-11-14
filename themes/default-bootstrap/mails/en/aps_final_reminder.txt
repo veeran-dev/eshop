@@ -1,0 +1,11 @@
+{firstname}
+{billed_date}
+{due_date}
+{data}
+{total_invoice_amount}
+{pending_invoice_amount}
+{rm_name}
+{rm_email}
+{rm_phone}
+{follow_up_user}
+{company_name}

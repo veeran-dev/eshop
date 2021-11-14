@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_quotation_detail` ADD  `id_detail` INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST ;

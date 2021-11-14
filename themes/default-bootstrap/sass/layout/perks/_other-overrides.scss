@@ -1,0 +1,457 @@
+// Cart page Overrides
+.from-perks{
+    .b2b-alert-container-all{
+        display: none;
+    }
+    &#order #columns .container,
+    &#order #columns .wrapper,
+    &#module-ebs-response #columns .container,
+    &#module-ebs-response #columns .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &#module-loyalty-default #center_column{
+        @media (min-width: 769px){
+            min-height: 589px;
+        }
+    }
+    &#order .cart_navigation .button-red{
+        background: $perks-green;
+        height: 48px;
+        padding: 0 48px;
+        line-height: 48px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &#order .cart_navigation .button-gray{
+        background: transparent;
+        border-color: #323232;
+        color: #323232;
+        float: right;
+        margin-right: 32px;
+        height: 48px;
+        padding: 0 48px;
+        line-height: 48px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    @media (min-width: 768px){
+        &#order #center_column.col-sm-9{
+            width: 66%;
+        }
+        &#order #right_column.col-sm-3{
+            width: 33%;
+        }
+    }
+    #loyalty{
+        display: none;
+    }
+    .cart_block_list .table tbody tr > th:nth-child(4){
+    	//display: none;
+    }
+    .cart_block_list .table tbody tr> td:nth-child(4){
+        //display: none
+    }
+    ul#order_step li.step_current{
+        border-bottom: 0 !important;
+        .step-title{
+            background: #323232;
+            color: #fff;
+            border: transparent;
+        }
+    }
+    ul#order_step{
+         .step-count{
+            display: none;
+        }
+        .step-title{
+            margin: 8px;
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 16px;
+        }
+        @media (max-width: 767px){
+            border-bottom: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            display: -webkit-flex;
+            -webkit-justify-content: space-around;
+        }
+        @media (max-width: 480px){
+            .step-title{
+                margin: 8px 0;
+                padding: 8px 4px;
+            }
+        }
+    }
+    .select-address-form{
+        padding: 0 15px;
+    }
+    &#order{
+        .columns-container{
+            padding-bottom: 0;
+        }
+        .button-black{
+            background: $perks-green;
+            font-size: 18px;
+            line-height: 48px;
+            height: 48px;
+            padding: 0 48px;
+            font-weight: 600;
+            text-transform: uppercase;
+            @media (max-width: 767px){
+                width: 100%;
+            }
+        }
+        a.button-black.secondary {
+            background: #fff !important;
+            margin-left: 16px;
+            font-weight: 400;
+            color: #999;
+            border: 1px solid #ccc;
+        }
+        .button-outline.small {
+            padding: 2px 8px;
+            font-size: 12px;
+            border-color: #999;
+        }
+        .support-container,
+        .footer-container{
+            display: none;
+        }
+        .payment-methods-wrapper{
+            float: right;
+            max-width: 152px;
+            display: inline-block;
+            @media (max-width: 767px){
+                float: initial;
+                margin: 0 16px;
+            }
+            .payment-methods{
+                width: 36px;
+                background: url('../img/sprite.png');
+            }
+            .visa{
+                background-position: 0 -288px;
+            }
+            .master-card {
+                background-position: -41px -288px;
+            }
+            .maestro {
+                background-position: -82px -288px;
+            }
+            .cod {
+                background-position: -205px -288px;
+            }
+        }
+
+        // Payment Page Styles
+        .payment-amount-info{
+            margin-bottom: 32px;
+        }
+        .margin70{
+            margin-top: 120px;
+            @media (max-width: 767px){
+                margin-top: 24px;
+            }
+        }
+        .payment_section ul li{
+            border: 1px solid $perks-green;
+            padding: 0 32px;
+            cursor: pointer;
+            float: left;
+            margin-right: 16px;
+            border-radius: 3px;
+            background: #fff;
+            color: $perks-green;
+            font-size: 16px;
+            height: 102px;
+            padding: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            @media (max-width: 767px){
+                float: initial;
+                text-align: center;
+                margin: 0 0 16px 0;
+            }
+            &:hover{
+                background: $perks-green;
+                color: #fff;
+                border: 1px solid $perks-green;
+                .payment-icon{
+                    background-position-y: -48px !important;
+                }
+            }
+        }
+        .payment_section ul li .payment-icon{
+            height: 48px;
+            width: 48px;
+            display: block;
+            margin: 0 auto 8px auto;
+            background: url('../img/perks/payment-methods/payment-sprite.png');
+            &.credit-card{
+                background-position: 0 0;
+            }
+            &.debit-card{
+                background-position: -48px 0;
+            }
+            &.net-banking{
+                background-position: -96px 0;
+            }
+            &.cod{
+                background-position: -144px 0;
+            }
+        }
+        .margin120{
+            margin-top: 120px;
+        }
+        #payment_cod{
+            background: #e2f5d8;
+            padding: 32px 32px 0 32px;
+            border-radius: 4px;
+            &::after{
+                width: 0; 
+                height: 0;
+                display: block;
+                content: "";
+                top: -15px;
+                right: 108px;
+                position: absolute;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid #e2f5d8;
+                @media (max-width: 767px){
+                    right: calc(50% - 8px);
+                }
+            }
+            .button-black{
+                background: #efb229;
+            }
+        }
+    }
+    strong{
+        font-weight: bold;
+    }
+    .cart_block_list .products{
+        display: block;
+        overflow-y: auto;
+        max-height: 269px;
+    }
+    #cart_product_table.table{
+        margin-bottom: 0;
+    }
+    .error_msg{
+        color: #f08383;
+    }
+}
+// Authentication Page
+body#authentication.from-perks {
+    #center_column{
+        width: 100% !important;
+    }
+    #right_column{
+        display: none;
+    }
+}
+
+// My Account Page
+.myaccount-link-list{
+    margin: 0 -15px;
+}
+// Loyalty Page Overrides
+#module-loyalty-default.from-perks .shopping_cart,
+#discount.from-perks .shopping_cart{
+    position: initial;
+    margin-top: 0;
+}
+// My Addresses Page
+#dataConfirmModal{
+    .modal-dialog{
+        max-width: 420px;
+    }
+    .modal-content .modal-body p{
+        text-align: left;
+    }
+} 
+// Identity
+#identity.from-perks{
+    .radio-inline,
+    .checkbox{
+        margin-left: 20px;
+        margin-right: 16px;
+    }
+    .radio-inline input[type="radio"]{
+        margin: 4px 4px 4px 0 !important;
+    }
+    .checkbox #newsletter{
+        left: initial;
+        margin: 2px 0 2px -20px !important;
+    }
+    .page-subheading{
+        margin-top: 24px;
+    }
+}
+.professional-id{
+    form{
+        margin-bottom: 8px;
+    }
+    .upload-proof-label{
+        border-radius: 2px;
+        width: 160px;
+        border: 1px solid #393939;
+        padding: 8px 16px;
+        margin: 0 12px 0 0;
+        cursor: pointer;
+        i{
+            margin-right: 8px;
+        }
+    }
+    .submit-proof{
+        border-radius: 2px;
+        padding: 8px 32px;
+        color: #fff;
+        outline: none !important;
+        background: #393939;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+    .message{
+        text-align: left;
+    }
+    #uploadProof + p{
+        margin-top: 16px;
+        color: #999;
+        span{
+            color: #333;
+            font-weight: bold;
+        }
+    }
+}
+.professional-id-success{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 16px;
+    border-radius: 3px;
+    border: 1px solid #72e23f;
+    background: rgba(75, 195, 21, 0.2);
+    .title{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .description{
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .voucher-code{
+        font-size: 18px;
+        color: #000;
+        padding: 4px 16px;
+        margin: 0 4px;
+        border: 2px dashed $perks-green;
+    }
+}
+// Order Confirmation
+body#order-confirmation.from-perks #order_step {
+    display: none;
+}
+body#order-confirmation,
+body#module-ebs-response{
+    .payment-response{
+        h2{
+            margin-bottom: 30px;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+        .back-to-home{
+            border-radius: 4px !important;
+            span{
+                padding: 8px 16px;
+            }
+        }
+    }
+}
+
+// Product Page Overrides
+body#product.from-perks #header div.nav .container {
+    max-width: 90%;
+}
+#product.from-perks{
+    .shopping_cart{
+        position: initial;
+        margin-top: 0;
+    }
+    .other-site-prices-container{
+        margin: 24px 0;
+    }
+    .help-block{
+        display: none;
+    }
+    .brand-details .brand_image {
+        pointer-events: none;
+    }
+}
+
+.minimal-footer{
+    max-width: 1024px;
+    margin: 32px auto;
+    padding: 0 16px;
+    border-top: 1px solid #f7f7f7;
+    padding-top: 16px;
+    @media (max-width: 767px){
+        text-align: center;
+    }
+}
+
+.help-info{
+    display: inline-block;
+    @media (max-width: 767px){
+        margin-bottom: 16px;
+    }
+}
+
+
+// Payment Page
+.payment-response{
+    padding: 64px 0;
+    @media (max-width: 991px){
+        text-align: center;
+        padding: 32px 0
+    }
+    p{
+        color: #999;
+    }
+}
+
+// My Account Pages - Footer Links
+.footer_links{
+    .button.button-small{
+        border-radius: 3px !important;
+        height: 48px !important;
+        line-height: 48px !important;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-right: 16px;
+        border: 1px solid #ccc;
+        color: #323232;
+        background: #fff;
+        &:hover{
+            background: #323232;
+            color: #fff;
+            border-color: transparent;
+        }
+        span{
+            padding: 0;
+            border: none;
+            height: 46px;
+            &:hover{
+                background: transparent;
+                border: none;
+            }
+        }
+        i{
+            display: none;
+        }
+    }
+}

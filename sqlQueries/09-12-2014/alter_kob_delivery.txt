@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_delivery` ADD  `dr_file_name` VARCHAR( 200 ) NULL AFTER  `price` ;

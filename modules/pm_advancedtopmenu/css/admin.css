@@ -1,0 +1,57 @@
+.width3 {width:100%!important;}
+	.width3 select {width:245px;}
+	.width3 label {width:400px;font-weight:normal;margin-right:10px;text-align:left;border-bottom:1px dotted #DFD5C3!important;}
+	.width3 .margin-form label {width:auto!important;border:0!important;margin:0;}
+	.width3 .margin-form p {clear:both;}
+.info_screen {
+background: #F4E6C9;
+border-bottom:1px solid #CCCCCC;
+clear:left;
+color:#cc0000;
+margin:0;
+padding:0;
+display:none;width:100%;font-size:1.4em!important;font-weight:bold!important;position:fixed;z-index:200000;bottom:0;height:40px;line-height:40px;text-align:center;}
+* html .info_screen {position:absolute;top:expression(body.scrollTop + document.body.clientHeight - 40 + "px");}
+.ui-state-highlight {background:#ffffbd; height: 100px; line-height: 1.2em; }
+.menuColumn {background:#fff;border:1px solid #DFD5C3;padding:5px;margin:15px 0;position:relative;}
+.menuColumnWrap {background:#eee;border:1px solid #ccc;padding:10px;margin:15px 0;position:relative;}
+.column_action, .menu_action {position:absolute;top:5px;right:5px;}
+.add_element select { width:200px;margin:10px 0;}
+.tabContent {position:relative;}
+.dragColumn, .dragWrap {cursor:move;}
+.dynamicTextarea {background:#f3f3f3;border:1px solid #ccc;padding:5px;}
+
+/*Copyright and newsletter*/
+.pm_panel_bottom {margin-top:15px;border:1px solid #B6B6B6; width:43%; height:210px; padding: 0 2%; float:left;margin-left:1%; margin-right:1%; clear:none!important;}
+.pm_panel_bottom .ui-input-pm {margin-top:3px;}
+.pm_send_newsletter {margin-top:10px;float:right}
+#pm_newsletter_terms {float:left;font-size:11px;padding-top:5px;display:block;margin-top:7px;color:#666;}
+
+#pm_copy_bloc {width:150px;float:left;}
+#pm_copy_bloc img {max-width:150px;}
+
+blockquote { 
+    font: italic 1.2em serif; 
+    color: #999; 
+	padding:0!important;
+	margin-top:0;
+}
+blockquote:before, blockquote:after { 
+    display: block; 
+    font-size: 300%; 
+    color: #999; 
+}
+blockquote:before { 
+    content: open-quote; 
+    margin-left: -10%; 
+    height: 0; 
+}
+blockquote:after { 
+    content: close-quote; 
+    margin-left: 100%; 
+    margin-top: -33px; 
+    height: 33px; 
+}
+
+.pm_link {color:#268CCD;}
+#pm_newsletter_trms_dialog p {text-align:justify}

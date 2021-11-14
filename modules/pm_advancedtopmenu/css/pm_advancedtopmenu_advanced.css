@@ -1,0 +1,11 @@
+#adtm_menu {z-index:1000; font-weight: bold}
+img.adtm_menu_icon {vertical-align:middle;margin-right:3px;}
+#adtm_menu .searchboxATM .search_query_atm {width:150px;margin-left:0!important;}
+#adtm_menu .searchboxATM .button_mini {display:inline-block;}
+#adtm_menu .adtm_unclickable {text-decoration:none!important;}
+#adtm_menu ul#menu li.li-niveau1 a.a-niveau1 {font-weight:bold;}
+
+#adtm_menu .adtm_column{width: 100%}
+#adtm_menu .li-niveau1 a.a-niveau1 .advtm_menu_span {font-weight:bold;}
+#adtm_menu .adtm_column h5, #adtm_menu .adtm_column h5 a {font-weight:bold}
+.adtm_column_wrap h5, .adtm_column_wrap h5 a {text-decoration: none}

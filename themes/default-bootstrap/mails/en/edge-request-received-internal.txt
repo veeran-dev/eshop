@@ -1,0 +1,53 @@
+
+
+	
+	Message from {shop_name}
+
+
+	
+		
+			
+				
+			
+		
+		 
+		
+			Hello, 
+		
+		
+		A new request for price quote is received.
+		
+		
+			More details about the request: 
+		
+		 
+		
+			
+				Customer Name: {firstname}
+				Customer Email: {email}
+				Customer Phone: {phone}
+				Product Name: {product_name}
+				Product Code: {product_code}
+				Estimated Quantity: {estimated_quantity}
+				Delivery Pin-Code: {pin_code}
+				Target Price: {target_price}
+				Need Credit: {credit}
+				Other Details: {other_details}
+			
+		
+		
+		 
+
+		
+			Thank You!
+			Kobster.com Team
+			
+		
+		
+			
+				Kobster.com – Your one stop shop for all your office needs | {shop_name}
+			
+		
+	
+
+

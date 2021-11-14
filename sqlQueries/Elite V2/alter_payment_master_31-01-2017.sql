@@ -1,0 +1,2 @@
+ALTER TABLE  `kob_payment_option_master` CHANGE id_payment id_payment INT( 11 ) NOT NULL AUTO_INCREMENT PRIMARY KEY;
+INSERT INTO  `kob_payment_option_master` (  `Payment_Name` ) VALUES ("CREDIT"), ("EPAYLATER");

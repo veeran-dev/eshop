@@ -1,0 +1,144 @@
+.upload-file{
+  padding: 0 24px 24px;
+  text-align: center;
+  max-width: 420px;
+  margin: 0 auto;
+  @media (max-width: 768px){
+    overflow-y: scroll;
+  }
+
+  .select-sect{
+    display: flex;
+    margin-bottom: 16px;
+    button{
+      width: 100%;
+    }
+  }
+  .upload-section{
+    display: none;
+    margin-bottom: 16px;
+  }
+  .upload-file-section{
+    margin-bottom: 16px;
+  }
+  .delivery-date{
+    margin-bottom: 24px;
+    //min-height: 330px;
+    @media (max-width: 768px){
+      //min-height: 420px;
+    }
+    .delivery-cal{
+      display: flex;
+      flex-direction: column;
+      p{
+        input{
+          width: 100%;
+        }
+      }
+      .rdt{
+          width: 240px;
+          .form-control{
+            margin: 0;
+          }
+          @media (max-width: 768px){
+            table{
+              thead{
+                display: table-header-group;
+                tr{
+                  position: unset;
+                  display: table-row;
+                  th{
+                    display: table-cell;
+                  }
+                }
+              }
+              tbody{
+                display: table-row-group;
+                tr{
+                  display: table-row;
+                  td{
+                    display: table-cell;
+                    border-color: transparent;
+                    text-align: center !important;
+                    &.rdtToday:before{
+                      left: auto;
+                      width: auto;
+                      padding: 0;
+                    }
+                  }
+                }
+              }
+              tfoot{
+                tr{
+                  display: table-row;
+                  td{
+                    display: table-cell;
+                    text-align: center !important;
+                    padding: unset;
+                    border-bottom-color: transparent;
+                  }
+                }
+              }
+            }
+          }
+          .rdtPicker table{
+            thead tr th{
+              color: inherit;
+              padding: unset;
+              line-height: unset;
+              text-transform: unset;
+            }
+            tbody tr td{
+              padding: unset;
+              transition: unset
+            }
+
+          }
+      } 
+    }
+  }
+  .button-blue{
+    width: 120px;
+    margin-bottom: 16px;
+  }
+  .warning{
+    p{
+      color: $kob-orange;
+      padding: 4px;
+    }
+  }
+  .filepond--wrapper, .filepond--file-action-button .filepond--action-remove-item{
+    cursor: pointer;
+  }
+  .filepond--file-wrapper .filepond--file [data-align*=left]{
+    cursor: pointer;
+  }
+  .filepond--drop-label.filepond--drop-label label{
+    font-size: 14px;
+    padding: 0;
+  }
+  .filepond--file-wrapper{
+    min-height: 40px;
+    .filepond--file [data-align*=left]{
+      left: 1em;
+    }
+  }
+  .filepond--file{
+    padding: 1em .5625em;
+  }
+  .filepond--file-status-main{
+    font-size: 16px;
+  }
+  .filepond--file-status-sub{
+    display: none;
+  }
+  .filepond--file-info{
+    padding: 0 8px;
+    .filepond--file-info-main{
+      font-size: 1em;
+    }
+    .filepond--file-info-sub{
+      font-size: 1em;
+    }
+  }
+}

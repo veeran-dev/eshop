@@ -1,0 +1,1 @@
+ALTER TABLE `kob_order_detail` ADD `product_quantity_delivered` INT NOT NULL AFTER `product_quantity_return`;

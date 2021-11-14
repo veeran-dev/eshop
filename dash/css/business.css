@@ -1,0 +1,235 @@
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html,body{
+	background-color: rgba(211,212,217,1) !important;
+}
+
+.brand{
+	background: #FFFFFF !important;
+}
+
+.panel,.header,.navbar-fixed-bottom{
+	background: none;
+}
+
+html{
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.main-content{
+	margin-top: 80px;
+}
+
+.flex_aligner{
+	    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.onboarding-bacground{
+	background: url('../images/op-66.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-control{
+	border: 1px solid #6D7D8B !important;
+    color: #6D7D8B !important;
+}
+
+.m-top0{
+	margin-top: 0px;
+}
+
+.business-fixed-header{
+	padding: 45px;
+	box-shadow: none;
+}
+
+.onboarding-logo{
+	margin-top: 8%;
+	margin-left: 39%;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-fixed-bottom
+{
+    height: 65px !important;
+}
+
+.btn-onboard{
+	background-color: #333333;
+	color: #FFFFFF;
+	border: 1px solid #333333;
+}
+
+.benefits-text-font{
+	font-size: 16px;
+}
+
+.benefits-text{
+	text-align: left;
+    padding-left: 55px;
+}
+
+.border-right-statistics{
+	border-right: 1px solid #6D7D8B;
+	height: 43px;
+}
+
+.contact-us-btn{
+	padding: 10px 120px 10px 120px;
+}
+
+.benefits-text-padding{
+	padding-right: 30px;
+}
+
+.padd-right-50{
+	padding-right: 50px;
+}
+
+.padd-left-50{
+	padding-left: 50px;
+	padding-right: 0 !important;
+}
+
+.m-left-25{
+	margin-left: 25px;
+}
+
+.benefits-text-color{
+	color: #6D7D8B;
+}
+
+.login-right-border{
+	border-right: 1.5px solid #6D7D8B;
+	height: 285px;
+}
+
+.onboard-heading-text{
+	color: #6D7D8B;
+}
+
+.onboard-heading-color{
+	color: #393939;
+}
+
+.link{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+@media (max-width: 980px)
+{
+	.login-right-border{
+		border: none;
+	}
+
+	.login-bottom-border{
+		border-bottom: 1px solid #D14233;
+	}
+
+	.navbar-fixed-bottom{
+		position: inherit;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.login-right-border{
+		border: none;
+	}
+
+	.login-bottom-border{
+		border-bottom: 1px solid #D14233;
+	}
+
+	.navbar-fixed-bottom{
+		position: inherit;
+	}
+}
+
+@media (max-width: 767px){
+	
+	.login-right-border{
+		border: none;
+	}
+
+	.business-fixed-header,.padd-right-50,
+	.padd-left-50,.benefits-text{
+		padding: 0px;
+	}
+
+	.benefits-text{
+		text-align: center;
+	}
+
+	.business-fixed-header{
+		padding: 0px;
+	}
+
+	.login-bottom-border{
+		border-bottom: 1px solid #D14233;
+	}
+
+	.navbar-fixed-bottom{
+		position: inherit;
+	}
+}
+
+@media (max-width: 480px)
+{
+	.business-fixed-header,.padd-right-50,
+	.padd-left-50,.benefits-text{
+		padding: 0px;
+	}
+
+	.benefits-text-font{
+		font-size: 14px;
+	}
+
+	.contact-us-btn{
+		padding: 10px 100px 10px 100px;
+	}
+
+	.benefits-text{
+		text-align: center;
+	}
+
+	.login-right-border{
+		border: none;
+	}
+
+	.login-bottom-border{
+		border-bottom: 1px solid #D14233;
+	}
+
+	.navbar-fixed-bottom{
+		position: inherit;
+	}
+}
+
+.valid{
+	font-size: 18px !important;
+}

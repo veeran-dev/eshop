@@ -1,0 +1,7 @@
+CREATE OR REPLACE VIEW kob_supplier_category_auto_map AS SELECT kes.id_supplier, CAST(GROUP_CONCAT(DISTINCT(kcp.id_category)) as VARCHAR) as c_list FROM `kob_elite_supplier_stock` kes LEFT JOIN kob_category_product kcp ON kcp.id_product=kes.id_product GROUP by kes.id_supplier
+
+
+CREATE OR REPLACE VIEW kob_supplier_category_auto_map AS
+SELECT DISTINCT(kcp.id_category) as c_list , kes.id_supplier
+FROM `kob_elite_supplier_stock` kes 
+LEFT JOIN kob_category_product kcp ON kcp.id_product=kes.id_product

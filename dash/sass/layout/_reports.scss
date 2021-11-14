@@ -1,0 +1,108 @@
+.reports-container{
+    //display: flex;
+		//display: -webkit-flex;
+	//height: 100vh;
+	//background: #fff;
+
+	position: relative;
+	> div{
+		border-radius: 4px;
+		padding: 0 16px;
+		background: $kob-white;
+		min-height: calc(100vh - 198px);
+		@media (max-width: $tablet-small){
+			min-height: calc(100vh - 192px);
+		}
+	}
+}
+#line-chart,
+#categories-chart{
+	width: 100%;
+	height: 380px;
+}
+.map{
+	width: 400px;
+	margin: 0 auto;
+	display: block;
+	transition: width 300ms ease-in;
+	transition-delay: 600ms;
+}
+
+  .st0{fill:#FFFFFF;stroke:#29ABE2;stroke-width:0.5;}
+  .st1{fill:#C92A2A;}
+  .st2{fill:#FFFFFF;}
+
+	// Location Reports
+// Custom Styles
+.maps-data-wrapper{
+	display: flex;
+	display: -webkit-flex;
+	@media (max-width: $tablet-large){
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+}
+.leaflet-container{
+	width: 100%;
+	padding: 16px 0px;
+	display: flex;
+	display: -webkit-flex;
+	margin: 16px 16px 16px 0;
+	height: calc(100vh - 284px);
+	@media (min-width: #{$tablet-small + 1px}){
+		min-width: 480px;
+	}
+	@media (max-width: $tablet-small){
+		margin-bottom: 16px;
+	}
+}
+.location-data-table-container{
+	width: 100%;
+	h3{
+		margin: 10px;
+	}
+	.scroll-table{
+		height: calc(100vh - 344px) !important;
+		width: 100% !important;
+	}
+	@media (min-width: #{$tablet-large - 32px}){
+		margin-left: 16px;
+	}
+	@media (max-width: $tablet-small){
+		margin-bottom: 16px;
+	}
+}
+.no-results + .location-data-table-container{
+	display: none;
+}
+.fixed-table{
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	@media (min-width: #{$tablet-small + 1px}){
+		tr th,
+		tr td{
+			&:nth-child(1){
+				width: 64px;
+				text-align: right;
+				border-top-left-radius: 4px;
+			}
+			&:nth-child(2){
+				width:164px;
+			}
+			&:nth-child(3){
+				width: 160px;
+			}
+			&:nth-child(4){
+				text-align: right;
+				width: 160px;
+				border-top-right-radius: 4px;
+			}
+		}
+		tr th{
+			background: $kob-gray-hover;
+		}
+		tr td{
+			background: #f7f7f7;
+		}
+	}
+}

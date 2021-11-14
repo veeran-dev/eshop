@@ -1,0 +1,50 @@
+.notifications{
+    .page-container{
+        padding: 0;
+    }
+}
+
+.notification-item{
+    border-bottom: 1px solid $kob-gray-eighty;
+    padding: 8px;
+    background: $kob-gray-background;
+    &:first-child{
+        border-top: 1px solid $kob-gray-eighty;
+    }
+    &.unread{
+        background: $kob-white;
+    }
+}
+.notification-link{
+    display: flex;
+    display: -webkit-flex;
+    & > div:first-child{
+        margin-right: 16px;
+        line-height: 36px;
+        i{
+            font-size: 36px;
+            line-height: 36px;
+            color: $kob-gray-eighty;
+        }
+    }
+}
+.notification-message{
+    font-weight: normal;
+    color: $kob-gray;
+    margin-bottom: 6px;
+    text-overflow: ellipsis;
+    word-spacing: no-wrap;
+    overflow: hidden;
+}
+.unread .notification-message{
+    font-weight: bold;
+    color: $kob-dark-black;
+}
+
+.notification-date{
+    color: $kob-gray-light;
+    font-weight: normal;
+}
+.unread .notification-date{
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+Hello {supplier}, You got a new order from {delivery_company}!
+
+Order details
+
+   Order: {order_name} placed on {date}
+   Payment: {payment}
+
+   Products: {total_products}
+   Discounts: {total_discounts}
+   Shipping: {total_shipping}
+   Gift-wrapping: {total_wrapping}
+   Total paid: {total_paid}
+   
+   {payment_informations}
+   
+   {products}
+   {discounts}
+
+Shipping
+
+   Carrier: {carrier}
+
+   Delivery address:
+
+   {delivery_company}
+   {delivery_firstname} {delivery_lastname}
+   {delivery_address1}
+   {delivery_address2}
+   {delivery_postal_code} {delivery_city}
+   {delivery_country} {delivery_state}
+   {delivery_other}
+
+   Billing address:
+
+   {invoice_company}
+   {invoice_firstname} {invoice_lastname}
+   {invoice_address1}
+   {invoice_address2}
+   {invoice_postal_code} {invoice_city}
+   {invoice_country} {invoice_state}
+   {invoice_other}
+
+You can review this order and download your invoice from {shop_url}supplier/#/orders. 
+
+{shop_url} 

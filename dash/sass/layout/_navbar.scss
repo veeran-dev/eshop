@@ -1,0 +1,125 @@
+header{
+	@media (max-width: #{$tablet-large - 32px}){
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+		top: 0;
+	}
+}
+
+.navbar{
+	background: #333;
+	position: relative;
+	ul{
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		align-items: center;
+		-webkit-align-items: center;
+		li{
+			flex-grow: 1;
+			-webkit-flex-grow: 1;
+			max-height: 63px;
+			& > div{
+				width: 100%;
+			}
+		}
+	}
+	@media (max-width: #{$tablet-large - 32px}){
+		top: 44px;
+		width: 240px;
+		position: fixed;
+		left: -240px;
+		height: calc(100vh - 44px);
+		z-index: 501;
+		background: $kob-black;
+		transition: transform 0.3s ease-out;
+		will-change: transform;
+		ul{
+			align-items: flex-start;
+			-webkit-align-items: flex-start;
+			li{
+				height: 44px;
+				width: 100%;
+			}
+		}
+	}
+}
+//Hiding Mobile Menu
+@media (max-width: #{$tablet-large - 32px}){
+	#is-active + .navbar, #is-active-mobile + .navbar{
+		-ms-transform: translate(240px);
+		-webkit-transform: translate(240px);
+		transform: translate(240px);
+		ul{
+			flex-direction: column;
+			-webkit-flex-direction: column;
+			height: 440px;
+		}
+	}
+	#is-hidden + .navbar, #is-hidden-mobile + .navbar{
+		left: -240px;
+		transition: all 0.3s ease-out;
+		ul{
+			li{
+				display: none;
+			}
+		}
+	}
+}
+.menu-item{
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 13px;
+	display: block;
+	text-align: center;
+	padding: 4px 0;
+	transition: all 0.3s ease-in;
+	border-bottom: 3px solid #333333;
+	&:hover,
+	&:focus{
+		color: rgba(255, 255, 255, 0.6);
+		background: #444;
+		border-bottom: 3px solid transparent;
+	}
+	&.is-active{
+		color: $kob-white;
+		border-bottom: 3px solid $kob-red;
+		background: #222;
+	}
+	@media (max-width: #{$tablet-large - 32px}){
+		font-size: 16px;
+		line-height: 24px;
+		padding: 10px;
+		text-align: left;
+		color: lighten($kob-gray-light, 15%);
+		border-bottom: 1px solid $kob-gray-eighty;
+		&:hover,
+		&:focus,
+		&.is-active{
+			color: $kob-white;
+			background: $kob-red;
+			border-bottom: 0;
+		}
+	}
+
+}
+.menu-icon{
+	font-size: 32px;
+	line-height: 36px;
+	text-align: center;
+	display: block;
+	@media (max-width: #{$tablet-large - 32px}){
+		display: inline-block;
+		font-size: 24px;
+		line-height: 24px;
+		margin-right: 15px;
+		vertical-align: top;
+	}
+}
+.menu-icon-red{
+	color: $kob-red;
+}
+.menu-label{
+	text-align: center;
+}

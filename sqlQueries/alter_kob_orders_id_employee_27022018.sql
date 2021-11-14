@@ -1,0 +1,1 @@
+ALTER TABLE  `kob_orders` ADD  `id_employee` INT( 10 ) UNSIGNED NOT NULL AFTER  `po_number` ;

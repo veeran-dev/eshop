@@ -1,0 +1,148 @@
+.popup-header{
+	padding: 0 16px;
+}
+.product-title{
+	font-size: 24px;
+	line-height: 24px;
+	margin-bottom: 16px;
+	color: $kob-red;
+}
+.step{
+	padding: 0 16px;
+	button{
+		min-width: 120px;
+		margin-left: 16px;
+	}
+}
+.form-group{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	&.flex-column-exception{
+		flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+}
+
+.form-control{
+	width: 100%;
+	input{
+		width: 100%;
+	}
+	textarea{
+		height: 60px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	&.inline{
+		display: flex;
+		display: -webkit-flex;
+		select{
+			flex-basis: 107px;
+			-ms-background-position-x: 36px;
+		}
+	}
+}
+
+.double-column{
+	display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	.form-group{
+		width: 50%;
+		& > div{
+			width: 100%;
+		}
+	}
+	.form-control{
+		display: flex;
+		display: -webkit-flex;
+	}
+	.quantity{
+		padding-right: 8px;
+		input{
+			border-radius: 2px 0 0 2px;
+			margin-right: -1px;
+			&:focus{
+				z-index: 1;
+			}
+		}
+		select{
+			border-radius: 0 2px 2px 0;
+			width: 72px;
+			background-color: $kob-gray-hover;
+		}
+	}	
+	.price{
+		padding-left: 8px;
+		span{
+			width: 72px;
+			height: 28px;
+			line-height: 26px;
+			display: inline-block;
+		    background-color: $kob-gray-hover;
+			text-align: center;
+			border: 1px solid $kob-gray-eighty;
+			border-radius: 2px 0 0 2px;
+		}
+		input{
+			border-radius: 0 2px 2px 0;
+			margin-left: -1px;
+		}
+	}	
+}
+p.form-control{
+	color: $kob-gray-light;
+}
+
+// Auto Suggest Styles
+#bulkEnquiry{
+	.react-autosuggest__container{
+		width: 100%;
+	}
+	.suggestion-box{
+		width: 100%;
+		top: 32px;
+	}
+}
+
+// Selected Item Styles
+.product-result{
+	display: flex;
+	display: -webkit-flex;
+	padding: 16px;
+	margin: 16px;
+	background: $kob-gray-background;
+	.product-visual{
+		max-width: 80px;
+		img{
+			width: 64px;
+			margin-right: 16px;
+			height: 64px;
+			//Temp Styles
+			border: 1px solid $kob-gray-eighty;
+		}
+	}
+	.product-info{
+		h3{
+			font-size: 18px;
+			line-height: 24px;
+		}
+		p{
+			font-size: 14px;
+			line-height: 14px;
+			margin-top: 6px;
+			color: $kob-gray-light;
+		}
+		p.price{
+			font-weight: bold;
+			color: $kob-red;
+		}
+	}
+}
+
+//Validation
+.error{
+	color: $kob-red;
+	font-size: 13px;
+}
