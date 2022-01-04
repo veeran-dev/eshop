@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/furniup4/public_html/elite/
+    - /bin/cp -R images $DEPLOYPATH
